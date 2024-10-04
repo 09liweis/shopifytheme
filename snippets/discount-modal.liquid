@@ -1,0 +1,201 @@
+<section id="discount-modal-trigger">
+  Get 10% Off
+</section>
+<section id="discount-modal-container">
+  <section id="discount-modal">
+    <a href="javascript::" id="discount-modal-close">{%- render 'icon-close' -%}</a>
+    {{ settings.discount_image | image_url: width: 600 | image_tag:
+      class: 'discount-modal-image motion-reduce flex-1',
+      widths: widths,
+      height: logo_height,
+      width: settings.logo_width,
+      alt: logo_alt,
+      sizes: sizes,
+      preload: true
+    }}
+    <section class="discount-modal-content flex-1">
+    <h1 style="text-align:center;margin:10px 0;">{{ settings.discount_title }}</h1>
+    <h3>{{ settings.discount_content }}</h3>
+    <div class="footer-block__newsletter">
+      {%- if section.settings.newsletter_heading != blank -%}
+        <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
+      {%- endif -%}
+      {%- form 'customer', id: 'DiscountModal', class: 'footer__newsletter newsletter-form' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div class="newsletter-form__field-wrapper">
+          <div class="field">
+            <label class="field__label" for="NewsletterForm--{{ section.id }}">
+              {{ 'newsletter.label' | t }}
+            </label>
+            <input
+              id="NewsletterForm--{{ section.id }}"
+              type="email"
+              name="contact[email]"
+              class="field__input"
+              value="{{ form.email }}"
+              aria-required="true"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              {% if form.errors %}
+                autofocus
+                aria-invalid="true"
+                aria-describedby="ContactFooter-error"
+              {% elsif form.posted_successfully? %}
+                aria-describedby="ContactFooter-success"
+              {% endif %}
+              placeholder="{{ 'newsletter.label' | t }}"
+              required
+            >
+            
+          </div>
+          <button
+            type="submit"
+            class="newsletter-form__btn"
+            name="commit"
+            id="Subscribe"
+            aria-label="{{ 'newsletter.button_label' | t }}"
+          >
+            SUBSCRIBE
+          </button>
+          {%- if form.errors -%}
+            <small class="newsletter-form__message form__message" id="ContactFooter-error">
+              {%- render 'icon-error' -%}
+              {{- form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email -}}
+            </small>
+          {%- endif -%}
+        </div>
+        {%- if form.posted_successfully? -%}
+          <h3
+            class="newsletter-form__message newsletter-form__message--success form__message"
+            id="ContactFooter-success"
+            tabindex="-1"
+            autofocus
+          >
+            {% render 'icon-success' -%}
+            {{- 'newsletter.success' | t }}
+          </h3>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
+    <section id="discount-modal-desc">*By completing this form, you are signing up to receive our emails and can unsubscribe at any time.</section>
+    </section>
+  </section>
+</section>
+
+<style>
+  .flex-1 {
+    flex:1;
+  }
+  .discount-modal-content {
+    text-align: left;
+  }
+  #discount-modal-trigger {
+    cursor:pointer;
+    z-index:2;
+    background-color:#ccc;
+    color:#000;
+    padding:10px;
+    position: fixed;
+    bottom:-50px;
+    left:0;
+    width:100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  #discount-modal-trigger.show {
+    bottom: 0;
+  }
+  
+  #discount-modal-container {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+  }
+  
+  #discount-modal {
+    width: 625px;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 749px) {
+    #discount-modal {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    #discount-modal-trigger {
+      top:50%;
+      right:-40px;
+      transform: rotate(-90deg);
+      bottom: auto !important;
+      left: auto;
+      width: auto;
+    }
+    .discount-modal-image {
+      /* width:100%; */
+    }
+  }
+  
+  #discount-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  #discount-modal-desc {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+</style>
+<script>
+  function showDiscountModal() {
+    document.getElementById("discount-modal-container").style.display = "flex";
+  }
+  window.addEventListener("load", (event) => {
+    const discountModalTrigger = document.getElementById("discount-modal-trigger");
+
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function() {
+      let scrollTop = window.scrollY;
+      console.log(scrollTop);
+    
+      if (scrollTop > lastScrollTop) {
+        discountModalTrigger.classList.add('show');
+      } else {
+        discountModalTrigger.classList.remove('show');
+      }
+    
+      lastScrollTop = scrollTop;
+    });
+
+    discountModalTrigger.addEventListener("click",()=>{
+      showDiscountModal();
+    });
+    
+    const discountModal = sessionStorage.getItem("discountModal");
+    if (!discountModal) {
+      showDiscountModal();
+    }
+    document.getElementById("discount-modal-close").addEventListener("click",()=>{
+      sessionStorage.setItem("discountModal","discountModal");
+      document.getElementById("discount-modal-container").style.display = "none";
+    });
+  });
+</script>

@@ -17,7 +17,14 @@
 {%- endstyle -%}
 
 {%- paginate customer.addresses by 5 -%}
-  <div class="customer addresses section-{{ section.id }}-padding" data-customer-addresses>
+  <div class="customer account addresses section-{{ section.id }}-padding" data-customer-addresses>
+    <svg style="display: none">
+      <symbol id="icon-caret" viewBox="0 0 10 6">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+      </symbol>
+    </svg>
+    {% render "account-navs" %}
+    <div>
     <h1>{{ 'customer.addresses.title' | t }}</h1>
     <a href="{{ routes.account_url }}">
       {{ 'customer.account.return' | t }}
@@ -35,6 +42,7 @@
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
           <div class="field">
+            <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
             <input
               type="text"
               id="AddressFirstNameNew"
@@ -43,9 +51,9 @@
               autocomplete="given-name"
               placeholder="{{ 'customer.addresses.first_name' | t }}"
             >
-            <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
           </div>
           <div class="field">
+            <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
             <input
               type="text"
               id="AddressLastNameNew"
@@ -54,9 +62,9 @@
               autocomplete="family-name"
               placeholder="{{ 'customer.addresses.last_name' | t }}"
             >
-            <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
           </div>
           <div class="field">
+            <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
             <input
               type="text"
               id="AddressCompanyNew"
@@ -65,9 +73,9 @@
               autocomplete="organization"
               placeholder="{{ 'customer.addresses.company' | t }}"
             >
-            <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
           </div>
           <div class="field">
+            <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
             <input
               type="text"
               id="AddressAddress1New"
@@ -76,9 +84,9 @@
               autocomplete="address-line1"
               placeholder="{{ 'customer.addresses.address1' | t }}"
             >
-            <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
           </div>
           <div class="field">
+            <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
             <input
               type="text"
               id="AddressAddress2New"
@@ -87,9 +95,9 @@
               autocomplete="address-line2"
               placeholder="{{ 'customer.addresses.address2' | t }}"
             >
-            <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
           </div>
           <div class="field">
+            <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
             <input
               type="text"
               id="AddressCityNew"
@@ -98,7 +106,6 @@
               autocomplete="address-level2"
               placeholder="{{ 'customer.addresses.city' | t }}"
             >
-            <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
           </div>
           <div>
             <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
@@ -111,9 +118,9 @@
               >
                 {{ all_country_option_tags }}
               </select>
-              <span class="svg-wrapper">
-                {{- 'icon-caret.svg' | inline_asset_content -}}
-              </span>
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                <use href="#icon-caret" />
+              </svg>
             </div>
           </div>
           <div id="AddressProvinceContainerNew" style="display: none">
@@ -125,12 +132,13 @@
                 data-default="{{ form.province }}"
                 autocomplete="address-level1"
               ></select>
-              <span class="svg-wrapper">
-                {{- 'icon-caret.svg' | inline_asset_content -}}
-              </span>
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                <use href="#icon-caret" />
+              </svg>
             </div>
           </div>
           <div class="field">
+            <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
             <input
               type="text"
               id="AddressZipNew"
@@ -140,9 +148,9 @@
               autocomplete="postal-code"
               placeholder="{{ 'customer.addresses.zip' | t }}"
             >
-            <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
           </div>
           <div class="field">
+            <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
             <input
               type="tel"
               id="AddressPhoneNew"
@@ -151,7 +159,7 @@
               autocomplete="tel"
               placeholder="{{ 'customer.addresses.phone' | t }}"
             >
-            <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
+            
           </div>
           <div>
             {{ form.set_as_default_checkbox }}
@@ -194,6 +202,7 @@
             <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
             {%- form 'customer_address', address -%}
               <div class="field">
+                <label for="AddressFirstName_{{ form.id }}">{{ 'customer.addresses.first_name' | t }}</label>
                 <input
                   type="text"
                   id="AddressFirstName_{{ form.id }}"
@@ -202,9 +211,9 @@
                   autocomplete="given-name"
                   placeholder="{{ 'customer.addresses.first_name' | t }}"
                 >
-                <label for="AddressFirstName_{{ form.id }}">{{ 'customer.addresses.first_name' | t }}</label>
               </div>
               <div class="field">
+                <label for="AddressLastName_{{ form.id }}">{{ 'customer.addresses.last_name' | t }}</label>
                 <input
                   type="text"
                   id="AddressLastName_{{ form.id }}"
@@ -213,9 +222,9 @@
                   autocomplete="family-name"
                   placeholder="{{ 'customer.addresses.last_name' | t }}"
                 >
-                <label for="AddressLastName_{{ form.id }}">{{ 'customer.addresses.last_name' | t }}</label>
               </div>
               <div class="field">
+                <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
                 <input
                   type="text"
                   id="AddressCompany_{{ form.id }}"
@@ -224,9 +233,9 @@
                   autocomplete="organization"
                   placeholder="{{ 'customer.addresses.company' | t }}"
                 >
-                <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
               </div>
               <div class="field">
+                <label for="AddressAddress1_{{ form.id }}">{{ 'customer.addresses.address1' | t }}</label>
                 <input
                   type="text"
                   id="AddressAddress1_{{ form.id }}"
@@ -235,9 +244,9 @@
                   autocomplete="address-line1"
                   placeholder="{{ 'customer.addresses.address1' | t }}"
                 >
-                <label for="AddressAddress1_{{ form.id }}">{{ 'customer.addresses.address1' | t }}</label>
               </div>
               <div class="field">
+                <label for="AddressAddress2_{{ form.id }}">{{ 'customer.addresses.address2' | t }}</label>
                 <input
                   type="text"
                   id="AddressAddress2_{{ form.id }}"
@@ -246,9 +255,9 @@
                   autocomplete="address-line2"
                   placeholder="{{ 'customer.addresses.address2' | t }}"
                 >
-                <label for="AddressAddress2_{{ form.id }}">{{ 'customer.addresses.address2' | t }}</label>
               </div>
               <div class="field">
+                <label for="AddressCity_{{ form.id }}">{{ 'customer.addresses.city' | t }}</label>
                 <input
                   type="text"
                   id="AddressCity_{{ form.id }}"
@@ -257,7 +266,6 @@
                   autocomplete="address-level2"
                   placeholder="{{ 'customer.addresses.city' | t }}"
                 >
-                <label for="AddressCity_{{ form.id }}">{{ 'customer.addresses.city' | t }}</label>
               </div>
               <div>
                 <label for="AddressCountry_{{ form.id }}">
@@ -274,9 +282,9 @@
                   >
                     {{ all_country_option_tags }}
                   </select>
-                  <span class="svg-wrapper">
-                    {{- 'icon-caret.svg' | inline_asset_content -}}
-                  </span>
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                    <use href="#icon-caret" />
+                  </svg>
                 </div>
               </div>
               <div id="AddressProvinceContainer_{{ form.id }}" style="display:none;">
@@ -290,12 +298,13 @@
                     data-default="{{ form.province }}"
                     autocomplete="address-level1"
                   ></select>
-                  <span class="svg-wrapper">
-                    {{- 'icon-caret.svg' | inline_asset_content -}}
-                  </span>
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                    <use href="#icon-caret" />
+                  </svg>
                 </div>
               </div>
               <div class="field">
+                <label for="AddressZip_{{ form.id }}">{{ 'customer.addresses.zip' | t }}</label>
                 <input
                   type="text"
                   id="AddressZip_{{ form.id }}"
@@ -305,8 +314,8 @@
                   autocomplete="postal-code"
                   placeholder="{{ 'customer.addresses.zip' | t }}"
                 >
-                <label for="AddressZip_{{ form.id }}">{{ 'customer.addresses.zip' | t }}</label>
               </div>
+              <label for="AddressPhone_{{ form.id }}">{{ 'customer.addresses.phone' | t }}</label>
               <div class="field">
                 <input
                   type="tel"
@@ -316,7 +325,6 @@
                   autocomplete="tel"
                   placeholder="{{ 'customer.addresses.phone' | t }}"
                 >
-                <label for="AddressPhone_{{ form.id }}">{{ 'customer.addresses.phone' | t }}</label>
               </div>
               <div>
                 {{ form.set_as_default_checkbox }}
@@ -341,9 +349,9 @@
             {%- if paginate.previous -%}
               <li>
                 <a href="{{ paginate.previous.url }}" aria-label="{{ 'general.pagination.previous' | t }}">
-                  <span class="svg-wrapper">
-                    {{- 'icon-caret.svg' | inline_asset_content -}}
-                  </span>
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                  </svg>
                 </a>
               </li>
             {%- endif -%}
@@ -369,9 +377,9 @@
             {%- if paginate.next -%}
               <li>
                 <a href="{{ paginate.next.url }}" aria-label="{{ 'general.pagination.next' | t }}">
-                  <span class="svg-wrapper">
-                    {{- 'icon-caret.svg' | inline_asset_content -}}
-                  </span>
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                  </svg>
                 </a>
               </li>
             {%- endif -%}
@@ -379,6 +387,7 @@
         </nav>
       {%- endif -%}
     {%- endif -%}
+  </div>
   </div>
 {%- endpaginate -%}
 

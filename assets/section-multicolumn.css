@@ -74,6 +74,7 @@
 }
 
 .multicolumn.background-primary .multicolumn-card {
+  display:flex;
   background: rgb(var(--color-background))
     linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
 }
@@ -88,9 +89,10 @@
 }
 
 .multicolumn-card-spacing {
+  width: 60px;
   padding-top: 2.5rem;
   margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  /* margin-right: 2.5rem; */
 }
 
 .multicolumn-card__info > :nth-child(2) {

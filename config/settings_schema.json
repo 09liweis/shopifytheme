@@ -2,10 +2,116 @@
   {
     "name": "theme_info",
     "theme_name": "Dawn",
-    "theme_version": "15.1.0",
+    "theme_version": "15.0.0",
     "theme_author": "Shopify",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
+  },
+  {
+    "name":"Contact Info",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id":"show_wechat",
+        "label": "Show Wechat",
+        "default":true
+      },
+      {
+        "type": "text",
+        "id": "wechat_id",
+        "label": "Wechat Id"
+      },
+      {
+        "type": "image_picker",
+        "id": "wechat_image",
+        "label": "Wechat Image"
+      },
+      {
+        "type": "checkbox",
+        "id":"show_phone_number",
+        "label": "Show Phone Number",
+        "default":false
+      },
+      {
+        "type":"text",
+        "id":"contact_phone",
+        "label":"Phone number"
+      },
+      {
+        "type":"text",
+        "id":"contact_email",
+        "label":"Email"
+      },
+      {
+        "type":"checkbox",
+        "id": "show_store_address",
+        "label": "Show Store Address",
+        "default":true
+      },
+      {
+        "type":"text",
+        "id":"contact_address",
+        "label":"Address"
+      },
+      {
+        "type":"checkbox",
+        "id":"show_store_map",
+        "label": "Show Contact Store Map",
+        "default":true
+      }
+    ]
+  },
+  {
+    "name": "Disclaimer Modal",
+    "settings": [
+      {
+        "type":"checkbox",
+        "id":"disclaimer_showModal",
+        "label":"Show Modal"
+      },
+      {
+        "type":"text",
+        "id": "disclaimer_title",
+        "label":"Disclaimer Title"
+      },
+      {
+        "type":"richtext",
+        "id":"disclaimer_content",
+        "label":"Disclaimer Content"
+      },
+      {
+        "type":"text",
+        "id": "agree_text",
+        "label":"Agree button text",
+        "default":"YES, I AM OVER 19"
+      },
+      {
+        "type":"text",
+        "id": "disagree_text",
+        "label":"Disgress button text",
+        "default":"NO, I AM UNDER 19"
+      },
+    ]
+  },
+  {
+    "name": "Discount Modal",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "discount_image",
+        "label": "Discount Image"
+      },
+      {
+        "type":"text",
+        "id": "discount_title",
+        "label":"Discount Title"
+      },
+      {
+        "type":"text",
+        "id":"discount_content",
+        "label":"Discount Content"
+      }
+    ]
   },
   {
     "name": "t:settings_schema.logo.name",

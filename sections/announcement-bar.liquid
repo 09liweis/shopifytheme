@@ -40,12 +40,12 @@
               class="announcement-bar__link link link--text focus-inset animate-arrow"
             >
           {%- endif -%}
-          <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
+          <section class="announcement-bar__message">
+            {{ section.blocks.first.settings.text }}
             {%- if section.blocks.first.settings.link != blank -%}
-              {{- 'icon-arrow.svg' | inline_asset_content -}}
+              {% render 'icon-arrow' %}
             {%- endif -%}
-          </p>
+          </section>
           {%- if section.blocks.first.settings.link != blank -%}
             </a>
           {%- endif -%}
@@ -66,9 +66,7 @@
             aria-label="{{ 'sections.announcements.previous_announcement' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
-            <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
-            </span>
+            {% render 'icon-caret' %}
           </button>
           <div
             class="grid grid--1-col slider slider--everywhere"
@@ -101,12 +99,12 @@
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
                       >
                     {%- endif -%}
-                    <p class="announcement-bar__message h5">
-                      <span>{{ block.settings.text | escape }}</span>
+                    <section class="announcement-bar__message">
+                     {{ block.settings.text }}
                       {%- if block.settings.link != blank -%}
-                        {{- 'icon-arrow.svg' | inline_asset_content -}}
+                        {% render 'icon-arrow' %}
                       {%- endif -%}
-                    </p>
+                    </section>
                     {%- if block.settings.link != blank -%}
                       </a>
                     {%- endif -%}
@@ -122,9 +120,7 @@
             aria-label="{{ 'sections.announcements.next_announcement' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
-            <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
-            </span>
+            {% render 'icon-caret' %}
           </button>
         </div>
       </slideshow-component>
@@ -173,6 +169,12 @@
     "groups": ["header"]
   },
   "settings": [
+    {
+      "type":"checkbox",
+      "id":"is_sticky",
+      "label":"Is Sticky",
+      "default":false
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
@@ -245,7 +247,7 @@
       "name": "t:sections.announcement-bar.blocks.announcement.name",
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "text",
           "default": "t:sections.announcement-bar.blocks.announcement.settings.text.default",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"

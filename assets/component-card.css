@@ -125,7 +125,7 @@
 .card__content {
   display: grid;
   grid-template-rows: minmax(0, 1fr) max-content minmax(0, 1fr);
-  padding: 1rem;
+  /* padding: 1rem; */
   width: 100%;
   flex-grow: 1;
 }
@@ -303,6 +303,7 @@
 .card__heading {
   margin-top: 0;
   margin-bottom: 0;
+  height: 50px;
 }
 
 .card__heading:last-child {
@@ -471,12 +472,12 @@
 
 .card-information > * {
   line-height: calc(1 + 0.4 / var(--font-body-scale));
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
 }
 
-.card-information > .price {
+/* .card-information > .price {
   color: rgb(var(--color-foreground));
-}
+} */
 
 .card--horizontal .card-information > .price {
   color: rgba(var(--color-foreground), 0.75);

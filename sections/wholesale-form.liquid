@@ -1,0 +1,230 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  #contact-form {
+    max-width:1200px;
+    margin:auto;
+    width:100%;
+    gap:40px;
+    margin-bottom:20px;
+  }
+{%- endstyle -%}
+
+<div id="contact-form" class="color-{{ section.settings.color_scheme }} gradient">
+  
+  <div class="contact page-width page-width--narrow section-{{ section.id }}-paddin">
+    {%- liquid
+      assign contact_form_class = 'isolate'
+      if settings.animations_reveal_on_scroll
+        assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
+      endif
+    -%}
+    {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+      {%- if form.posted_successfully? -%}
+        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+          {% render 'icon-success' %}
+          {{ 'templates.contact.form.post_success' | t }}
+        </h2>
+      {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+            {% render 'icon-error' %}
+            {{ 'templates.contact.form.error_heading' | t }}
+          </h2>
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <!-- <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </a> -->
+            <a>Please fill out all the required fields</a>
+          </li>
+        </ul>
+      {%- endif -%}
+      <div class="field-group" style="display:flex;gap:30px;">
+        <div class="field">
+          <label class="field__label required" for="ContactForm-name">{{ 'templates.contact.form.first_name' | t }}</label>
+          <input
+            class="field__input"
+            autocomplete="name"
+            type="text"
+            id="ContactForm-first_name"
+            name="contact[{{ 'templates.contact.form.first_name' | t }}]"
+            value="{% if form.first_name %}{{ form.first_name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+            placeholder="{{ 'templates.contact.form.first_name' | t }}"
+          >
+        </div>
+        <div class="field">
+          <label class="field__label required" for="ContactForm-name">{{ 'templates.contact.form.last_name' | t }}</label>
+          <input
+            class="field__input"
+            autocomplete="name"
+            type="text"
+            id="ContactForm-last_name"
+            name="contact[{{ 'templates.contact.form.last_name' | t }}]"
+            value="{% if form.last_name %}{{ form.last_name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+            placeholder="{{ 'templates.contact.form.last_name' | t }}"
+          >
+        </div>
+      </div>
+      <div class="field">
+        <label class="field__label required" for="ContactForm-address">
+          {{- 'templates.contact.form.address' | t }}
+        </label>
+        <input
+          type="text"
+          id="ContactForm-address"
+          class="field__input"
+          name="contact[address]"
+          spellcheck="false"
+          autocapitalize="off"
+          value="{% if form.address %}{{ form.address }}{% endif %}"
+          aria-required="true"
+          placeholder="{{ 'templates.contact.form.address' | t }}"
+        >
+      </div>
+
+      <div class="field">
+        <label class="field__label required" for="ContactForm-postal_code">
+          {{- 'templates.contact.form.postal_code' | t }}
+        </label>
+        <input
+          type="text"
+          id="ContactForm-postal_code"
+          class="field__input"
+          name="contact[postal_code]"
+          spellcheck="false"
+          autocapitalize="off"
+          value="{% if form.postal_code %}{{ form.postal_code }}{% endif %}"
+          aria-required="true"
+          placeholder="{{ 'templates.contact.form.postal_code' | t }}"
+        >
+      </div>
+
+      <div class="field">
+        <label class="field__label required" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+        <input
+          type="tel"
+          id="ContactForm-phone"
+          class="field__input"
+          autocomplete="tel"
+          name="contact[{{ 'templates.contact.form.phone' | t }}]"
+          value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+          placeholder="{{ 'templates.contact.form.phone' | t }}"
+        >
+      </div>
+      
+      <div class="field field--with-error">
+        <label class="field__label required" for="ContactForm-address">
+          {{- 'templates.contact.form.email' | t }}
+        </label>
+        <input
+          autocomplete="email"
+          type="email"
+          id="ContactForm-email"
+          class="field__input"
+          name="contact[email]"
+          spellcheck="false"
+          autocapitalize="off"
+          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+          aria-required="true"
+          {% if form.errors contains 'email' %}
+            aria-invalid="true"
+            aria-describedby="ContactForm-email-error"
+          {% endif %}
+          placeholder="{{ 'templates.contact.form.email' | t }}"
+        >
+        
+        {%- if form.errors contains 'email' -%}
+          <small class="contact__field-error" id="ContactForm-email-error">
+            <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+            <span class="form__message">
+              {%- render 'icon-error' -%}
+              {{- form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email -}}
+            </span>
+          </small>
+        {%- endif -%}
+      </div>
+
+      <div class="field">
+        <label class="field__label requried" for="ContactForm-location">{{ 'templates.contact.form.location' | t }}</label>
+        <input
+          type="tel"
+          id="ContactForm-location"
+          class="field__input"
+          autocomplete="tel"
+          name="contact[{{ 'templates.contact.form.location' | t }}]"
+          value="{% if form.location %}{{ form.location }}{% endif %}"
+          placeholder="{{ 'templates.contact.form.location' | t }}"
+        >
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="ContactForm-hear_us">{{ 'templates.contact.form.hear_us' | t }}</label>
+        <input
+          type="tel"
+          id="ContactForm-hear_us"
+          class="field__input"
+          autocomplete="tel"
+          name="contact[{{ 'templates.contact.form.hear_us' | t }}]"
+          value="{% if form.hear_us %}{{ form.hear_us }}{% endif %}"
+          placeholder="{{ 'templates.contact.form.hear_us' | t }}"
+        >
+      </div>
+      
+      <div class="field">
+        <label class="field__label required" for="ContactForm-body">
+          {{- 'templates.contact.form.message' | t -}}
+        </label>
+        <textarea
+          rows="10"
+          id="ContactForm-body"
+          class="text-area field__input"
+          name="contact[{{ 'templates.contact.form.message' | t }}]"
+          placeholder="{{ 'templates.contact.form.message' | t }}"
+        >
+          {{- form.body -}}
+        </textarea>
+        
+      </div>
+      <div class="contact__button">
+        <button type="submit" class="button">
+          {{ 'templates.contact.form.send' | t }}
+        </button>
+      </div>
+    {%- endform -%}
+  </div>
+
+</div>
+
+
+{% schema %}
+{
+  "name": "t:sections.wholesale-form.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [    
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+  ],
+  "presets": [
+    {
+      "name": "t:sections.wholesale-form.presets.name"
+    }
+  ]
+}
+{% endschema %}
