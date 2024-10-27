@@ -55,16 +55,11 @@ if (!customElements.get('product-form')) {
               this.handleErrorMessage(response.description);
 
               const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
-              console.log(soldOutMessage);
-              if (!soldOutMessage) {
-                window.location.reload();
-                return;
-              }
+              if (!soldOutMessage) return;
               this.submitButton.setAttribute('aria-disabled', true);
               this.submitButtonText.classList.add('hidden');
               soldOutMessage.classList.remove('hidden');
               this.error = true;
-              window.location.reload();
               return;
             } else if (!this.cart) {
               window.location = window.routes.cart_url;

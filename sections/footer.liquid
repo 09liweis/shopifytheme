@@ -6,22 +6,6 @@
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  ::-webkit-input-placeholder {
-      color:white;
-  }
-  
-  ::-moz-placeholder {
-      color:white;
-  }
-  
-  ::-ms-placeholder {
-      color:white;
-  }
-  
-  ::placeholder {
-      color:white;
-  }
-  
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
@@ -101,30 +85,6 @@
                   {%- when 'text' -%}
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
-
-                      {%- if settings.show_store_address -%}
-                      {%- if settings.contact_address -%}
-                        <div class="">
-                          <h4 style="margin-bottom:5px;">Address:</h4>
-                          <span style="font-size:1.4rem">{{ settings.contact_address }}</span>
-                        </div>
-                      {%- endif -%}
-                      {%- endif -%}
-
-                      <!-- {%- if settings.contact_phone -%}
-                        <a style="" href="tel:{{settings.contact_phone}}" class="full-unstyled-link">
-                          <h4 style="margin-bottom:5px;">PHONE #:</h4>
-                          <span style="font-size:1.4rem">{{settings.contact_phone}}</span>
-                        </a>
-                      {%- endif -%} -->
-                      
-                      {%- if settings.contact_email -%}
-                        <a style="" href="mailto:{{ settings.contact_email }}" class="link focus-inset full-unstyled-link">
-                          <h4 style="margin-bottom:5px;">Email:</h4>
-                          <span style="font-size:1.4rem">{{ settings.contact_email }}</span>
-                        </a>
-                      {%- endif -%}
-                      
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
@@ -166,7 +126,7 @@
                         <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
                       {%- endif -%}
                       {%- if settings.brand_description != blank -%}
-                        <div class="rte" style="font-size:1.4rem;">{{ settings.brand_description }}</div>
+                        <div class="rte">{{ settings.brand_description }}</div>
                       {%- endif -%}
                       {%- if block.settings.show_social and has_social_icons -%}
                         {%- render 'social-icons', class: 'footer__list-social' -%}
@@ -234,27 +194,26 @@
                       placeholder="{{ 'newsletter.label' | t }}"
                       required
                     >
-                    <!-- <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                    <label class="field__label" for="NewsletterForm--{{ section.id }}">
                       {{ 'newsletter.label' | t }}
-                    </label> -->
+                    </label>
                     <button
                       type="submit"
-                      class="newsletter-form__button"
+                      class="newsletter-form__button field__button"
                       name="commit"
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
-                      style="color: white;
-    padding: 10px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;"
                     >
-                      Subscribe
+                      <span class="svg-wrapper">
+                        {{- 'icon-arrow.svg' | inline_asset_content -}}
+                      </span>
                     </button>
                   </div>
                   {%- if form.errors -%}
                     <small class="newsletter-form__message form__message" id="ContactFooter-error">
-                      {%- render 'icon-error' -%}
+                      <span class="svg-wrapper">
+                        {{- 'icon-error.svg' | inline_asset_content -}}
+                      </span>
                       {{- form.errors.translated_fields.email | capitalize }}
                       {{ form.errors.messages.email -}}
                     </small>
@@ -267,7 +226,9 @@
                     tabindex="-1"
                     autofocus
                   >
-                    {% render 'icon-success' -%}
+                    <span class="svg-wrapper">
+                      {{- 'icon-success.svg' | inline_asset_content -}}
+                    </span>
                     {{- 'newsletter.success' | t }}
                   </h3>
                 {%- endif -%}
@@ -331,12 +292,6 @@
                   {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
                 </li>
               {%- endfor -%}
-              <li class="list-payment__item">
-                <img class="_PaymentIcon_12mz5_1 _Border_12mz5_28" src="https://cdn.shopify.com/shopifycloud/web/assets/v1/vite/client/en/assets/alipay-BCm6OwTidkGS.svg" alt="AliPay">
-              </li>
-              <li class="list-payment__item">
-                <img class="_PaymentIcon_12mz5_1 _Border_12mz5_28" src="https://cdn.shopify.com/shopifycloud/web/assets/v1/vite/client/en/assets/wechat-pay-DZl11bjPtf3f.svg" alt="WeChat Pay">
-              </li>
             </ul>
           </div>
         {%- endif -%}
@@ -422,11 +377,6 @@
           "id": "heading",
           "default": "t:sections.footer.blocks.text.settings.heading.default",
           "label": "t:sections.footer.blocks.text.settings.heading.label"
-        },
-        {
-          "type": "text",
-          "id": "address",
-          "label": "Address"
         },
         {
           "type": "richtext",

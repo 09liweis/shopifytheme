@@ -355,22 +355,9 @@ quick-add-modal .product-form__buttons {
 }
 
 .quick-add__submit {
-  color:#000;
   padding: 0.8rem;
-  width: auto;
+  min-width: 100%;
   box-sizing: border-box;
-  transition:0.4s;
-  background-color:#ccc;
-  margin:auto;
-}
-
-.quick-add__submit::after {
-  box-shadow:none !important;
-}
-.quick-add__submit:hover {
-  color:#fff;
-  background-color:#000;
-  border-color:#000;
 }
 
 quick-add-modal .product-media-container.constrain-height {

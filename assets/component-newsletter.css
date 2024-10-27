@@ -19,10 +19,6 @@
   width: 100%;
 }
 
-#NewsletterForm--sections--17979857469669__footer {
-  border: 1px solid #fff;
-}
-
 .newsletter-form__field-wrapper .field__input {
   padding-right: 5rem;
 }
@@ -46,14 +42,13 @@
   }
 }
 
-.newsletter-form__btn {
-  background-color: red;
-  color:#fff;
-  padding:20px;
-  outline: none;
-  border: none;
-  width:100%;
-  margin-top: 10px;
+.newsletter-form__button {
+  width: 4.4rem;
+  margin: 0;
+  right: var(--inputs-border-width);
+  top: 0;
+  height: 100%;
+  z-index: 2;
 }
 
 .newsletter-form__button:focus-visible {

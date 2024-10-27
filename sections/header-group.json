@@ -1,1 +1,44 @@
-{"name":"t:sections.header.name","type":"header","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-bar-0":{"type":"announcement","settings":{"text":"<h3><strong>Warning: Vaping products contain nicotine, a highly addictive chemical. Health Canada<\/strong><\/h3><h3><strong>Avertissement : Les produits de vapotage contiennent de la nicotine, une substance chimique hautement addictive. Santé Canada<\/strong><\/h3>","link":""}}},"block_order":["announcement-bar-0"],"settings":{"is_sticky":false,"color_scheme":"scheme-1","show_line_separator":true,"show_social":false,"auto_rotate":false,"change_slides_speed":5,"enable_country_selector":false,"enable_language_selector":false}},"announcement_bar_RFBazG":{"type":"announcement-bar","blocks":{"announcement_Y4bF6k":{"type":"announcement","settings":{"text":"<p>FREE SHIPPING IN CANADA ON ORDERS OVER $90 | FREE PICKUP IN-STORE<\/p>","link":""}},"announcement_CGGcGk":{"type":"announcement","settings":{"text":"<p>SHOP BEST VAPE PRODUCTS! GET 10% OFF ON FIRST ORDER!<\/p>","link":""}}},"block_order":["announcement_Y4bF6k","announcement_CGGcGk"],"custom_css":[".announcement-bar__message {padding: 0.5rem;}","p {margin: 0; font-size: 1.4rem;}"],"settings":{"is_sticky":true,"color_scheme":"scheme-5","show_line_separator":true,"show_social":false,"auto_rotate":true,"change_slides_speed":3,"enable_country_selector":false,"enable_language_selector":false}},"header":{"type":"header","settings":{"logo_position":"top-left","menu":"main-menu","menu_type_desktop":"dropdown","sticky_header_type":"always","show_line_separator":true,"color_scheme":"scheme-1","menu_color_scheme":"scheme-1","enable_country_selector":true,"enable_language_selector":true,"enable_customer_avatar":true,"mobile_logo_position":"center","margin_bottom":0,"padding_top":4,"padding_bottom":4}}},"order":["announcement-bar","announcement_bar_RFBazG","header"]}
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "text_alignment": "center",
+            "color_scheme": "scheme-1",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ]
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

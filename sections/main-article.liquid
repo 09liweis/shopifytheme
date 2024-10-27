@@ -83,32 +83,14 @@
   {%- endfor -%}
 
   <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-
-    <span>
-    {% if blog.previous_article %}
-      <a class="header__icon" href="{{ blog.previous_article.url }}">
-        <svg class="icon icon--tail-left" viewBox="0 0 24 24" role="presentation">
-          <path fill="currentColor" d="M1.293 11.293L9 3.586 10.414 5l-6 6H22c.553 0 1 .448 1 1s-.447 1-1 1H4.414l6 6L9 20.414l-7.707-7.707c-.391-.391-.391-1.023 0-1.414z"></path>
-        </svg>
-      </a>
-    {% endif %}
-    </span>
-    
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
-      <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+      <span class="icon-wrap">
+        <span class="svg-wrapper">
+          {{- 'icon-arrow.svg' | inline_asset_content -}}
+        </span>
+      </span>
       {{ 'blogs.article.back_to_blog' | t: title: blog.title | escape }}
     </a>
-
-    <span>
-    {% if blog.next_article %}
-      <a class="header__icon" href="{{ blog.next_article.url }}">
-        <svg class="icon icon--tail-right" viewBox="0 0 24 24" role="presentation">
-          <path fill="currentColor" d="M22.707 11.293L15 3.586 13.586 5l6 6H2c-.553 0-1 .448-1 1s.447 1 1 1h17.586l-6 6L15 20.414l7.707-7.707c.391-.391.391-1.023 0-1.414z"></path>
-        </svg>
-      </a>
-    {% endif %}
-      </span>
-    
   </div>
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
@@ -159,7 +141,9 @@
           {%- if form.errors -%}
             <div class="form__message" role="alert">
               <h3 class="form-status caption-large text-body" tabindex="-1" autofocus>
-                {% render 'icon-error' %}
+                <span class="svg-wrapper">
+                  {{- 'icon-error.svg' | inline_asset_content -}}
+                </span>
                 {{ 'templates.contact.form.error_heading' | t }}
               </h3>
             </div>
@@ -182,7 +166,9 @@
           {%- elsif form.posted_successfully? -%}
             <div class="form-status-list form__message" role="status">
               <h3 class="form-status" tabindex="-1" autofocus>
-                {% render 'icon-success' %}
+                <span class="svg-wrapper">
+                  {{- 'icon-success.svg' | inline_asset_content -}}
+                </span>
                 {{ post_message | t }}
               </h3>
             </div>
@@ -217,7 +203,9 @@
                 {%- if form.errors contains 'author' -%}
                   <small id="CommentForm-author-error">
                     <span class="form__message">
-                      {%- render 'icon-error' -%}
+                      <span class="svg-wrapper">
+                        {{- 'icon-error.svg' | inline_asset_content -}}
+                      </span>
                       {{- 'blogs.article.name' | t }}
                       {{ form.errors.messages.author }}.</span
                     >
@@ -249,7 +237,9 @@
                 {%- if form.errors contains 'email' -%}
                   <small id="CommentForm-email-error">
                     <span class="form__message">
-                      {%- render 'icon-error' -%}
+                      <span class="svg-wrapper">
+                        {{- 'icon-error.svg' | inline_asset_content -}}
+                      </span>
                       {{- 'blogs.article.email' | t }}
                       {{ form.errors.messages.email }}.</span
                     >
@@ -279,7 +269,9 @@
             {%- if form.errors contains 'body' -%}
               <small id="CommentForm-body-error">
                 <span class="form__message">
-                  {%- render 'icon-error' -%}
+                  <span class="svg-wrapper">
+                    {{- 'icon-error.svg' | inline_asset_content -}}
+                  </span>
                   {{- 'blogs.article.message' | t }}
                   {{ form.errors.messages.body }}.</span
                 >

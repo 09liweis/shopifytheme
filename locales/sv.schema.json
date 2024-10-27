@@ -1684,7 +1684,7 @@
             },
             "swatch_shape": {
               "label": "Prov",
-              "info": "Aktivera [swatches](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) på produktalternativ.",
+              "info": "Läs mer om [swatches](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) på produktalternativ",
               "options__1": {
                 "label": "Cirkel"
               },
@@ -2436,7 +2436,7 @@
             "text_style": {
               "label": "Textstil",
               "options__1": {
-                "label": "Underrubrik"
+                "label": "Undertext"
               },
               "options__2": {
                 "label": "Stora bokstäver"
@@ -2567,7 +2567,7 @@
             },
             "swatch_shape": {
               "label": "Prov",
-              "info": "Aktivera [swatches](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) på produktalternativ.",
+              "info": "Läs mer om [swatches](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) på produktalternativ",
               "options__1": {
                 "label": "Cirkel"
               },
@@ -2786,7 +2786,7 @@
                 "label": "Brödtext"
               },
               "options__2": {
-                "label": "Underrubrik"
+                "label": "Undertext"
               },
               "label": "Textstil"
             }
