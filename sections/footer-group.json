@@ -39,7 +39,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Terms & Conditions",
-            "menu": "footer"
+            "menu": "footer-terms-menu"
           }
         }
       },
