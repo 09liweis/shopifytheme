@@ -106,32 +106,27 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "17305859161a6b9556": {
+      "type": "apps",
+      "blocks": {
+        "ldt_product_compare_widget_FMUaKX": {
+          "type": "shopify://apps/ldt-product-compare/blocks/widget/4efd09c5-8a59-401e-a364-e3440f693913",
+          "settings": {
+            "title": "Dawn Mattress vs Hybrid Mattress",
+            "description": "",
+            "products": [
+              "dawn-mattress",
+              "hybrid-mattress"
+            ],
+            "attribute_set": ""
+          }
+        }
+      },
+      "block_order": [
+        "ldt_product_compare_widget_FMUaKX"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
+        "include_margins": true
       }
     },
     "collage": {
@@ -291,7 +286,7 @@
   "order": [
     "image_with_text_chaiCX",
     "rich_text",
-    "featured_collection",
+    "17305859161a6b9556",
     "collage",
     "multicolumn",
     "collapsible_content_4TtwRV",
