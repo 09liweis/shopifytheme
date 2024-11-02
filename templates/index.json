@@ -49,13 +49,25 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Discover the perfect mattress at Maple Mattress , where quality craftsmanship meets customizable comfort, proudly made in Canada. Enjoy peace of mind with our risk-free 100-night trial and 10-year warranty, ensuring you wake up refreshed every morning!</p><ul><li>Made right here in Canada!</li><li>Built with Canadian-Sourced Materials and careful craftsmanship.</li><li>We're always finding new ways to help Canadians sleep better.</li><li>Proud to support local Canadian businesses!</li></ul><p>Sleep Well, Canada! Our mattresses are proudly made from Canadian-sourced materials. Support local craftsmanship and enjoy the comfort of home!</p><p>Try Maple at Home Risk-Free for 100 Nights</p><p>Shop Now (button)</p>"
+            "text": "<p>Discover the perfect mattress at Maple Mattress , where quality craftsmanship meets customizable comfort, proudly made in Canada. Enjoy peace of mind with our risk-free 100-night trial and 10-year warranty, ensuring you wake up refreshed every morning!</p><ul><li>Made right here in Canada!</li><li>Built with Canadian-Sourced Materials and careful craftsmanship.</li><li>We're always finding new ways to help Canadians sleep better.</li><li>Proud to support local Canadian businesses!</li></ul><p>Sleep Well, Canada! Our mattresses are proudly made from Canadian-sourced materials. Support local craftsmanship and enjoy the comfort of home!</p><p>Try Maple at Home Risk-Free for 100 Nights</p>"
+          }
+        },
+        "button_U8bpwf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "heading",
-        "text"
+        "text",
+        "button_U8bpwf"
       ],
       "settings": {
         "desktop_content_position": "center",
