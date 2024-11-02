@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
@@ -17,21 +17,13 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Curious? Our Sleep Specialists are here",
-            "link": ""
-          }
-        },
-        "announcement_mMh9Aq": {
-          "type": "announcement",
-          "settings": {
-            "text": "Enjoy free shipping and easy returns. Rest easy with our 100-night risk-free trial!",
+            "text": "Experience the ultimate comfort with Maple Mattress! Factory direct savings, loved by Canadians. Enjoy 100 risk-free nights to try it out!",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_mMh9Aq"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "",
