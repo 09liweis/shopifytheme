@@ -9,31 +9,59 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "image_with_text_chaiCX": {
+      "type": "image-with-text",
       "blocks": {
-        "heading": {
+        "heading_eWg8kE": {
           "type": "heading",
           "settings": {
             "heading": "Proudly Made in Canada  | Spend Less and Sleep Better with Maple Mattress  | Order Your Custom Mattress if you don’t find the right fit",
-            "heading_size": "h1"
+            "heading_size": "h2"
+          }
+        },
+        "text_egLVjf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ultimate Comfort & Support</p><p>100-Night Worry-Free Trial</p><p>15-Year Warranty</p><p>Tailor Your Custom Mattress</p>",
+            "text_style": "subtitle"
+          }
+        },
+        "caption_6Tfhjm": {
+          "type": "caption",
+          "settings": {
+            "caption": "100-Night Worry-Free Trial",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "button_mgAPeL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading"
+        "heading_eWg8kE",
+        "text_egLVjf",
+        "caption_6Tfhjm",
+        "button_mgAPeL"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "small",
-        "desktop_content_position": "top-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text": {
@@ -261,7 +289,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "image_with_text_chaiCX",
     "rich_text",
     "featured_collection",
     "collage",
