@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "image_banner": {
       "type": "image-banner",
@@ -15,38 +15,18 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "Proudly Made in Canada  | Spend Less and Sleep Better with Maple Mattress  | Order Your Custom Mattress if you don’t find the right fit",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "heading"
       ],
       "settings": {
         "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "image_height": "small",
+        "desktop_content_position": "top-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
@@ -62,14 +42,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "<strong>About Maple:</strong>",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Discover the perfect mattress at Maple Mattress , where quality craftsmanship meets customizable comfort, proudly made in Canada. Enjoy peace of mind with our risk-free 100-night trial and 10-year warranty, ensuring you wake up refreshed every morning!</p><ul><li>Made right here in Canada!</li><li>Built with Canadian-Sourced Materials and careful craftsmanship.</li><li>We're always finding new ways to help Canadians sleep better.</li><li>Proud to support local Canadian businesses!</li></ul><p>Sleep Well, Canada! Our mattresses are proudly made from Canadian-sourced materials. Support local craftsmanship and enjoy the comfort of home!</p><p>Try Maple at Home Risk-Free for 100 Nights</p><p>Shop Now (button)</p>"
           }
         }
       },
@@ -79,7 +59,7 @@
       ],
       "settings": {
         "desktop_content_position": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 40,
