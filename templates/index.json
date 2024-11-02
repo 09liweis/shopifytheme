@@ -109,21 +109,21 @@
     "17305859161a6b9556": {
       "type": "apps",
       "blocks": {
-        "ldt_product_compare_widget_FMUaKX": {
+        "ldt_product_compare_widget_LUxJ9g": {
           "type": "shopify://apps/ldt-product-compare/blocks/widget/4efd09c5-8a59-401e-a364-e3440f693913",
           "settings": {
-            "title": "Dawn Mattress vs Hybrid Mattress",
-            "description": "",
+            "title": "Compare Title",
+            "description": "Compare Description",
             "products": [
               "dawn-mattress",
               "hybrid-mattress"
             ],
-            "attribute_set": ""
+            "attribute_set": "code?"
           }
         }
       },
       "block_order": [
-        "ldt_product_compare_widget_FMUaKX"
+        "ldt_product_compare_widget_LUxJ9g"
       ],
       "settings": {
         "include_margins": true
