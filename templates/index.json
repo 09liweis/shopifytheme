@@ -145,28 +145,14 @@
         "padding_bottom": 36
       }
     },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "<strong>Easy Setup and Super Comfort</strong>",
+            "text": "<p>I recently purchased a Maple mattress, and I couldn't be happier! It was incredibly easy to set up, and the comfort level is off the charts. Since making the switch, my sleep has improved significantly. I wake up feeling refreshed and ready to take on the day. Highly recommend!</p>",
             "link_label": "",
             "link": ""
           }
@@ -174,17 +160,8 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "<strong>Say Goodbye to Back Pain</strong>",
+            "text": "<p>I've been sleeping on my Maple mattress for a few weeks now, and I am amazed at the difference it has made. No more back pain, and I can finally sleep through the night without tossing and turning. I would definitely recommend this mattress to my family and friends. It's a game changer!</p>",
             "link_label": "",
             "link": ""
           }
@@ -192,15 +169,14 @@
       },
       "block_order": [
         "column1",
-        "column2",
-        "column3"
+        "column2"
       ],
       "settings": {
-        "title": "",
+        "title": "See What Canadians Say About Maple Mattress",
         "heading_size": "h1",
-        "image_width": "third",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
@@ -259,7 +235,6 @@
     "rich_text",
     "featured_collection",
     "collage",
-    "video",
     "multicolumn",
     "collapsible_content_4TtwRV"
   ]
