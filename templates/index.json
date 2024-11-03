@@ -50,6 +50,7 @@
         "button_mgAPeL"
       ],
       "settings": {
+        "image": "shopify://shop_images/home_banner_1024_20241030.webp",
         "height": "adapt",
         "desktop_image_width": "large",
         "layout": "text_first",
