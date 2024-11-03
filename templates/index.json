@@ -9,6 +9,61 @@
  */
 {
   "sections": {
+    "slideshow_UPiyTR": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_bpgdfg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/home_banner_1024_20241030.webp",
+            "heading": "Image slide1",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_qkQzXL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/home_banner_1024_20241030.webp",
+            "heading": "Image slide2",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_bpgdfg",
+        "slide_qkQzXL"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "ambient",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "image_with_text_chaiCX": {
       "type": "image-with-text",
       "blocks": {
@@ -293,6 +348,7 @@
     }
   },
   "order": [
+    "slideshow_UPiyTR",
     "image_with_text_chaiCX",
     "rich_text",
     "17305859161a6b9556",
