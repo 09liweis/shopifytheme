@@ -36,11 +36,6 @@
                 >
                   {%- for childlink in link.links -%}
                     <li>
-                      {{
-                        childlink.object.images[0]
-                        | image_url: width: 300
-                        | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
-                      }}
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
@@ -49,7 +44,14 @@
                           aria-current="page"
                         {% endif %}
                       >
+                        {% assign product = childlink.object %}
+                        {{
+                          product.images[0]
+                          | image_url: width: 300
+                          | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
+                        }}
                         {{ childlink.title | escape }}
+                        <p>{{ product.selected_or_first_available_variant.price | money_with_currency }}</p>
                       </a>
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
