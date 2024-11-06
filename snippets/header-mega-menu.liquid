@@ -36,6 +36,11 @@
                 >
                   {%- for childlink in link.links -%}
                     <li>
+                      {{
+                        childlink.object.images[0]
+                        | image_url: width: 300
+                        | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
+                      }}
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
