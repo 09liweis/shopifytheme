@@ -120,56 +120,14 @@
         "padding_bottom": 36
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>About Maple:</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Discover the perfect mattress at Maple Mattress , where quality craftsmanship meets customizable comfort, proudly made in Canada. Enjoy peace of mind with our risk-free 100-night trial and 10-year warranty, ensuring you wake up refreshed every morning!</p><ul><li>Made right here in Canada!</li><li>Built with Canadian-Sourced Materials and careful craftsmanship.</li><li>We're always finding new ways to help Canadians sleep better.</li><li>Proud to support local Canadian businesses!</li></ul><p>Sleep Well, Canada! Our mattresses are proudly made from Canadian-sourced materials. Support local craftsmanship and enjoy the comfort of home!</p><p>Try Maple at Home Risk-Free for 100 Nights</p>"
-          }
-        },
-        "button_U8bpwf": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Now",
-            "button_link": "shopify://collections",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button_U8bpwf"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "17305859161a6b9556": {
       "type": "apps",
       "blocks": {
         "ldt_product_compare_widget_LUxJ9g": {
           "type": "shopify://apps/ldt-product-compare/blocks/widget/4efd09c5-8a59-401e-a364-e3440f693913",
           "settings": {
-            "title": "Compare Title",
-            "description": "Compare Description",
+            "title": "",
+            "description": "",
             "products": [
               "dawn-mattress",
               "hybrid-mattress"
@@ -350,7 +308,6 @@
   "order": [
     "slideshow_UPiyTR",
     "image_with_text_chaiCX",
-    "rich_text",
     "17305859161a6b9556",
     "image_with_text_4bwrnd",
     "multicolumn",
