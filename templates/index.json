@@ -29,10 +29,29 @@
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_yd3JNt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hybrid_mattress_medium_1_20240419.webp",
+            "heading": "Image slide2",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
-        "slide_bpgdfg"
+        "slide_bpgdfg",
+        "slide_yd3JNt"
       ],
       "settings": {
         "layout": "full_bleed",
