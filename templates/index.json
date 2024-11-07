@@ -67,26 +67,11 @@
     "image_with_text_chaiCX": {
       "type": "image-with-text",
       "blocks": {
-        "heading_eWg8kE": {
-          "type": "heading",
-          "settings": {
-            "heading": "Proudly Made in Canada  | Spend Less and Sleep Better with Maple Mattress  | Order Your Custom Mattress if you don’t find the right fit",
-            "heading_size": "h2"
-          }
-        },
         "text_egLVjf": {
           "type": "text",
           "settings": {
             "text": "<p>Ultimate Comfort & Support</p><p>100-Night Worry-Free Trial</p><p>15-Year Warranty</p><p>Tailor Your Custom Mattress</p>",
             "text_style": "subtitle"
-          }
-        },
-        "caption_6Tfhjm": {
-          "type": "caption",
-          "settings": {
-            "caption": "100-Night Worry-Free Trial",
-            "text_style": "subtitle",
-            "text_size": "medium"
           }
         },
         "button_mgAPeL": {
@@ -99,9 +84,7 @@
         }
       },
       "block_order": [
-        "heading_eWg8kE",
         "text_egLVjf",
-        "caption_6Tfhjm",
         "button_mgAPeL"
       ],
       "settings": {
