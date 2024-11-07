@@ -135,15 +135,12 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "8554118278144459913": {
         "type": "shopify://apps/ldt-product-compare/blocks/embed/4efd09c5-8a59-401e-a364-e3440f693913",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
@@ -182,7 +179,7 @@
       },
       "scheme-4": {
         "settings": {
-          "background": "#4a4a4a",
+          "background": "{{ shop.brand.colors.primary[0].background }}",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
