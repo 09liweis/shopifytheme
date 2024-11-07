@@ -183,8 +183,8 @@
         "column_4DRkVC": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Read the FAQs",
+            "text": "<p>We might have already answered your question.</p>",
             "link_label": "",
             "link": ""
           }
@@ -192,8 +192,8 @@
         "column_fTB3p7": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Chat with Us",
+            "text": "<p>Need a quick response? We're here to help. <a href=\"/pages/contact\" title=\"Contact\">Contact Us.</a></p>",
             "link_label": "",
             "link": ""
           }
@@ -201,8 +201,17 @@
         "column_8EdqQ6": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Phone Us",
+            "text": "<p>Call us at</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iKd6nL": {
+          "type": "column",
+          "settings": {
+            "title": "Email Us",
+            "text": "<p>Send us an email at</p>",
             "link_label": "",
             "link": ""
           }
@@ -211,7 +220,8 @@
       "block_order": [
         "column_4DRkVC",
         "column_fTB3p7",
-        "column_8EdqQ6"
+        "column_8EdqQ6",
+        "column_iKd6nL"
       ],
       "settings": {
         "title": "Need Help Deciding on Your Next Mattress?",
