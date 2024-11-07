@@ -20,10 +20,18 @@
             "text": "Experience the ultimate comfort with Maple Mattress! Factory direct savings, loved by Canadians. Enjoy 100 risk-free nights to try it out!",
             "link": ""
           }
+        },
+        "announcement_ipMPjE": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_ipMPjE"
       ],
       "settings": {
         "color_scheme": "",
