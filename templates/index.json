@@ -64,45 +64,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "image_with_text_chaiCX": {
-      "type": "image-with-text",
-      "blocks": {
-        "text_egLVjf": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Ultimate Comfort & Support</p><p>100-Night Worry-Free Trial</p><p>15-Year Warranty</p><p>Tailor Your Custom Mattress</p>",
-            "text_style": "subtitle"
-          }
-        },
-        "button_mgAPeL": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "text_egLVjf",
-        "button_mgAPeL"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/home_banner_1024_20241030.webp",
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "17305859161a6b9556": {
       "type": "apps",
       "blocks": {
@@ -216,43 +177,65 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_KyRhpx": {
-      "type": "rich-text",
+    "multicolumn_QDPtyU": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_fTiwF4": {
-          "type": "heading",
+        "column_4DRkVC": {
+          "type": "column",
           "settings": {
-            "heading": "Need help deciding your next mattress?",
-            "heading_size": "h1"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "text_txezWX": {
-          "type": "text",
+        "column_fTB3p7": {
+          "type": "column",
           "settings": {
-            "text": "<p><strong>Chat with Us</strong></p><p>Ask us anything or get our tips for the best fit mattress for your sleep.  </p><p><strong>Read the FAQs</strong></p><p>We might have already answered your question.</p><p><strong>Phone Us</strong></p><p>Call us at XXX-xxx-xxxx</p><p>Email Us</p><p>Send us an email at <a href=\"mailto:support@maplezzz.com\"><span style=\"text-decoration:underline\">support@maplezzz.com</span></a></p>"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8EdqQ6": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading_fTiwF4",
-        "text_txezWX"
+        "column_4DRkVC",
+        "column_fTB3p7",
+        "column_8EdqQ6"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
+        "title": "Need Help Deciding on Your Next Mattress?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "slideshow_UPiyTR",
-    "image_with_text_chaiCX",
     "17305859161a6b9556",
     "image_with_text_4bwrnd",
     "multicolumn",
-    "rich_text_KyRhpx"
+    "multicolumn_QDPtyU"
   ]
 }
