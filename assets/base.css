@@ -2833,6 +2833,10 @@ details[open] > .header__menu-item .icon-caret {
   text-decoration-thickness: 0.2rem;
 }
 
+#HeaderMenu-sales {
+  color: #FA522D;
+}
+
 .header__submenu {
   transition: opacity var(--duration-default) ease, transform var(--duration-default) ease;
 }
