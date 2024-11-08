@@ -215,6 +215,64 @@
         <label class="field__label" for="ContactForm-thickness">{{ 'templates.contact.form.thickness' | t }}</label>
       </div>
 
+      <div class="field">
+        <select
+          type="tel"
+          id="ContactForm-material"
+          class="field__input"
+          name="contact[{{ 'templates.contact.form.material' | t }}]"
+          value="{% if form.material %}{{ form.material }}{% elsif customer %}{{ customer.material }}{% endif %}"
+          aria-required="true"
+          placeholder="{{ 'templates.contact.form.material' | t }}"
+        >
+          <option>Memory Foam</option>
+          <option>Latex</option>
+          <option>Hybrid</option>
+          <option>Organic</option>
+        </select>
+        <label class="field__label" for="ContactForm-material">{{ 'templates.contact.form.material' | t }}</label>
+      </div>
+
+      <div class="field">
+        <select
+          type="tel"
+          id="ContactForm-comfortlayer"
+          class="field__input"
+          name="contact[{{ 'templates.contact.form.comfortlayer' | t }}]"
+          value="{% if form.comfortlayer %}{{ form.comfortlayer }}{% elsif customer %}{{ customer.comfortlayer }}{% endif %}"
+          aria-required="true"
+          placeholder="{{ 'templates.contact.form.comfortlayer' | t }}"
+        >
+          <option>Pillow-Top</option>
+          <option>Gel-Infused Foam</option>
+          <option>Zoned Support</option>
+          <option>None</option>
+        </select>
+        <label class="field__label" for="ContactForm-comfortlayer">
+          {{- 'templates.contact.form.comfortlayer' | t -}}
+        </label>
+      </div>
+
+      <div class="field">
+        <select
+          type="tel"
+          id="ContactForm-coverfabric"
+          class="field__input"
+          name="contact[{{ 'templates.contact.form.coverfabric' | t }}]"
+          value="{% if form.coverfabric %}{{ form.coverfabric }}{% elsif customer %}{{ customer.coverfabric }}{% endif %}"
+          aria-required="true"
+          placeholder="{{ 'templates.contact.form.coverfabric' | t }}"
+        >
+          <option>Breathable Cotton</option>
+          <option>Organic Wool</option>
+          <option>Cooling Fabric</option>
+          <option>Other (please specify)</option>
+        </select>
+        <label class="field__label" for="ContactForm-coverfabric">
+          {{- 'templates.contact.form.coverfabric' | t -}}
+        </label>
+      </div>
+
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
