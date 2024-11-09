@@ -70,13 +70,13 @@
         "ldt_product_compare_widget_LUxJ9g": {
           "type": "shopify://apps/ldt-product-compare/blocks/widget/4efd09c5-8a59-401e-a364-e3440f693913",
           "settings": {
-            "title": "",
+            "title": "Which is Right for you?",
             "description": "",
             "products": [
               "dawn-mattress",
               "hybrid-mattress"
             ],
-            "attribute_set": "code?"
+            "attribute_set": ""
           }
         }
       },
