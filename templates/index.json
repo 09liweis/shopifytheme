@@ -269,28 +269,18 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "column_WJzLRV": {
-          "type": "column",
-          "settings": {
-            "title": "Comment",
-            "text": "<p>Good feedback</p><p>Name</p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "column1",
-        "column2",
-        "column_WJzLRV"
+        "column2"
       ],
       "settings": {
-        "title": "See What Canadians Say About Maple Mattress",
+        "title": "<strong>See What Canadians Say About Maple Mattress</strong>",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
