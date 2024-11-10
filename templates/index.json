@@ -263,7 +263,7 @@
           "type": "column",
           "settings": {
             "title": "Email Us",
-            "text": "<p>Send us an email at</p>",
+            "text": "<p>Send us an email at <a href=\"mailto:support@maplezzz.com\" title=\"mailto:support@maplezzz.com\">support@maplezzz.com</a></p>",
             "link_label": "",
             "link": ""
           }
