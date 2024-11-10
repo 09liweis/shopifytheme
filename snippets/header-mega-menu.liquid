@@ -45,9 +45,14 @@
                         {% endif %}
                       >
                         {% assign product = childlink.object %}
+
+                        {% if product.tags %}
+                          <span class="mega-menu__link-label">{{ product.tags }}</span>
+                        {% endif %}
+
                         {{
                           product.images[0]
-                          | image_url: width: 300
+                          | image_url: width: 500
                           | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
                         }}
                         {{ childlink.title | escape }}
