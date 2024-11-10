@@ -87,6 +87,79 @@
         "include_margins": true
       }
     },
+    "multicolumn_UgzUgj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_hJgefF": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>25</strong>",
+            "text": "<p>Years of Experience</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GMrKtN": {
+          "type": "column",
+          "settings": {
+            "title": "9500+",
+            "text": "<p>Happy Clients</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Vx8fwz": {
+          "type": "column",
+          "settings": {
+            "title": "15",
+            "text": "<p>Years of Warrently</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JTeXL6": {
+          "type": "column",
+          "settings": {
+            "title": "100",
+            "text": "<p>Night Worry-Free Trial</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JrtD6i": {
+          "type": "column",
+          "settings": {
+            "title": "4.7",
+            "text": "<p>Google Reviews</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_hJgefF",
+        "column_GMrKtN",
+        "column_Vx8fwz",
+        "column_JTeXL6",
+        "column_JrtD6i"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_4bwrnd": {
       "type": "image-with-text",
       "blocks": {
@@ -296,6 +369,7 @@
   "order": [
     "slideshow_UPiyTR",
     "17305859161a6b9556",
+    "multicolumn_UgzUgj",
     "image_with_text_4bwrnd",
     "rich_text_K6gc4b",
     "multicolumn",
