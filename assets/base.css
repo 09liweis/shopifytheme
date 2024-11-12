@@ -995,8 +995,18 @@ summary::-webkit-details-marker {
   }
 
   .grid--5-col-desktop .grid__item {
-    width: calc(19% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
-    max-width: calc(19% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+    width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+    max-width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+  }
+
+  .grid--5-col-desktop .grid__item.footer-block--menu {
+    width: 15%;
+    max-width: 15%;
+  }
+
+  .grid--5-col-desktop .grid__item.footer-block--newsletter {
+    width: 32%;
+    max-width: 32%;
   }
 
   .grid--4-col-desktop .grid__item {
