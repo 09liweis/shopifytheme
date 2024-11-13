@@ -64,6 +64,30 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "announcement_bar_N4aQEr": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_igRwTD": {
+          "type": "announcement",
+          "settings": {
+            "text": "Take up to 365 Nights to Decide",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_igRwTD"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
     "17305859161a6b9556": {
       "type": "apps",
       "blocks": {
@@ -358,6 +382,7 @@
   },
   "order": [
     "slideshow_UPiyTR",
+    "announcement_bar_N4aQEr",
     "17305859161a6b9556",
     "multicolumn_UgzUgj",
     "image_with_text_4bwrnd",
