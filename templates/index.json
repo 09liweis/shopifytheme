@@ -273,6 +273,54 @@
         "padding_bottom": 52
       }
     },
+    "image_banner_yBB8JL": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_M66imA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Not finding the perfect mattress?",
+            "heading_size": "h1"
+          }
+        },
+        "text_twTcqw": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Let us design one tailored to your unique needs for the ultimate comfort.</strong>",
+            "text_style": "body"
+          }
+        },
+        "buttons_yyedJi": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Design Your Mattress",
+            "button_link_1": "shopify://pages/design-your-mattress",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_M66imA",
+        "text_twTcqw",
+        "buttons_yyedJi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/bedroom-decor-with-potted-plants.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -387,6 +435,7 @@
     "multicolumn_UgzUgj",
     "image_with_text_4bwrnd",
     "rich_text_K6gc4b",
+    "image_banner_yBB8JL",
     "multicolumn",
     "multicolumn_QDPtyU"
   ]
