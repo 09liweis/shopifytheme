@@ -26,7 +26,7 @@
             "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "",
+            "color_scheme": "scheme-5",
             "text_alignment_mobile": "center"
           }
         },
@@ -44,7 +44,7 @@
             "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-5",
             "text_alignment_mobile": "center"
           }
         }
@@ -177,7 +177,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -190,14 +190,14 @@
         "heading_zMhEik": {
           "type": "heading",
           "settings": {
-            "heading": "A Bed Frame For Every Style",
+            "heading": "About Maple",
             "heading_size": "h1"
           }
         },
         "text_yL6iji": {
           "type": "text",
           "settings": {
-            "text": "<p>Whether you're seeking elevated comfort with our new Adjustable Bases, customizable aesthetics with our Wooden Upholstered Frame, or adding a finishing touch with our Cushion Headboard — we're crafting the perfect foundation for every chapter of your sleep journey.<br/></p>",
+            "text": "<p>Discover the perfect mattress at Maple Mattress , where quality craftsmanship meets customizable comfort, proudly made in Canada. Enjoy peace of mind with our risk-free 100-night trial and 10-year warranty, ensuring you wake up refreshed every morning! Sleep Well, Canada! Our mattresses are proudly made from Canadian-sourced materials. Support local craftsmanship and enjoy the comfort of home!</p>",
             "text_style": "body"
           }
         },
@@ -309,7 +309,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -372,7 +372,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
