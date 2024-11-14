@@ -160,10 +160,13 @@
 
 .banner__media {
   height: 100%;
-  /* position: absolute;
-  left: 0;
-  top: 0; */
   width: 100%;
+}
+
+.image-banner .banner__media {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .banner__media-half {
