@@ -231,48 +231,6 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_K6gc4b": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Emw3c6": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Try Maple at Home Risk-Free for 100 Nights</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_bfiEge": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>We're always finding new ways to help Canadians sleep better.</strong></p>"
-          }
-        },
-        "button_8pXiMf": {
-          "type": "button",
-          "settings": {
-            "button_label": "Design your mattress",
-            "button_link": "shopify://pages/design-your-mattress",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Emw3c6",
-        "text_bfiEge",
-        "button_8pXiMf"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "image_banner_yBB8JL": {
       "type": "image-banner",
       "blocks": {
@@ -434,7 +392,6 @@
     "17305859161a6b9556",
     "multicolumn_UgzUgj",
     "image_with_text_4bwrnd",
-    "rich_text_K6gc4b",
     "image_banner_yBB8JL",
     "multicolumn",
     "multicolumn_QDPtyU"
