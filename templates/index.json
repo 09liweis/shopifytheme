@@ -325,20 +325,22 @@
     "multicolumn_QDPtyU": {
       "type": "multicolumn",
       "blocks": {
-        "column_4DRkVC": {
+        "column_fTB3p7": {
           "type": "column",
           "settings": {
-            "title": "Read the FAQs",
-            "text": "<p>We might have already answered your question.</p>",
+            "image": "shopify://shop_images/chat-with-us.svg",
+            "title": "Chat with Us",
+            "text": "<p>Need a quick response? We're here to help. <a href=\"/pages/contact\" title=\"Contact\">Contact Us.</a></p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_fTB3p7": {
+        "column_4DRkVC": {
           "type": "column",
           "settings": {
-            "title": "Chat with Us",
-            "text": "<p>Need a quick response? We're here to help. <a href=\"/pages/contact\" title=\"Contact\">Contact Us.</a></p>",
+            "image": "shopify://shop_images/faqs.svg",
+            "title": "Read the FAQs",
+            "text": "<p>We might have already answered your question.</p>",
             "link_label": "",
             "link": ""
           }
@@ -346,6 +348,7 @@
         "column_8EdqQ6": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/phone-us.svg",
             "title": "Phone Us",
             "text": "<p>Call us at</p>",
             "link_label": "",
@@ -355,6 +358,7 @@
         "column_iKd6nL": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/email-us.svg",
             "title": "Email Us",
             "text": "<p>Send us an email at <a href=\"mailto:support@maplezzz.com\" title=\"mailto:support@maplezzz.com\">support@maplezzz.com</a></p>",
             "link_label": "",
@@ -363,8 +367,8 @@
         }
       },
       "block_order": [
-        "column_4DRkVC",
         "column_fTB3p7",
+        "column_4DRkVC",
         "column_8EdqQ6",
         "column_iKd6nL"
       ],
@@ -379,7 +383,7 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-4",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
