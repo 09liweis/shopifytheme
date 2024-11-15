@@ -33,11 +33,11 @@
         "slide_yd3JNt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/hybrid_mattress_medium_1_20240419.webp",
+            "image": "shopify://shop_images/Cover5.jpg",
             "heading": "Leisure & Sleep, Elevated",
             "heading_size": "h1",
-            "subheading": "The addition your bedroom didn't know it needed.",
-            "button_label": "Explore Adjustable Beds",
+            "subheading": "Design your own mattress for maximum comfort",
+            "button_label": "Design Your Mattress",
             "link": "shopify://pages/design-your-mattress",
             "button_style_secondary": false,
             "box_align": "middle-center",
