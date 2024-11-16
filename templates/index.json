@@ -91,31 +91,9 @@
     "products_compare_Dh6r9b": {
       "type": "products-compare",
       "settings": {
-        "products-compare": "",
+        "product1": "foam-mattress",
+        "product2": "hybrid-mattress",
         "heading_size": "h1"
-      }
-    },
-    "17305859161a6b9556": {
-      "type": "apps",
-      "blocks": {
-        "ldt_product_compare_widget_LUxJ9g": {
-          "type": "shopify://apps/ldt-product-compare/blocks/widget/4efd09c5-8a59-401e-a364-e3440f693913",
-          "settings": {
-            "title": "Which is Right for you?",
-            "description": "",
-            "products": [
-              "foam-mattress",
-              "hybrid-mattress"
-            ],
-            "attribute_set": ""
-          }
-        }
-      },
-      "block_order": [
-        "ldt_product_compare_widget_LUxJ9g"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "multicolumn_UgzUgj": {
@@ -401,7 +379,6 @@
     "slideshow_UPiyTR",
     "announcement_bar_N4aQEr",
     "products_compare_Dh6r9b",
-    "17305859161a6b9556",
     "multicolumn_UgzUgj",
     "image_with_text_4bwrnd",
     "image_banner_yBB8JL",
