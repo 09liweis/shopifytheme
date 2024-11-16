@@ -1,5 +1,12 @@
 <section>
-  Compare product
+  {% if section.settings.product1 %}
+    <h2>{{ section.settings.product1.title }}</h2>
+  {% endif %}
+
+  {% if section.settings.product2 %}
+    <h2>{{ section.settings.product2.title }}</h2>
+  {% endif %}
+  
 </section>
 
 {% schema %}
