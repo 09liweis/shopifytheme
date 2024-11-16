@@ -88,6 +88,13 @@
         "enable_language_selector": false
       }
     },
+    "products_compare_Dh6r9b": {
+      "type": "products-compare",
+      "settings": {
+        "products-compare": "",
+        "heading_size": "h1"
+      }
+    },
     "17305859161a6b9556": {
       "type": "apps",
       "blocks": {
@@ -393,6 +400,7 @@
   "order": [
     "slideshow_UPiyTR",
     "announcement_bar_N4aQEr",
+    "products_compare_Dh6r9b",
     "17305859161a6b9556",
     "multicolumn_UgzUgj",
     "image_with_text_4bwrnd",
