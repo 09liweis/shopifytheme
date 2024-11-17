@@ -1,12 +1,19 @@
-<section>
-  {% if section.settings.product1 %}
-    <h2>{{ section.settings.product1.title }}</h2>
-  {% endif %}
+<section class="color-scheme-1 page-width isolate scroll-trigger animate--slide-in">
+  <h2>Perfect Mattresses for Every Sleeper Plush, Firm, or Extra Firm</h2>
+  <p>
+    As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush,
+    firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for
+    you!
+  </p>
+  <div class="grid grid--gapless grid--1-col grid--2-col-tablet">
+    {% if section.settings.product1 %}
+      {% render 'compare-product', compare_product: section.settings.product1 %}
+    {% endif %}
 
-  {% if section.settings.product2 %}
-    <h2>{{ section.settings.product2.title }}</h2>
-  {% endif %}
-  
+    {% if section.settings.product2 %}
+      {% render 'compare-product', compare_product: section.settings.product2 %}
+    {% endif %}
+  </div>
 </section>
 
 {% schema %}
@@ -55,7 +62,7 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
-    },
+    }
   ],
   "presets": [
     {
