@@ -1,3 +1,28 @@
+<style>
+  .font-27 {
+    font-size: 27px;
+  }
+  .font-22 {
+    font-size: 22px;
+  }
+  .font-16 {
+    font-size: 16px;
+  }
+  .compare-product {
+    position: relative;
+  }
+  .compare-product img {
+    width: 100%;
+  }
+  .compare-product .tag {
+    padding: 2px 10px;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+</style>
+
 <section class="color-scheme-1 page-width isolate scroll-trigger animate--slide-in">
   <h2>Perfect Mattresses for Every Sleeper Plush, Firm, or Extra Firm</h2>
   <p>
@@ -5,7 +30,7 @@
     firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for
     you!
   </p>
-  <div class="grid grid--gapless grid--1-col grid--2-col-tablet">
+  <div class="grid grid--1-col grid--2-col-tablet">
     {% if section.settings.product1 %}
       {% render 'compare-product', compare_product: section.settings.product1 %}
     {% endif %}

@@ -3609,3 +3609,43 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+.text-white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-primary {
+  color: #272C48;
+}
+
+.bg-primary {
+  background-color: #272C48;
+}
+
+.text-orange {
+  color: #F9522E;
+}
+
+.bg-orange {
+  background-color: #F9522E;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}

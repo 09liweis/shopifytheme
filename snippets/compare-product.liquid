@@ -7,31 +7,33 @@
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
-<article class="grid__item">
-  <div>{{ compare_product.tags }}</div>
+<article class="grid__item compare-product">
+  <span class="bg-orange text-white rounded tag">{{ compare_product.tags }}</span>
   {{
     compare_product.images[0]
     | image_url: width: 500
     | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
   }}
-  <div>
-    <h3>{{ compare_product.title }}</h3>
-    <p>{{ compare_product.selected_or_first_available_variant.price | money_with_currency }}</p>
+  <div class="flex items-center justify-between">
+    <h3 class="font-27">{{ compare_product.title }}</h3>
+    <p class="text-orange font-22">
+      {{ compare_product.selected_or_first_available_variant.price | money_with_currency }}
+    </p>
   </div>
 
   <div>
-    <h4>Comfort Level</h4>
-    <p>{{ compare_product.metafields.custom.comfort_level }}</p>
+    <h4 class="font-22">Comfort Level</h4>
+    <p class="font-16">{{ compare_product.metafields.custom.comfort_level }}</p>
   </div>
 
   <div>
-    <h4>Firmness Level</h4>
+    <h4 class="font-22">Firmness Level</h4>
     {{- 'firmless-level.svg' | inline_asset_content -}}
   </div>
 
   <div>
-    <h4>Ideal Sleep Position</h4>
-    <p>Best for Side Sleepers: Provides excellent cushioning for shoulders and hips.</p>
+    <h4 class="font-22">Ideal Sleep Position</h4>
+    <p class="font-16">Best for Side Sleepers: Provides excellent cushioning for shoulders and hips.</p>
   </div>
 
   <a href="{{ compare_product.url }}" class="button button--primary">Shop Now</a>
