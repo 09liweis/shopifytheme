@@ -56,15 +56,6 @@
           "type": "description",
           "settings": {}
         },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Measurements & Dimensions",
-            "icon": "ruler",
-            "content": "<h6>Twin</h6><p>37.5\" W x 74.5\" L x 9” H x 36lbs</p><h6>Twin XL</h6><p>37.5\" W x 79.5\" L x 9” H x 41lbs</p><h6>Full</h6><p>52.5\" W x 74.5\" L x 9” H x 47lbs</p><h6>Queen</h6><p>59.5\" W x 79.5\" L x 9” H x 59lbs</p><h6>King</h6><p>75.5\" W x 79.5\" L x 9” H x 74lbs</p><h6>Cal King</h6><p>71.5\" W x 83.5\" L x 9” H x 74lbs</p>",
-            "page": ""
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -82,21 +73,6 @@
             "content": "<p>Free shipping and free returns in Canada.*</p><p>*Limitations and additional shipping charges apply to NT, NU and YT, the J0M FSA in QC and the V0T 1C0 postal code in BC. Terms and Conditions apply.</p><p>Subject to 10-year Limited Mattress Warranty.</p>",
             "page": ""
           }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -108,11 +84,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-2",
         "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-3",
-        "share"
+        "collapsible-row-1"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -299,6 +272,67 @@
         "padding_bottom": 36
       }
     },
+    "collapsible_content_ER7KNk": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_a3mgrP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is memory foam?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_Qac9h9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I setup mattress?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_ht67Qk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will my order arrive?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_pCFHwx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the 100-night sleep trial work?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_a3mgrP",
+        "collapsible_row_Qac9h9",
+        "collapsible_row_ht67Qk",
+        "collapsible_row_pCFHwx"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -323,6 +357,7 @@
     "multicolumn",
     "multicolumn_qxCUi8",
     "multicolumn_CkcUYR",
+    "collapsible_content_ER7KNk",
     "related-products"
   ]
 }
