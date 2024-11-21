@@ -34,6 +34,19 @@
           "type": "price",
           "settings": {}
         },
+        "icon_with_text_U8bxgc": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "none",
+            "image_1": "shopify://shop_images/phone-us.svg",
+            "heading_1": "Made in Canada",
+            "icon_2": "return",
+            "heading_2": "*100-Night Trial",
+            "icon_3": "truck",
+            "heading_3": "*10-Year Warranty"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -80,6 +93,7 @@
         "title",
         "caption",
         "price",
+        "icon_with_text_U8bxgc",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
