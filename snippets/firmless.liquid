@@ -1,0 +1,19 @@
+{% comment %}
+  Render firmless section
+
+  Accepts:
+  - level: {number} firmless level
+
+  Usage:
+  {% render 'firmless', level: level %}
+{% endcomment %}
+<div>
+  <h2>How Does Maple Mattress Feel?</h2>
+  {{- 'firmless-level.svg' | inline_asset_content -}}
+  <div class="flex justify-evenly">
+    <b>Soft</b>
+    <b>Medium</b>
+    <b>Firm</b>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, qui saepe vel, tempora enim repellat dicta quasi repellendus libero optio, facilis architecto quibusdam sequi minima voluptas corporis asperiores repudiandae maiores.</p>
+</div>

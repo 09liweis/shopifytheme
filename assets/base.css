@@ -3642,8 +3642,16 @@ details-disclosure > details {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .items-center {
