@@ -226,6 +226,10 @@
   white-space: nowrap;
 }
 
+.multicolumn-card__info .inline-richtext {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
     display: list-item;
