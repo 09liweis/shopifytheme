@@ -24,13 +24,16 @@
 </style>
 
 <section class="color-scheme-1 page-width isolate scroll-trigger animate--slide-in">
-  <h2>Perfect Mattresses for Every Sleeper Plush, Firm, or Extra Firm</h2>
-  <p>
-    As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush,
-    firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for
-    you!
-  </p>
-  <div class="grid grid--1-col grid--2-col-tablet">
+  <div style="max-width: 812px; text-align: center;margin:auto;">
+    <h2 style="margin-bottom:0;font-size:30px;">Perfect Mattresses for Every Sleeper</h2>
+    <h3 style="margin-top:0;font-size: 22px;">Plush, Firm, or Extra Firm</h3>
+    <p style="font-size: 20px;">
+      As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush,
+      firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just
+      for you!
+    </p>
+  </div>
+  <div class="grid grid--2-col-tablet">
     {% if section.settings.product1 %}
       {% render 'compare-product', compare_product: section.settings.product1 %}
     {% endif %}
