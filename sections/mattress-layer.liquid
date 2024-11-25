@@ -1,8 +1,52 @@
-<div>
-  <h2>Engineered for Lasting Comfort</h2>
-  <div class="flex">
-    {{ 'hight-density-foam.jpg' | image_url: width: 600 | image_tag: class: 'motion-reduce', preload: true }}
-    <div></div>
+<style>
+  .layer-heading {
+    font-size: 30px;
+    color: #272c48;
+    text-align: center;
+    font-weight: bold;
+  }
+  .layer-items {
+    padding: 5rem;
+  }
+  .layer-item {
+  }
+  .layer-title {
+    margin: 0;
+    font-weight: bold;
+    color: #343a40;
+    font-size: 20px;
+  }
+  .layer-desc {
+    margin-top: 0;
+    color: #272c48;
+  }
+</style>
+
+<div class="page-width scroll-trigger animate--slide-in">
+  <h2 class="layer-heading">Engineered for Lasting Comfort</h2>
+  <div class="flex items-center">
+    {{ section.settings.mattress_layer_img | image_url: width: 600 | image_tag: class: 'motion-reduce', preload: true }}
+    <div class="layer-items">
+      <div class="layer-item">
+        <h5 class="layer-title">Easy-to-Remove Cover</h5>
+        <p class="layer-desc">A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.</p>
+      </div>
+
+      <div class="layer-item">
+        <h5 class="layer-title">Memory Foam for Personalized Comfort</h5>
+        <p class="layer-desc">A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.</p>
+      </div>
+
+      <div class="layer-item">
+        <h5 class="layer-title">High Resilience Foam for Pressure Relief</h5>
+        <p class="layer-desc">A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.</p>
+      </div>
+
+      <div class="layer-item">
+        <h5 class="layer-title">High-Density Foam for Long-Lasting Durability</h5>
+        <p class="layer-desc">A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -11,9 +55,9 @@
   "name": "Mattress Layer",
   "settings": [
     {
-      "type":"image_picker",
-      "id":"mattress_layer_img",
-      "label":"Image"
+      "type": "image_picker",
+      "id": "mattress_layer_img",
+      "label": "Image"
     },
     {
       "type": "color_scheme",
