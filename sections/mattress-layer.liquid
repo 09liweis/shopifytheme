@@ -1,0 +1,26 @@
+<div>
+  <h2>Engineered for Lasting Comfort</h2>
+  <div class="flex">
+    {{ 'hight-density-foam.jpg' | image_url: width: 600 | image_tag: class: 'motion-reduce', preload: true }}
+    <div></div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Mattress Layer",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mattress Layer"
+    }
+  ]
+}
+{% endschema %}
