@@ -183,6 +183,13 @@
         "padding_bottom": 36
       }
     },
+    "mattress_layer_LJWPKi": {
+      "type": "mattress-layer",
+      "settings": {
+        "mattress_layer_img": "shopify://shop_images/High-Density-Foam.jpg",
+        "color_scheme": ""
+      }
+    },
     "multicolumn_qxCUi8": {
       "type": "multicolumn",
       "blocks": {
@@ -390,6 +397,7 @@
   "order": [
     "main",
     "multicolumn",
+    "mattress_layer_LJWPKi",
     "multicolumn_qxCUi8",
     "multicolumn_CkcUYR",
     "collapsible_content_ER7KNk",
