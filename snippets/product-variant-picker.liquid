@@ -56,6 +56,11 @@
         <div class="product-form__input product-form__input--dropdown">
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}
+            {% if forloop.index == 1 %}
+              <span id="open-size-chart" style="float: right">Size Chart</span>
+            {% elsif forloop.index == 2 %}
+              <span id="open-firmness-chart" style="float: right">Firmness Chart</span>
+            {% endif %}
           </label>
           <div class="select">
             {%- if picker_type == 'swatch_dropdown' -%}

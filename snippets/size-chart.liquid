@@ -1,35 +1,110 @@
 {% comment %}
-  Render size chart section  
+  Render size chart section
 
   Usage:
   {% render 'size-chart' %}
 {% endcomment %}
-<div class="flex">
-  <div class="flex flex-column" style="width:20%;">
-    <b>Size</b>
-    <div>Twin</div>
-    <div>Twin XL</div>
-    <div>Full</div>
-    <div>Queen</div>
-    <div>King</div>
-    <div>Cal King</div>
+
+<style>
+  .bg-chart {
+    background-color: #fdf4eb;
+    text-align: center;
+  }
+  .chart-cell {
+    padding: 10px;
+    border: 0.5px solid;
+  }
+  #size-chart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+  }
+  #size-chart {
+    width: 625px;
+  }
+</style>
+
+<section id="size-chart-container" class="hidden flex justify-center items-center">
+  <div id="size-chart" class="flex bg-chart">
+    <div class="flex flex-column" style="width:20%;">
+      <b class="chart-cell">Size</b>
+      <div class="chart-cell">Twin</div>
+      <div class="chart-cell">Twin XL</div>
+      <div class="chart-cell">Full</div>
+      <div class="chart-cell">Queen</div>
+      <div class="chart-cell">King</div>
+      <div class="chart-cell">Cal King</div>
+    </div>
+    <div class="flex flex-column" style="width:40%;">
+      <b class="chart-cell">Firm</b>
+      <div class="flex justify-between chart-cell">
+        <span>38'' X 75'' X 9''</span>
+        <span>42lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>38'' X 80'' X 9''</span>
+        <span>45lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>54'' X 75'' X 9''</span>
+        <span>58lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>60'' X 80'' X 9''</span>
+        <span>69lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>76'' X 80'' X 9''</span>
+        <span>87lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>72'' X 84'' X 9''</span>
+        <span>87lbs</span>
+      </div>
+    </div>
+    <div class="flex flex-column" style="width:40%;">
+      <b class="chart-cell">Medium-Firm</b>
+      <div class="flex justify-between chart-cell">
+        <span>38'' X 75'' X 10''</span>
+        <span>43lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>38'' X 80'' X 10''</span>
+        <span>48lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>54'' X 75'' X 10''</span>
+        <span>65lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>60'' X 80'' X 10''</span>
+        <span>76lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>76'' X 80'' X 10''</span>
+        <span>91lbs</span>
+      </div>
+      <div class="flex justify-between chart-cell">
+        <span>72'' X 84'' X 10''</span>
+        <span>95lbs</span>
+      </div>
+    </div>
   </div>
-  <div class="flex flex-column" style="width:40%;">
-    <b>Firm</b>
-    <div>Twin</div>
-    <div>Twin</div>
-    <div>Twin</div>
-    <div>Twin</div>
-    <div>Twin</div>
-    <div>Twin</div>
-  </div>
-  <div class="flex flex-column" style="width:40%;">
-    <b>Medium-Firm</b>
-    <div>Twin</div>
-    <div>Twin</div>
-    <div>Twin</div>
-    <div>Twin</div>
-    <div>Twin</div>
-    <div>Twin</div>
-  </div>
-</div>
+</section>
+
+<script>
+  window.addEventListener('load', () => {
+    var sizeChartLink = document.querySelector('#open-size-chart');
+    var sizeChart = document.querySelector('#size-chart-container');
+    sizeChartLink.addEventListener('click', () => {
+      sizeChart.classList.toggle('hidden');
+    });
+
+    sizeChart.addEventListener('click', () => {
+      sizeChart.classList.toggle('hidden');
+    });
+  });
+</script>

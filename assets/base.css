@@ -3642,8 +3642,16 @@ details-disclosure > details {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .flex-column {
   flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
