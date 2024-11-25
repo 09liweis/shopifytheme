@@ -5,6 +5,37 @@
     text-align: center;
     font-weight: bold;
   }
+  #layer-image-container {
+    position: relative;
+  }
+  #layer-image-container .layer-point {
+    position: absolute;
+    left: 45%;
+  }
+  .layer-point {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    line-height: 10px;
+    border: 1px solid;
+    cursor: pointer;
+  }
+  .layer-point.active {
+    background-color: #fa522d;
+    color: white;
+  }
+  #layer-point1 {
+    top: 70px;
+  }
+  #layer-point2 {
+    top: 200px;
+  }
+  #layer-point3 {
+    top: 270px;
+  }
+  #layer-point4 {
+    top: 340px;
+  }
   .layer-items {
     padding: 5rem;
   }
@@ -19,36 +50,65 @@
   .layer-desc {
     margin-top: 0;
     color: #272c48;
+    display: none;
   }
 </style>
 
 <div class="page-width scroll-trigger animate--slide-in">
   <h2 class="layer-heading">Engineered for Lasting Comfort</h2>
   <div class="flex items-center">
-    {{ section.settings.mattress_layer_img | image_url: width: 600 | image_tag: class: 'motion-reduce', preload: true }}
+    <div id="layer-image-container">
+      {% assign layer_points = '1,2,3,4' | split: ',' %}
+      {% for point in layer_points %}
+        <div class="layer-point {% if point == '1' %} active {% endif %}" id="layer-point{{ point }}">{{ point }}</div>
+      {% endfor %}
+      {{
+        section.settings.mattress_layer_img
+        | image_url: width: 600
+        | image_tag: class: 'motion-reduce', preload: true
+      }}
+    </div>
     <div class="layer-items">
-      <div class="layer-item">
-        <h5 class="layer-title">Easy-to-Remove Cover</h5>
-        <p class="layer-desc">A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.</p>
-      </div>
-
-      <div class="layer-item">
-        <h5 class="layer-title">Memory Foam for Personalized Comfort</h5>
-        <p class="layer-desc">A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.</p>
-      </div>
-
-      <div class="layer-item">
-        <h5 class="layer-title">High Resilience Foam for Pressure Relief</h5>
-        <p class="layer-desc">A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.</p>
-      </div>
-
-      <div class="layer-item">
-        <h5 class="layer-title">High-Density Foam for Long-Lasting Durability</h5>
-        <p class="layer-desc">A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.</p>
-      </div>
+      {% assign layer_titles = 'Easy-to-Remove Cover,Memory Foam for Personalized Comfort,High Resilience Foam for Pressure Relief,High-Density Foam for Long-Lasting Durability'
+        | split: ','
+      %}
+      {% for layer_title in layer_titles %}
+        {% assign index = forloop.index %}
+        <div class="layer-item flex">
+          <div>
+            <div id="layer-item{{ index }}" class="layer-point {% if index == 1 %} active {% endif %}">
+              {{ index }}
+            </div>
+          </div>
+          <div>
+            <h5 class="layer-title">{{ layer_title }}</h5>
+            <p class="layer-desc">
+              A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.
+            </p>
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
+
+<script>
+  window.addEventListener('load', () => {
+    const layerPoints = document.querySelectorAll('.layer-point');
+
+    layerPoints.forEach((point) => {
+      point.addEventListener('click', function () {
+        layerPoints.forEach((point) => {
+          point.classList.remove('active');
+        });
+
+        const id = this.innerText;
+        document.querySelector(`#layer-point${id}`).classList.add('active');
+        document.querySelector(`#layer-item${id}`).classList.add('active');
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
