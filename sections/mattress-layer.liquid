@@ -40,6 +40,8 @@
     padding: 5rem;
   }
   .layer-item {
+    margin-bottom: 10px;
+    column-gap: 10px;
   }
   .layer-title {
     margin: 0;
@@ -51,6 +53,7 @@
     margin-top: 0;
     color: #272c48;
     display: none;
+    margin-bottom: 0;
   }
 </style>
 
@@ -82,7 +85,7 @@
           </div>
           <div>
             <h5 class="layer-title">{{ layer_title }}</h5>
-            <p class="layer-desc">
+            <p class="layer-desc {% if index == 1 %} block {% endif %}" id="layer-desc{{index}}">
               A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.
             </p>
           </div>
@@ -105,6 +108,10 @@
         const id = this.innerText;
         document.querySelector(`#layer-point${id}`).classList.add('active');
         document.querySelector(`#layer-item${id}`).classList.add('active');
+
+        document.querySelectorAll('.layer-desc').forEach((desc)=>desc.classList.remove('block'));
+        document.querySelector(`#layer-desc${id}`).classList.add('block');
+
       });
     });
   });

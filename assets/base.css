@@ -3647,6 +3647,10 @@ details-disclosure > details {
   display: none;
 }
 
+.block {
+  display: block !important;
+}
+
 .flex-column {
   flex-direction: column;
 }
