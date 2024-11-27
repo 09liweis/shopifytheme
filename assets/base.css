@@ -3189,7 +3189,8 @@ details-disclosure > details {
 }
 
 .rte a {
-  color: rgba(var(--color-link), var(--alpha-link));
+  /* color: rgba(var(--color-link), var(--alpha-link)); */
+  color: #F9522E;
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.1rem;
   transition: text-decoration-thickness var(--duration-short) ease;
@@ -3664,4 +3665,8 @@ details-disclosure > details {
 
 .items-center {
   align-items: center;
+}
+
+.w-full {
+  width: 100%;
 }
