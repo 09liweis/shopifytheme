@@ -1,11 +1,12 @@
 {{ 'section-numbers-stats.css' | asset_url | stylesheet_tag }}
 
-<div class="numbers-stats{% if section.settings.full_width %} page-width{% endif %}">
-  <div class="stats-container">
+<div class="numbers-stats">
+  <div class="stats-container {% if section.settings.full_width %} page-width{% endif %}">
     {%- for block in section.blocks -%}
       <div class="stat-item" {{ block.shopify_attributes }}>
         <div class="stat-number">
-          {{ block.settings.number }}{% if block.settings.plus %}+{% endif %}
+          {{ block.settings.number -}}
+          {%- if block.settings.plus %}+{% endif %}
         </div>
         <div class="stat-label">{{ block.settings.label }}</div>
       </div>
