@@ -91,14 +91,6 @@
     "products_compare_Dh6r9b": {
       "type": "products-compare",
       "blocks": {
-        "product_8FbQCK": {
-          "type": "product",
-          "settings": {
-            "product": "foam-mattress-1",
-            "button_label": "Shop Now",
-            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
-          }
-        },
         "product_NcT34e": {
           "type": "product",
           "settings": {
@@ -106,11 +98,19 @@
             "button_label": "Shop Now",
             "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
           }
+        },
+        "product_DxVktL": {
+          "type": "product",
+          "settings": {
+            "product": "foam-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
         }
       },
       "block_order": [
-        "product_8FbQCK",
-        "product_NcT34e"
+        "product_NcT34e",
+        "product_DxVktL"
       ],
       "settings": {
         "title": "Perfect Mattresses for Every Sleeper",
