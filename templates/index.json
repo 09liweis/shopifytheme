@@ -90,6 +90,37 @@
     },
     "products_compare_Dh6r9b": {
       "type": "products-compare",
+      "blocks": {
+        "product_ECJYMC": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        },
+        "product_dJFTBH": {
+          "type": "product",
+          "settings": {
+            "product": "foam-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        },
+        "product_w7DfQ8": {
+          "type": "product",
+          "settings": {
+            "product": "hybrid-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        }
+      },
+      "block_order": [
+        "product_ECJYMC",
+        "product_dJFTBH",
+        "product_w7DfQ8"
+      ],
       "settings": {
         "title": "Perfect Mattresses for Every Sleeper",
         "subtitle": "Soft, Medium, or Firm",
