@@ -117,6 +117,52 @@
         "padding_bottom": 12
       }
     },
+    "icon_row_weqNrV": {
+      "type": "icon-row",
+      "blocks": {
+        "icon_8EgmXW": {
+          "type": "icon",
+          "settings": {
+            "icon": "sleep",
+            "title": "*100-Night Trial",
+            "subtitle": "subtitle"
+          }
+        },
+        "icon_UcJejG": {
+          "type": "icon",
+          "settings": {
+            "icon": "warranty",
+            "title": "*10-Year Warranty",
+            "subtitle": "subtitle"
+          }
+        },
+        "icon_H7L4fM": {
+          "type": "icon",
+          "settings": {
+            "icon": "shipping",
+            "title": "*Free Shipping & Returns",
+            "subtitle": "subtitle"
+          }
+        },
+        "icon_weA64Y": {
+          "type": "icon",
+          "settings": {
+            "icon": "maple",
+            "title": "Made in Canada",
+            "subtitle": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "icon_8EgmXW",
+        "icon_UcJejG",
+        "icon_H7L4fM",
+        "icon_weA64Y"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -396,6 +442,7 @@
   },
   "order": [
     "main",
+    "icon_row_weqNrV",
     "multicolumn",
     "mattress_layer_LJWPKi",
     "multicolumn_qxCUi8",
