@@ -15,7 +15,7 @@
             <div class="testimonial-content">
               <div class="star-rating" aria-hidden="true">
                 {%- for i in (1..5) -%}
-                  <span class="star">★</span>
+                  {{- 'icon-rating.svg' | inline_asset_content -}}
                 {%- endfor -%}
               </div>
               <h3 class="testimonial-title">{{ block.settings.title }}</h3>

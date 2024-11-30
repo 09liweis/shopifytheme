@@ -44,6 +44,13 @@
           </span>
         </div>
       </div>
+      <div class="star-rating" aria-hidden="true" style="text-align: left;">
+        {%- for i in (1..5) -%}
+          <div class="svg-wrapper">
+            {{- 'icon-rating.svg' | inline_asset_content -}}
+          </div>
+        {%- endfor -%}
+      </div>
       {%- if product.metafields.custom.comfort_level != blank -%}
         <p class="compare-product__description">{{ product.metafields.custom.comfort_level }}</p>
       {%- endif -%}
