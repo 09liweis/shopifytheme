@@ -163,72 +163,6 @@
         "full_width": true
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/night_time.svg",
-            "title": "100 - Night Trial",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/year-warrenty.svg",
-            "title": "15 Year Warrantly",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_AVNEQ3": {
-          "type": "column",
-          "settings": {
-            "title": "Free Shipping",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_nTxDYR": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/made_in_ca.svg",
-            "title": "Made in Canada",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column-0",
-        "column-1",
-        "column_AVNEQ3",
-        "column_nTxDYR"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "mattress_layer_LJWPKi": {
       "type": "mattress-layer",
       "settings": {
@@ -443,7 +377,6 @@
   "order": [
     "main",
     "icon_row_weqNrV",
-    "multicolumn",
     "mattress_layer_LJWPKi",
     "multicolumn_qxCUi8",
     "multicolumn_CkcUYR",
