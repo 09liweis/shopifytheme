@@ -96,77 +96,59 @@
         "heading_size": "h0"
       }
     },
-    "multicolumn_UgzUgj": {
-      "type": "multicolumn",
+    "numbers_stats_8Caz4G": {
+      "type": "numbers-stats",
       "blocks": {
-        "column_hJgefF": {
-          "type": "column",
+        "stat_JyH3cj": {
+          "type": "stat",
           "settings": {
-            "title": "<strong>25</strong>",
-            "text": "<p>Years of Experience</p>",
-            "link_label": "",
-            "link": ""
+            "number": "25",
+            "plus": false,
+            "label": "Years in Experience"
           }
         },
-        "column_GMrKtN": {
-          "type": "column",
+        "stat_gLzJDT": {
+          "type": "stat",
           "settings": {
-            "title": "9500+",
-            "text": "<p>Happy Clients</p>",
-            "link_label": "",
-            "link": ""
+            "number": "9500",
+            "plus": true,
+            "label": "Happy Clients"
           }
         },
-        "column_Vx8fwz": {
-          "type": "column",
+        "stat_U6tLRm": {
+          "type": "stat",
           "settings": {
-            "title": "15",
-            "text": "<p>Years of Warrently</p>",
-            "link_label": "",
-            "link": ""
+            "number": "15",
+            "plus": false,
+            "label": "Years of Service"
           }
         },
-        "column_JTeXL6": {
-          "type": "column",
+        "stat_M93mJj": {
+          "type": "stat",
           "settings": {
-            "title": "100",
-            "text": "<p>Night Worry-Free Trial</p>",
-            "link_label": "",
-            "link": ""
+            "number": "100",
+            "plus": false,
+            "label": "Night Sleep Trial"
           }
         },
-        "column_JrtD6i": {
-          "type": "column",
+        "stat_TMR4ze": {
+          "type": "stat",
           "settings": {
-            "title": "4.8",
-            "text": "<p>Google Reviews</p>",
-            "link_label": "",
-            "link": ""
+            "number": "4.7",
+            "plus": false,
+            "label": "Google Reviews"
           }
         }
       },
       "block_order": [
-        "column_hJgefF",
-        "column_GMrKtN",
-        "column_Vx8fwz",
-        "column_JTeXL6",
-        "column_JrtD6i"
+        "stat_JyH3cj",
+        "stat_gLzJDT",
+        "stat_U6tLRm",
+        "stat_M93mJj",
+        "stat_TMR4ze"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 5,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-3",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "full_width": true
       }
     },
     "image_with_text_4bwrnd": {
@@ -391,7 +373,7 @@
     "slideshow_UPiyTR",
     "announcement_bar_N4aQEr",
     "products_compare_Dh6r9b",
-    "multicolumn_UgzUgj",
+    "numbers_stats_8Caz4G",
     "image_with_text_4bwrnd",
     "image_banner_yBB8JL",
     "featured_collection_kmWq9c",
