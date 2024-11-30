@@ -39,11 +39,13 @@
           "settings": {
             "layout": "vertical",
             "icon_1": "none",
-            "image_1": "shopify://shop_images/phone-us.svg",
+            "image_1": "shopify://shop_images/made_in_ca.svg",
             "heading_1": "Made in Canada",
             "icon_2": "return",
+            "image_2": "shopify://shop_images/night_time.svg",
             "heading_2": "*100-Night Trial",
             "icon_3": "truck",
+            "image_3": "shopify://shop_images/year-warrenty.svg",
             "heading_3": "*10-Year Warranty"
           }
         },
@@ -115,52 +117,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "icon_row_weqNrV": {
-      "type": "icon-row",
-      "blocks": {
-        "icon_8EgmXW": {
-          "type": "icon",
-          "settings": {
-            "icon": "sleep",
-            "title": "*100-Night Trial",
-            "subtitle": "subtitle"
-          }
-        },
-        "icon_UcJejG": {
-          "type": "icon",
-          "settings": {
-            "icon": "warranty",
-            "title": "*10-Year Warranty",
-            "subtitle": "subtitle"
-          }
-        },
-        "icon_H7L4fM": {
-          "type": "icon",
-          "settings": {
-            "icon": "shipping",
-            "title": "*Free Shipping & Returns",
-            "subtitle": "subtitle"
-          }
-        },
-        "icon_weA64Y": {
-          "type": "icon",
-          "settings": {
-            "icon": "maple",
-            "title": "Made in Canada",
-            "subtitle": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "icon_8EgmXW",
-        "icon_UcJejG",
-        "icon_H7L4fM",
-        "icon_weA64Y"
-      ],
-      "settings": {
-        "full_width": true
       }
     },
     "mattress_layer_LJWPKi": {
@@ -376,7 +332,6 @@
   },
   "order": [
     "main",
-    "icon_row_weqNrV",
     "mattress_layer_LJWPKi",
     "multicolumn_qxCUi8",
     "multicolumn_CkcUYR",
