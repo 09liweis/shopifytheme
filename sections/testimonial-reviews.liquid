@@ -1,0 +1,76 @@
+{{ 'section-testimonial-reviews.css' | asset_url | stylesheet_tag }}
+
+<div class="testimonial-reviews{% if section.settings.full_width %} page-width{% endif %}">
+  <div class="section-header text-center">
+    <h2>{{ section.settings.title }}</h2>
+  </div>
+
+  <div class="testimonial-grid">
+    {%- for block in section.blocks -%}
+      <div class="testimonial-item" {{ block.shopify_attributes }}>
+        <div class="testimonial-content">
+          <div class="star-rating" aria-hidden="true">
+            {%- for i in (1..5) -%}
+              <span class="star">★</span>
+            {%- endfor -%}
+          </div>
+          <h3 class="testimonial-title">{{ block.settings.title }}</h3>
+          <div class="testimonial-text">{{ block.settings.text }}</div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonial Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "See What Canadians Say About Maple Mattress"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Easy Setup and Super Comfort"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Testimonial",
+          "default": "I recently purchased a Maple mattress, and I couldn't be happier! It was incredibly easy to set up, and the comfort level is off the charts. Since making the switch, my sleep has improved significantly. I wake up feeling refreshed and ready to take on the day. Highly recommend!"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Reviews",
+      "blocks": [
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
