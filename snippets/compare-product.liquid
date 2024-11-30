@@ -35,6 +35,14 @@
     </div>
 
     <div class="compare-product__content">
+      <div class="star-rating" aria-hidden="true" style="text-align: left;">
+        {%- for i in (1..5) -%}
+          <div class="svg-wrapper">
+            {{- 'icon-rating.svg' | inline_asset_content -}}
+          </div>
+        {%- endfor -%}
+        (4.7)
+      </div>
       <div class="flex justify-between items-center">
         <h3 class="compare-product__title">{{ product.title }}</h3>
         <div class="compare-product__price-wrapper">
@@ -43,13 +51,6 @@
             {{- product.selected_or_first_available_variant.price | money_without_currency -}}
           </span>
         </div>
-      </div>
-      <div class="star-rating" aria-hidden="true" style="text-align: left;">
-        {%- for i in (1..5) -%}
-          <div class="svg-wrapper">
-            {{- 'icon-rating.svg' | inline_asset_content -}}
-          </div>
-        {%- endfor -%}
       </div>
       {%- if product.metafields.custom.comfort_level != blank -%}
         <p class="compare-product__description">{{ product.metafields.custom.comfort_level }}</p>
