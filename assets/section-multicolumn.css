@@ -229,6 +229,7 @@
 
 .multicolumn-card__info .inline-richtext {
   font-weight: bold;
+  margin: 0;
 }
 
 @media screen and (min-width: 990px) {
