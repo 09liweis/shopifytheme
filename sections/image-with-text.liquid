@@ -67,8 +67,7 @@
                 {%- endif -%}
               {%- when 'video' -%}
                 {%- if section.settings.video_url != blank -%}
-                  {%- assign video_id = section.settings.video_url | split: '/' | last -%}
-                  {%- assign video_host = section.settings.video_url | split: '/' | index: 2 -%}
+                  {%- assign video_id = section.settings.video_url | split: 'v=' | last -%}
                   <deferred-media
                     class="deferred-media no-js-hidden"
                     data-media-id="{{ video_id }}"
@@ -109,23 +108,13 @@
                       </span>
                     </button>
                     <template>
-                      {%- if video_host contains 'youtube' -%}
-                        <iframe
-                          src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1&controls=1&enablejsapi=1"
-                          class="js-youtube"
-                          allow="autoplay; encrypted-media"
-                          allowfullscreen
-                          title="{{ section.settings.description | escape }}"
-                        ></iframe>
-                      {%- elsif video_host contains 'vimeo' -%}
-                        <iframe
-                          src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1&controls=1"
-                          class="js-vimeo"
-                          allow="autoplay; encrypted-media"
-                          allowfullscreen
-                          title="{{ section.settings.description | escape }}"
-                        ></iframe>
-                      {%- endif -%}
+                      <iframe
+                        src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1&controls=1&enablejsapi=1"
+                        class="js-youtube"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="{{ section.settings.description | escape }}"
+                      ></iframe>
                     </template>
                   </deferred-media>
                 {%- else -%}
