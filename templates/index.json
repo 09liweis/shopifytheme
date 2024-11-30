@@ -91,30 +91,39 @@
     "products_compare_Dh6r9b": {
       "type": "products-compare",
       "blocks": {
-        "product_NcT34e": {
+        "product_ECJYMC": {
           "type": "product",
           "settings": {
-            "product": "hybrid-mattress",
+            "product": "",
             "button_label": "Shop Now",
             "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
           }
         },
-        "product_DxVktL": {
+        "product_dJFTBH": {
           "type": "product",
           "settings": {
             "product": "foam-mattress",
             "button_label": "Shop Now",
             "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
           }
+        },
+        "product_w7DfQ8": {
+          "type": "product",
+          "settings": {
+            "product": "hybrid-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
         }
       },
       "block_order": [
-        "product_NcT34e",
-        "product_DxVktL"
+        "product_ECJYMC",
+        "product_dJFTBH",
+        "product_w7DfQ8"
       ],
       "settings": {
         "title": "Perfect Mattresses for Every Sleeper",
-        "subtitle": "Plush, Firm, or Extra Firm",
+        "subtitle": "Soft, Medium, or Firm",
         "description": "As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush, firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for you!",
         "show_vendor": false,
         "show_price": true
@@ -126,7 +135,7 @@
         "stat_JyH3cj": {
           "type": "stat",
           "settings": {
-            "number": "25",
+            "number": "15",
             "plus": false,
             "label": "Years in Experience"
           }
@@ -142,9 +151,9 @@
         "stat_U6tLRm": {
           "type": "stat",
           "settings": {
-            "number": "15",
+            "number": "10",
             "plus": false,
-            "label": "Years of Service"
+            "label": "Years of Warrenty"
           }
         },
         "stat_M93mJj": {
@@ -152,7 +161,7 @@
           "settings": {
             "number": "100",
             "plus": false,
-            "label": "Night Sleep Trial"
+            "label": "Nights Sleep Trial"
           }
         },
         "stat_TMR4ze": {
