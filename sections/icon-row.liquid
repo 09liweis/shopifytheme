@@ -1,11 +1,15 @@
 {{ 'section-icon-row.css' | asset_url | stylesheet_tag }}
 
 <div class="icon-row">
-  <div class="icon-row__container {% if section.settings.full_width %}page-width{% endif %}">
-    {%- for block in section.blocks -%}
-      <div class="icon-item" {{ block.shopify_attributes }}>
+  <div class="icon-row__container page-width">
+    {% assign icons = 'sleep,warranty,shipping,maple' | split: ',' %}
+    {% assign icon_names = 'something,*100-Night Trial,*10-Year Warranty,Free Shipping & Returns,Made in Canada'
+      | split: ','
+    %}
+    {%- for icon in icons -%}
+      <div class="icon-item">
         <div class="icon-item__icon">
-          {%- case block.settings.icon -%}
+          {%- case icon -%}
             {%- when 'sleep' -%}
               <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
                 <g id="night_time" data-name="night time" transform="translate(-1.988 -2.006)">
@@ -36,102 +40,11 @@
           {%- endcase -%}
         </div>
         <div class="icon-item__text">
-          <div class="icon-item__title">{{ block.settings.title }}</div>
+          <div class="icon-item__title">
+            {{ icon_names[forloop.index] }}
+          </div>
         </div>
       </div>
     {%- endfor -%}
   </div>
 </div>
-
-{% schema %}
-{
-  "name": "Icon Row",
-  "settings": [
-    {
-      "type": "checkbox",
-      "id": "full_width",
-      "label": "Full width",
-      "default": true
-    }
-  ],
-  "blocks": [
-    {
-      "type": "icon",
-      "name": "Icon Item",
-      "settings": [
-        {
-          "type": "select",
-          "id": "icon",
-          "label": "Icon",
-          "options": [
-            {
-              "value": "sleep",
-              "label": "Sleep Trial"
-            },
-            {
-              "value": "warranty",
-              "label": "Warranty"
-            },
-            {
-              "value": "shipping",
-              "label": "Shipping"
-            },
-            {
-              "value": "maple",
-              "label": "Made in Canada"
-            }
-          ],
-          "default": "sleep"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "*100-Night Trial"
-        },
-        {
-          "type": "text",
-          "id": "subtitle",
-          "label": "Subtitle",
-          "default": "subtitle"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Icon Row",
-      "blocks": [
-        {
-          "type": "icon",
-          "settings": {
-            "icon": "sleep",
-            "title": "*100-Night Trial"
-          }
-        },
-        {
-          "type": "icon",
-          "settings": {
-            "icon": "warranty",
-            "title": "*10-Year Warranty"
-          }
-        },
-        {
-          "type": "icon",
-          "settings": {
-            "icon": "shipping",
-            "title": "*Free Shipping & Returns"
-          }
-        },
-        {
-          "type": "icon",
-          "settings": {
-            "icon": "maple",
-            "title": "Made in Canada"
-          }
-        }
-      ]
-    }
-  ]
-}
-{% endschema %}
