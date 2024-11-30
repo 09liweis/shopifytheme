@@ -90,10 +90,34 @@
     },
     "products_compare_Dh6r9b": {
       "type": "products-compare",
+      "blocks": {
+        "product_8FbQCK": {
+          "type": "product",
+          "settings": {
+            "product": "foam-mattress-1",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        },
+        "product_NcT34e": {
+          "type": "product",
+          "settings": {
+            "product": "hybrid-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        }
+      },
+      "block_order": [
+        "product_8FbQCK",
+        "product_NcT34e"
+      ],
       "settings": {
-        "product1": "foam-mattress",
-        "product2": "hybrid-mattress",
-        "heading_size": "h0"
+        "title": "Perfect Mattresses for Every Sleeper",
+        "subtitle": "Plush, Firm, or Extra Firm",
+        "description": "As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush, firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for you!",
+        "show_vendor": false,
+        "show_price": true
       }
     },
     "numbers_stats_8Caz4G": {
