@@ -292,47 +292,31 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "testimonial_reviews_ccYQUg": {
+      "type": "testimonial-reviews",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "testimonial_gbimyB": {
+          "type": "testimonial",
           "settings": {
-            "title": "<strong>Easy Setup and Super Comfort</strong>",
-            "text": "<p>I recently purchased a Maple mattress, and I couldn't be happier! It was incredibly easy to set up, and the comfort level is off the charts. Since making the switch, my sleep has improved significantly. I wake up feeling refreshed and ready to take on the day. Highly recommend!</p><p>Stacy C.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Easy Setup and Super Comfort",
+            "text": "I recently purchased a Maple mattress, and I couldn't be happier! It was incredibly easy to set up, and the comfort level is off the charts. Since making the switch, my sleep has improved significantly. I wake up feeling refreshed and ready to take on the day. Highly recommend!"
           }
         },
-        "column2": {
-          "type": "column",
+        "testimonial_nHAwBJ": {
+          "type": "testimonial",
           "settings": {
-            "title": "<strong>Say Goodbye to Back Pain</strong>",
-            "text": "<p>I've been sleeping on my Maple mattress for a few weeks now, and I am amazed at the difference it has made. No more back pain, and I can finally sleep through the night without tossing and turning. I would definitely recommend this mattress to my family and friends. It's a game changer!</p><p>Margaret J.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Easy Setup and Super Comfort",
+            "text": "I recently purchased a Maple mattress, and I couldn't be happier! It was incredibly easy to set up, and the comfort level is off the charts. Since making the switch, my sleep has improved significantly. I wake up feeling refreshed and ready to take on the day. Highly recommend!"
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2"
+        "testimonial_gbimyB",
+        "testimonial_nHAwBJ"
       ],
       "settings": {
-        "title": "<strong>See What Canadians Say About Maple Mattress</strong>",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "See What Canadians Say About Maple Mattress",
+        "full_width": true
       }
     },
     "multicolumn_QDPtyU": {
@@ -411,7 +395,7 @@
     "image_with_text_4bwrnd",
     "image_banner_yBB8JL",
     "featured_collection_kmWq9c",
-    "multicolumn",
+    "testimonial_reviews_ccYQUg",
     "multicolumn_QDPtyU"
   ]
 }
