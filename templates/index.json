@@ -167,7 +167,7 @@
         "stat_TMR4ze": {
           "type": "stat",
           "settings": {
-            "number": "4.7",
+            "number": "4.8",
             "plus": false,
             "label": "Google Reviews"
           }
@@ -218,7 +218,8 @@
       "settings": {
         "media_type": "video",
         "image": "shopify://shop_images/Bed_img_for_About_Us_section.png",
-        "video_url": "https://www.youtube.com/watch?v=Y1PWzX_TWsU",
+        "video_url": "https://www.youtube.com/watch?v=CkE5usR2obw",
+        "cover_image": "shopify://shop_images/fotor-ai-20241130113052.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
