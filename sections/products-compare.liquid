@@ -1,21 +1,24 @@
 {{ 'section-products-compare.css' | asset_url | stylesheet_tag }}
 
-<div class="products-compare page-width">
+<div class="products-compare">
   <div class="section-header text-center">
     <h2>{{ section.settings.title }}</h2>
     <p>{{ section.settings.subtitle }}</p>
+    <p>{{ section.settings.description }}</p>
   </div>
 
-  <div class="products-compare__grid">
-    {%- for block in section.blocks -%}
-      {% render 'compare-product',
-        product: block.settings.product,
-        button_label: block.settings.button_label,
-        description: block.settings.description,
-        show_price: section.settings.show_price,
-        show_vendor: section.settings.show_vendor
-      %}
-    {%- endfor -%}
+  <div class="products-compare__container">
+    <div class="products-compare__grid page-width">
+      {%- for block in section.blocks -%}
+        {% render 'compare-product',
+          product: block.settings.product,
+          button_label: block.settings.button_label,
+          description: block.settings.description,
+          show_price: section.settings.show_price,
+          show_vendor: section.settings.show_vendor
+        %}
+      {%- endfor -%}
+    </div>
   </div>
 </div>
 

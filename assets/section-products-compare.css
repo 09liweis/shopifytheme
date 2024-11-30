@@ -1,5 +1,5 @@
 .products-compare {
-  padding: 60px 0;
+  padding: 60px 0 0;
 }
 
 .products-compare .section-header {
@@ -10,14 +10,19 @@
 
 .products-compare .section-header h2 {
   margin: 0;
+  font-weight: bold;
   font-size: 30px;
   color: #272C48;
 }
 
 .products-compare .section-header p {
   margin: 5px 0 0;
-  font-size: 22px;
+  font-size: 20px;
   color: #272C48;
+}
+
+.products-compare__container {
+  background-color: #FDF9F5;
 }
 
 .products-compare__grid {
@@ -28,9 +33,9 @@
 }
 
 .compare-product {
-  background: #ffffff;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 50px 0;
 }
 
 .compare-product__image-wrapper {
@@ -111,7 +116,7 @@
 
 @media screen and (max-width: 749px) {
   .products-compare {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 
   .products-compare .section-header h2 {
