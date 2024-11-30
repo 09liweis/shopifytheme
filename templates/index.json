@@ -91,14 +91,6 @@
     "products_compare_Dh6r9b": {
       "type": "products-compare",
       "blocks": {
-        "product_ECJYMC": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "button_label": "Shop Now",
-            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
-          }
-        },
         "product_dJFTBH": {
           "type": "product",
           "settings": {
@@ -117,7 +109,6 @@
         }
       },
       "block_order": [
-        "product_ECJYMC",
         "product_dJFTBH",
         "product_w7DfQ8"
       ],
