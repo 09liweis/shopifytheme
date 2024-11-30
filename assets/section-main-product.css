@@ -1216,6 +1216,8 @@ a.product__text {
 .icon-with-text {
   --icon-size: calc(var(--font-heading-scale) * 3rem);
   --icon-spacing: calc(var(--font-heading-scale) * 1rem);
+  display: flex;
+  column-gap: 10px;
 }
 
 .icon-with-text--horizontal {
@@ -1253,7 +1255,7 @@ a.product__text {
 }
 
 .icon-with-text--vertical img {
-  margin-right: var(--icon-spacing);
+  /* margin-right: var(--icon-spacing); */
 }
 
 .icon-with-text--horizontal .h4 {

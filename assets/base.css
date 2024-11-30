@@ -3674,3 +3674,9 @@ details-disclosure > details {
 .w-full {
   width: 100%;
 }
+
+.section-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #272C48;
+}

@@ -35,13 +35,15 @@
     </div>
 
     <div class="compare-product__content">
-      <div class="star-rating" aria-hidden="true" style="text-align: left;">
+      <div class="star-rating flex items-center" aria-hidden="true" style="text-align: left;">
         {%- for i in (1..5) -%}
           <div class="svg-wrapper">
             {{- 'icon-rating.svg' | inline_asset_content -}}
           </div>
         {%- endfor -%}
-        (4.7)
+        {% if rating %}
+          <span style="font-size: 14px;">({{ rating }})</span>
+        {% endif %}
       </div>
       <div class="flex justify-between items-center">
         <h3 class="compare-product__title">{{ product.title }}</h3>

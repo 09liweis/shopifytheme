@@ -2,7 +2,7 @@
 
 <div class="products-compare">
   <div class="section-header text-center">
-    <h2>{{ section.settings.title }}</h2>
+    <h2 class="section-title">{{ section.settings.title }}</h2>
     <p>{{ section.settings.subtitle }}</p>
     <p>{{ section.settings.description }}</p>
   </div>
@@ -15,7 +15,8 @@
           button_label: block.settings.button_label,
           description: block.settings.description,
           show_price: section.settings.show_price,
-          show_vendor: section.settings.show_vendor
+          show_vendor: section.settings.show_vendor,
+          rating: section.settings.rating
         %}
       {%- endfor -%}
     </div>
@@ -43,6 +44,12 @@
       "id": "description",
       "label": "Description",
       "default": "As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush, firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for you!"
+    },
+    {
+      "type": "text",
+      "id": "rating",
+      "label": "Rating",
+      "default": "4.9"
     },
     {
       "type": "checkbox",
