@@ -216,9 +216,7 @@
         "button_yztnBy"
       ],
       "settings": {
-        "media_type": "video",
         "image": "shopify://shop_images/Bed_img_for_About_Us_section.png",
-        "video_url": "https://www.youtube.com/watch?v=CkE5usR2obw",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -282,7 +280,7 @@
         "buttons_yyedJi"
       ],
       "settings": {
-        "image": "shopify://shop_images/fotor-ai-20241130113052.jpg",
+        "image": "shopify://shop_images/fotor-ai-20241130122714.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
