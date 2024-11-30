@@ -344,7 +344,7 @@
           "settings": {
             "image": "shopify://shop_images/chat-with-us.svg",
             "title": "Chat with Us",
-            "text": "<p>Need a quick response? We're here to help. <a href=\"/pages/contact\" title=\"Contact\">Contact Us.</a></p>",
+            "text": "<p>Got questions? Chat with us for mattress tips!</p>",
             "link_label": "",
             "link": ""
           }
@@ -364,7 +364,7 @@
           "settings": {
             "image": "shopify://shop_images/phone-us.svg",
             "title": "Phone Us",
-            "text": "<p>647-999-9999</p>",
+            "text": "<p>Call us at 647-999-9999</p>",
             "link_label": "",
             "link": ""
           }
