@@ -364,7 +364,7 @@
           "settings": {
             "image": "shopify://shop_images/phone-us.svg",
             "title": "Phone Us",
-            "text": "<p>Call us at</p>",
+            "text": "<p>647-999-9999</p>",
             "link_label": "",
             "link": ""
           }
@@ -389,7 +389,7 @@
       "settings": {
         "title": "Need Help Deciding on Your Next Mattress?",
         "heading_size": "h1",
-        "image_width": "full",
+        "image_width": "half",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "center",
