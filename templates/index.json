@@ -90,35 +90,7 @@
     },
     "products_compare_Dh6r9b": {
       "type": "products-compare",
-      "blocks": {
-        "product_NcT34e": {
-          "type": "product",
-          "settings": {
-            "product": "hybrid-mattress",
-            "button_label": "Shop Now",
-            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
-          }
-        },
-        "product_DxVktL": {
-          "type": "product",
-          "settings": {
-            "product": "foam-mattress",
-            "button_label": "Shop Now",
-            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
-          }
-        }
-      },
-      "block_order": [
-        "product_NcT34e",
-        "product_DxVktL"
-      ],
-      "settings": {
-        "title": "Perfect Mattresses for Every Sleeper",
-        "subtitle": "Plush, Firm, or Extra Firm",
-        "description": "As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush, firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for you!",
-        "show_vendor": false,
-        "show_price": true
-      }
+      "settings": {}
     },
     "numbers_stats_8Caz4G": {
       "type": "numbers-stats",
@@ -126,7 +98,7 @@
         "stat_JyH3cj": {
           "type": "stat",
           "settings": {
-            "number": "25",
+            "number": "15",
             "plus": false,
             "label": "Years in Experience"
           }
@@ -142,9 +114,9 @@
         "stat_U6tLRm": {
           "type": "stat",
           "settings": {
-            "number": "15",
+            "number": "10",
             "plus": false,
-            "label": "Years of Service"
+            "label": "Years of Warrenty"
           }
         },
         "stat_M93mJj": {
@@ -152,7 +124,7 @@
           "settings": {
             "number": "100",
             "plus": false,
-            "label": "Night Sleep Trial"
+            "label": "Nights Sleep Trial"
           }
         },
         "stat_TMR4ze": {
