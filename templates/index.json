@@ -125,6 +125,7 @@
         "title": "Perfect Mattresses for Every Sleeper",
         "subtitle": "Soft, Medium, or Firm",
         "description": "As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush, firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for you!",
+        "rating": "4.9",
         "show_vendor": false,
         "show_price": true
       }
@@ -298,7 +299,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
