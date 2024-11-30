@@ -1,0 +1,143 @@
+.products-compare {
+  padding: 60px 0;
+}
+
+.products-compare .section-header {
+  text-align: center;
+  max-width: 812px;
+  margin: 0 auto 40px;
+}
+
+.products-compare .section-header h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #272C48;
+}
+
+.products-compare .section-header p {
+  margin: 5px 0 0;
+  font-size: 22px;
+  color: #272C48;
+}
+
+.products-compare__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.compare-product {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.compare-product__image-wrapper {
+  position: relative;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+.compare-product__image-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.compare-product__tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.compare-product__tag.best-seller {
+  background-color: #F9522E;
+}
+
+.compare-product__tag.popular {
+  background-color: #F9522E;
+}
+
+.compare-product__content {
+  padding: 20px;
+  text-align: center;
+}
+
+.compare-product__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #272C48;
+  margin: 0 0 10px;
+}
+
+.compare-product__description {
+  font-size: 16px;
+  color: #666666;
+  margin: 0 0 15px;
+  line-height: 1.5;
+}
+
+.compare-product__price-wrapper {
+  margin-bottom: 20px;
+}
+
+.compare-product__price-label {
+  font-size: 16px;
+  color: #666666;
+  margin-right: 5px;
+}
+
+.compare-product__price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #F9522E;
+}
+
+.button.button--primary {
+  background: #F9522E;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.button.button--primary:hover {
+  background: #e64a29;
+}
+
+@media screen and (max-width: 749px) {
+  .products-compare {
+    padding: 40px 0;
+  }
+
+  .products-compare .section-header h2 {
+    font-size: 24px;
+  }
+
+  .products-compare .section-header p {
+    font-size: 18px;
+  }
+
+  .products-compare__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .compare-product__title {
+    font-size: 20px;
+  }
+
+  .compare-product__price {
+    font-size: 20px;
+  }
+}
