@@ -51,17 +51,10 @@
   top: 20px;
   right: 20px;
   padding: 4px 12px;
-  border-radius: 4px;
+  border-radius: 12px;
   font-size: 14px;
   font-weight: 500;
   color: #ffffff;
-}
-
-.compare-product__tag.best-seller {
-  background-color: #F9522E;
-}
-
-.compare-product__tag.popular {
   background-color: #F9522E;
 }
 
@@ -74,18 +67,19 @@
   font-size: 24px;
   font-weight: 600;
   color: #272C48;
-  margin: 0 0 10px;
+  margin: 0;
 }
 
 .compare-product__description {
+  text-align: left;
   font-size: 16px;
-  color: #666666;
+  color: #272C48;
   margin: 0 0 15px;
   line-height: 1.5;
 }
 
 .compare-product__price-wrapper {
-  margin-bottom: 20px;
+  
 }
 
 .compare-product__price-label {
