@@ -231,6 +231,20 @@
         "padding_bottom": 36
       }
     },
+    "video_btpYNQ": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=CkE5usR2obw",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_yBB8JL": {
       "type": "image-banner",
       "blocks": {
@@ -408,6 +422,7 @@
     "products_compare_Dh6r9b",
     "numbers_stats_8Caz4G",
     "image_with_text_4bwrnd",
+    "video_btpYNQ",
     "image_banner_yBB8JL",
     "featured_collection_kmWq9c",
     "testimonial_reviews_ccYQUg",
