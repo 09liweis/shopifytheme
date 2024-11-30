@@ -1,0 +1,136 @@
+{{ 'section-icon-row.css' | asset_url | stylesheet_tag }}
+
+<div class="icon-row">
+  <div class="icon-row__container {% if section.settings.full_width %}page-width{% endif %}">
+    {%- for block in section.blocks -%}
+      <div class="icon-item" {{ block.shopify_attributes }}>
+        <div class="icon-item__icon">
+          {%- case block.settings.icon -%}
+            {%- when 'sleep' -%}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" fill="currentColor"/>
+              </svg>
+            {%- when 'warranty' -%}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            {%- when 'shipping' -%}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 3H1V16H16V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 8H20L23 11V16H16V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.5 21C6.88071 21 8 19.8807 8 18.5C8 17.1193 6.88071 16 5.5 16C4.11929 16 3 17.1193 3 18.5C3 19.8807 4.11929 21 5.5 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            {%- when 'maple' -%}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 12L21 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 12L3 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          {%- endcase -%}
+        </div>
+        <div class="icon-item__text">
+          <div class="icon-item__title">{{ block.settings.title }}</div>
+          <div class="icon-item__subtitle">{{ block.settings.subtitle }}</div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Icon Row",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon",
+      "name": "Icon Item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "sleep",
+              "label": "Sleep Trial"
+            },
+            {
+              "value": "warranty",
+              "label": "Warranty"
+            },
+            {
+              "value": "shipping",
+              "label": "Shipping"
+            },
+            {
+              "value": "maple",
+              "label": "Made in Canada"
+            }
+          ],
+          "default": "sleep"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "*100-Night Trial"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": ""
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon Row",
+      "blocks": [
+        {
+          "type": "icon",
+          "settings": {
+            "icon": "sleep",
+            "title": "*100-Night Trial"
+          }
+        },
+        {
+          "type": "icon",
+          "settings": {
+            "icon": "warranty",
+            "title": "*10-Year Warranty"
+          }
+        },
+        {
+          "type": "icon",
+          "settings": {
+            "icon": "shipping",
+            "title": "*Free Shipping & Returns"
+          }
+        },
+        {
+          "type": "icon",
+          "settings": {
+            "icon": "maple",
+            "title": "Made in Canada"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
