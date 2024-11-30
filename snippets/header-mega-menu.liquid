@@ -56,8 +56,8 @@
                           | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
                         }}
                         {{ childlink.title | escape }}
-                        <p>{{ product.selected_or_first_available_variant.price | money_with_currency }}</p>
                       </a>
+                      <p>{{ product.selected_or_first_available_variant.price | money_with_currency }}</p>
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
