@@ -1,0 +1,97 @@
+{{ 'section-numbers-stats.css' | asset_url | stylesheet_tag }}
+
+<div class="numbers-stats{% if section.settings.full_width %} page-width{% endif %}">
+  <div class="stats-container">
+    {%- for block in section.blocks -%}
+      <div class="stat-item" {{ block.shopify_attributes }}>
+        <div class="stat-number">
+          {{ block.settings.number }}{% if block.settings.plus %}+{% endif %}
+        </div>
+        <div class="stat-label">{{ block.settings.label }}</div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Numbers Stats",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistic",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "25"
+        },
+        {
+          "type": "checkbox",
+          "id": "plus",
+          "label": "Show plus sign",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Years in Experience"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Numbers Stats",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "number": "25",
+            "label": "Years in Experience"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "9500",
+            "plus": true,
+            "label": "Happy Clients"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "15",
+            "label": "Years of Service"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "100",
+            "label": "Night Sleep Trial"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "4.7",
+            "label": "Google Reviews"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
