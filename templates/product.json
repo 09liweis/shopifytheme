@@ -122,7 +122,7 @@
     "mattress_layer_LJWPKi": {
       "type": "mattress-layer",
       "settings": {
-        "mattress_layer_img": "shopify://shop_images/Rosemary__Mattress_Pocket_Coil_Construction.png",
+        "mattress_layer_img": "shopify://shop_images/foam_mattress_layer.png",
         "color_scheme": ""
       }
     },
