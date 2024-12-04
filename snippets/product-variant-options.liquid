@@ -113,7 +113,8 @@
       {% if option_disabled -%}
         {{- 'products.product.value_unavailable' | t: option_value: value -}}
       {%- else -%}
-        {{ value }} {{- value.variant.price |  money_with_currency -}}
+        {{ value }}
+        {% comment %} {{- value.variant.price |  money_with_currency -}} {% endcomment %}
       {%- endif %}
     </option>
   {%- endif -%}
