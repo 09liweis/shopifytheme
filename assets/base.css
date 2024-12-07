@@ -3684,6 +3684,13 @@ details-disclosure > details {
   color: #272C48;
 }
 
+.section-subtitle {
+  font-size: 20px;
+  color: #272C48;
+  max-width: 812px;
+  text-align: center;
+}
+
 #shopify-section-template--23641922437436__multicolumn_qxCUi8 {
   background-color: #FDF9F5;
 }
