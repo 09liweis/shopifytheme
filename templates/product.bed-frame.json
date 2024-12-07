@@ -121,134 +121,82 @@
         "padding_bottom": 12
       }
     },
-    "mattress_layer_LJWPKi": {
-      "type": "mattress-layer",
-      "settings": {
-        "mattress_layer_img": "shopify://shop_images/Rosemary__Mattress_Pocket_Coil_Construction.png",
-        "color_scheme": ""
-      }
-    },
-    "multicolumn_qxCUi8": {
-      "type": "multicolumn",
+    "image_with_text_bqVjRT": {
+      "type": "image-with-text",
       "blocks": {
-        "column_dHBUEq": {
-          "type": "column",
+        "heading_ajX8L9": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/Uninterrupted-Sleep-Experience.jpg",
-            "title": "No More Sleep Hot",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Quality Material s Means You Can Rest Easy",
+            "heading_size": "h1"
           }
         },
-        "column_nA7tmL": {
-          "type": "column",
+        "text_YrgtE7": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Back-Pain-Relief-_-Support.jpg",
-            "title": "Great Motion Isolation",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_KyqhDz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Feel-Refreshed-Every-Morning.jpg",
-            "title": "Feel refreshed every morning",
-            "text": "<p>start your daily rejuvenated! The Maple mattress helps you wake up feeling fresh and ready to take on the day.</p>",
-            "link_label": "",
-            "link": ""
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "column_dHBUEq",
-        "column_nA7tmL",
-        "column_KyqhDz"
+        "heading_ajX8L9",
+        "text_YrgtE7"
       ],
       "settings": {
-        "title": "",
-        "subtitle": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
+        "media_type": "image",
+        "image": "shopify://shop_images/5891GYbed_angle__bedroom__view.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
         "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "multicolumn_CkcUYR": {
-      "type": "multicolumn",
+    "image_with_text_fQAT9K": {
+      "type": "image-with-text",
       "blocks": {
-        "column_Q7aB37": {
-          "type": "column",
+        "heading_xkTjWz": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/unbox.svg",
-            "title": "Unbox",
-            "text": "<p>Remove the mattress from the box carefully.</p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Complete Your Bedroom",
+            "heading_size": "h1"
           }
         },
-        "column_K4m6Mc": {
-          "type": "column",
+        "text_DVYWrd": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/position.svg",
-            "title": "Position",
-            "text": "<p>Place the rolled-up mattress on your bed frame.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_XfwPY9": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/unroll.svg",
-            "title": "Unroll",
-            "text": "<p>Open the plastic wrap and gently unroll the  mattress.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_A6Ftjh": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/expand.svg",
-            "title": "Expand",
-            "text": "<p>Allow 24-48 hours for the  mattress to fully expand and be ready for a comfortable sleep.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>We designed a bed that combines a luxurious tufted upholstered headboard with a sturdy bed frame for your mattress. The Bed Frame with Headboard offers a timeless, contemporary design while acting as a solid platform to provide ideal support for any mattress. </p>",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "column_Q7aB37",
-        "column_K4m6Mc",
-        "column_XfwPY9",
-        "column_A6Ftjh"
+        "heading_xkTjWz",
+        "text_DVYWrd"
       ],
       "settings": {
-        "title": "Unboxing Your New Maple Mattress",
-        "subtitle": "Maple mattress arrives compressed in a box for easy delivery and hassle-free unboxing. Simply follow the quick setup steps to enjoy a great night’s sleep.",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
+        "media_type": "image",
+        "image": "shopify://shop_images/fotor-ai-2024120221939.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
         "color_scheme": "",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -259,7 +207,7 @@
         "collapsible_row_a3mgrP": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What is memory foam?",
+            "heading": "How many pieces does the bed frame come in?",
             "icon": "none",
             "row_content": "",
             "page": ""
@@ -268,7 +216,7 @@
         "collapsible_row_Qac9h9": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I setup mattress?",
+            "heading": "How do I care for my Aurora Bed Frame?",
             "icon": "none",
             "row_content": "",
             "page": ""
@@ -277,16 +225,7 @@
         "collapsible_row_ht67Qk": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "When will my order arrive?",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_pCFHwx": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How does the 100-night sleep trial work?",
+            "heading": "What happens if I notice a defect on my new bed frame?",
             "icon": "none",
             "row_content": "",
             "page": ""
@@ -296,19 +235,17 @@
       "block_order": [
         "collapsible_row_a3mgrP",
         "collapsible_row_Qac9h9",
-        "collapsible_row_ht67Qk",
-        "collapsible_row_pCFHwx"
+        "collapsible_row_ht67Qk"
       ],
       "settings": {
         "caption": "",
-        "heading": "Frequently Asked Questions",
+        "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
-        "image": "shopify://shop_images/bright-clean-modern-bedroom-scandinavian-style.jpg",
         "image_ratio": "adapt",
         "desktop_layout": "image_first",
         "padding_top": 36,
@@ -336,9 +273,8 @@
   },
   "order": [
     "main",
-    "mattress_layer_LJWPKi",
-    "multicolumn_qxCUi8",
-    "multicolumn_CkcUYR",
+    "image_with_text_bqVjRT",
+    "image_with_text_fQAT9K",
     "collapsible_content_ER7KNk",
     "related-products"
   ]
