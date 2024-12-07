@@ -169,6 +169,7 @@
       ],
       "settings": {
         "title": "",
+        "subtitle": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -236,6 +237,7 @@
       ],
       "settings": {
         "title": "Unboxing Your New Maple Mattress",
+        "subtitle": "Maple mattress arrives compressed in a box for easy delivery and hassle-free unboxing. Simply follow the quick setup steps to enjoy a great night’s sleep.",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
