@@ -329,6 +329,8 @@
       </button>
     </slider-component>
   {%- endif -%}
-  {% render 'firmless', level: 1 %}
-  {% render 'icon-row' %}
+  {% if product.template_suffix == '' %}
+    {% render 'firmless', level: 1 %}
+    {% render 'icon-row' %}
+  {% endif %}
 </media-gallery>
