@@ -87,6 +87,11 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+                {%- if link.title == 'Mattresses' -%}
+                  <div class="flex justify-center">
+                    <a href="/pages/compare-mattress" class="button button--primary"> Compare Mattress </a>
+                  </div>
+                {% endif %}
               </div>
             </details>
           </header-menu>

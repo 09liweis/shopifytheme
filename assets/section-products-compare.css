@@ -1,5 +1,6 @@
 .products-compare {
   padding: 60px 0 0;
+  background-color: #FDF9F5;
 }
 
 .products-compare .section-header {
@@ -15,7 +16,7 @@
 }
 
 .products-compare__container {
-  background-color: #FDF9F5;
+  
 }
 
 .products-compare__grid {
@@ -28,7 +29,7 @@
 .compare-product {
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 50px 0;
+  margin-bottom: 50px;
 }
 
 .compare-product__image-wrapper {
