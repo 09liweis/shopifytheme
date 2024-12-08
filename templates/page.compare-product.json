@@ -15,9 +15,105 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "products_compare_KLDJhj": {
+      "type": "products-compare",
+      "blocks": {
+        "product_DaEYF3": {
+          "type": "product",
+          "settings": {
+            "product": "foam-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        },
+        "product_egCm6L": {
+          "type": "product",
+          "settings": {
+            "product": "hybrid-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        }
+      },
+      "block_order": [
+        "product_DaEYF3",
+        "product_egCm6L"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "description": "",
+        "rating": "",
+        "show_vendor": false,
+        "show_price": true
+      }
+    },
+    "collapsible_content_DKJREk": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_yXyKPn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_Ub9Ufk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_MGwRAh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_Yh9kU6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_yXyKPn",
+        "collapsible_row_Ub9Ufk",
+        "collapsible_row_MGwRAh",
+        "collapsible_row_Yh9kU6"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently asked questions",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "products_compare_KLDJhj",
+    "collapsible_content_DKJREk"
   ]
 }
