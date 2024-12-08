@@ -11,6 +11,7 @@
     <div class="products-compare__grid page-width">
       {%- for block in section.blocks -%}
         {% render 'compare-product',
+          isPageVersion: section.settings.page_version,
           product: block.settings.product,
           button_label: block.settings.button_label,
           description: block.settings.description,
