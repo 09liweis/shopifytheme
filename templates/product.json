@@ -57,6 +57,10 @@
             "swatch_shape": "circle"
           }
         },
+        "free_gift_wpijTQ": {
+          "type": "free_gift",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -95,6 +99,7 @@
         "price",
         "icon_with_text_U8bxgc",
         "variant_picker",
+        "free_gift_wpijTQ",
         "buy_buttons",
         "description",
         "collapsible-row-0",
