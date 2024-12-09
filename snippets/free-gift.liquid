@@ -1,0 +1,30 @@
+<div class="gift-card-list">
+  {% for product in collections['gift-cards'].products %}
+    <div class="gift-card-item">
+      <a href="{{ product.url }}">
+        <img
+          src="{{ product.featured_image | image_url: 'medium' }}"
+          alt="{{ product.title }}"
+          width="110px"
+          height="110px"
+        >
+        <h3>{{ product.title }}</h3>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+<style>
+  .gift-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .gift-card-item {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+  }
+  .gift-card-item img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
