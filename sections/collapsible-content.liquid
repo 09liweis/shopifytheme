@@ -28,15 +28,11 @@
               {{ section.settings.caption | escape }}
             </p>
           {% endif %}
-          {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
-              {{ section.settings.heading }}
-            </h2>
-          {%- else -%}
-            <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
-          {% endif %}
         </div>
-        <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div
+          style="background-color: #FDF9F5"
+          class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        >
           {%- if section.settings.image != blank -%}
             <div class="grid__item collapsible-content__grid-item">
               <div
@@ -69,9 +65,16 @@
             </div>
           {% endif %}
           <div class="grid__item">
+            {%- if section.settings.heading != blank -%}
+              <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
+                {{ section.settings.heading }}
+              </h2>
+            {%- else -%}
+              <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
+            {% endif %}
             {%- for block in section.blocks -%}
               <div
-                class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
                 {{ block.shopify_attributes }}
               >
                 <details
