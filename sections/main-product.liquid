@@ -144,7 +144,7 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
-              {% when 'free-gift' %}
+              {% when 'free_gift' %}
                 {% render 'free-gift', product: product %}
               {%- when 'inventory' -%}
                 <p
@@ -729,6 +729,12 @@
     </script>
   </div>
 </product-info>
+
+{% if product.template_suffix == '' %}
+  {% render 'icon-row' %}
+
+  {% render 'mattress-layer', product: product %}
+{% endif %}
 
 {% schema %}
 {

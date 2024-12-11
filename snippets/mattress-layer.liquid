@@ -57,6 +57,9 @@
   }
 </style>
 
+{% assign mattressLayer = product.metafields.custom.mattress_layer.value %}
+{% assign layerItems = mattressLayer.layer_items.value %}
+
 <div class="page-width scroll-trigger animate--slide-in">
   <h2 class="layer-heading">Engineered for Lasting Comfort</h2>
   <div class="flex items-center">
@@ -66,16 +69,13 @@
         <div class="layer-point {% if point == '1' %} active {% endif %}" id="layer-point{{ point }}">{{ point }}</div>
       {% endfor %}
       {{
-        section.settings.mattress_layer_img
+        mattressLayer.layer_image.value
         | image_url: width: 600
         | image_tag: class: 'motion-reduce w-full', preload: true
       }}
     </div>
     <div class="layer-items" style="width: 50%;">
-      {% assign layer_titles = 'Easy-to-Remove Cover,Memory Foam for Personalized Comfort,High Resilience Foam for Pressure Relief,High-Density Foam for Long-Lasting Durability'
-        | split: ','
-      %}
-      {% for layer_title in layer_titles %}
+      {% for layerItem in layerItems %}
         {% assign index = forloop.index %}
         <div class="layer-item flex">
           <div>
@@ -84,9 +84,9 @@
             </div>
           </div>
           <div>
-            <h5 class="layer-title">{{ layer_title }}</h5>
+            <h5 class="layer-title">{{ layerItem.layer_title }}</h5>
             <p class="layer-desc {% if index == 1 %} block {% endif %}" id="layer-desc{{index}}">
-              A soft, breathable cover that’s easy to remove and wash, keeping your mattress fresh.
+              {{ layerItem.layer_description }}
             </p>
           </div>
         </div>
@@ -109,34 +109,9 @@
         document.querySelector(`#layer-point${id}`).classList.add('active');
         document.querySelector(`#layer-item${id}`).classList.add('active');
 
-        document.querySelectorAll('.layer-desc').forEach((desc)=>desc.classList.remove('block'));
+        document.querySelectorAll('.layer-desc').forEach((desc) => desc.classList.remove('block'));
         document.querySelector(`#layer-desc${id}`).classList.add('block');
-
       });
     });
   });
 </script>
-
-{% schema %}
-{
-  "name": "Mattress Layer",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "mattress_layer_img",
-      "label": "Image"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-4"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Mattress Layer"
-    }
-  ]
-}
-{% endschema %}
