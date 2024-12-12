@@ -1,6 +1,6 @@
 <div class="gift-card-list">
   Free Gift
-  {% for product in collections['gift-cards'].products %}
+  {% for product in product.metafields.custom.free_gifts.value %}
     <div class="gift-card-item">
       <a href="{{ product.url }}">
         <img
