@@ -154,8 +154,6 @@
       const addToCartButton = document.querySelector('[data-product-id]');
       const freeGifts = document.querySelectorAll('[data-freegift-id]');
       addToCartButton.addEventListener('click', function (event) {
-        event.preventDefault();
-
         function addGiftsToCart(items) {
           fetch(window.Shopify.routes.root + 'cart/add.js', {
             method: 'POST',
