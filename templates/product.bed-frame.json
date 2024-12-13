@@ -62,6 +62,10 @@
           "disabled": true,
           "settings": {}
         },
+        "free_gift_A9cyDa": {
+          "type": "free_gift",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -101,6 +105,7 @@
         "icon_with_text_U8bxgc",
         "variant_picker",
         "quantity_selector",
+        "free_gift_A9cyDa",
         "buy_buttons",
         "description",
         "collapsible-row-0",
