@@ -24,11 +24,20 @@
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
     {%- liquid
-      assign contact_form_class = 'isolate'
+      assign contact_form_class = 'isolate grid__item'
       if settings.animations_reveal_on_scroll
-        assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
+        assign contact_form_class = 'isolate grid__item scroll-trigger animate--slide-in'
       endif
     -%}
+    <section class="grid grid--1-col grid--2-col">
+      <div class="grid__item">
+        {{
+          section.settings.image
+          | image_url: width: 400
+          | image_tag: class: 'header__heading-logo', preload: true
+        }}
+        {{section.settings.description}}
+      </div>
     {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
       {%- if form.posted_successfully? -%}
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
@@ -51,53 +60,51 @@
           </li>
         </ul>
       {%- endif -%}
-      <div class="contact__fields">
-        <div class="field">
-          <input
-            class="field__input"
-            autocomplete="name"
-            type="text"
-            id="ContactForm-name"
-            name="contact[{{ 'templates.contact.form.name' | t }}]"
-            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-            placeholder="{{ 'templates.contact.form.name' | t }}"
-          >
-          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
-        </div>
-        <div class="field field--with-error">
-          <input
-            autocomplete="email"
-            type="email"
-            id="ContactForm-email"
-            class="field__input"
-            name="contact[email]"
-            spellcheck="false"
-            autocapitalize="off"
-            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-            aria-required="true"
-            {% if form.errors contains 'email' %}
-              aria-invalid="true"
-              aria-describedby="ContactForm-email-error"
-            {% endif %}
-            placeholder="{{ 'templates.contact.form.email' | t }}"
-          >
-          <label class="field__label" for="ContactForm-email">
-            {{- 'templates.contact.form.email' | t }}
-            <span aria-hidden="true">*</span></label
-          >
-          {%- if form.errors contains 'email' -%}
-            <small class="contact__field-error" id="ContactForm-email-error">
-              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-              <span class="form__message">
-                <span class="svg-wrapper">
-                  {{- 'icon-error.svg' | inline_asset_content -}}
-                </span>
-                {{- form.errors.translated_fields.email | capitalize }}
-                {{ form.errors.messages.email -}}
+      <div class="field">
+        <input
+          class="field__input"
+          autocomplete="name"
+          type="text"
+          id="ContactForm-name"
+          name="contact[{{ 'templates.contact.form.name' | t }}]"
+          value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          placeholder="{{ 'templates.contact.form.name' | t }}"
+        >
+        <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+      </div>
+      <div class="field field--with-error">
+        <input
+          autocomplete="email"
+          type="email"
+          id="ContactForm-email"
+          class="field__input"
+          name="contact[email]"
+          spellcheck="false"
+          autocapitalize="off"
+          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+          aria-required="true"
+          {% if form.errors contains 'email' %}
+            aria-invalid="true"
+            aria-describedby="ContactForm-email-error"
+          {% endif %}
+          placeholder="{{ 'templates.contact.form.email' | t }}"
+        >
+        <label class="field__label" for="ContactForm-email">
+          {{- 'templates.contact.form.email' | t }}
+          <span aria-hidden="true">*</span></label
+        >
+        {%- if form.errors contains 'email' -%}
+          <small class="contact__field-error" id="ContactForm-email-error">
+            <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+            <span class="form__message">
+              <span class="svg-wrapper">
+                {{- 'icon-error.svg' | inline_asset_content -}}
               </span>
-            </small>
-          {%- endif -%}
-        </div>
+              {{- form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email -}}
+            </span>
+          </small>
+        {%- endif -%}
       </div>
       <div class="field">
         <input
@@ -132,6 +139,7 @@
         </button>
       </div>
     {%- endform -%}
+    </section>
   </div>
 </div>
 
