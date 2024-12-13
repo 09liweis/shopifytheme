@@ -733,7 +733,11 @@
 {% if product.template_suffix == '' %}
   {% render 'icon-row' %}
 
-  {% render 'mattress-layer', product: product %}
+  {% assign mattressLayer = product.metafields.custom.mattress_layer.value %}
+
+  {% if mattressLayer %}
+  {% render 'mattress-layer', mattressLayer: mattressLayer %}
+  {% endif %}
 {% endif %}
 
 {% schema %}

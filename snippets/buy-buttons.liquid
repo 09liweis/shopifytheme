@@ -148,4 +148,36 @@
 
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const addToCartButton = document.querySelector('[data-product-id]');
+      const freeGifts = document.querySelectorAll('[data-freegift-id]');
+      addToCartButton.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        function addGiftsToCart(items) {
+          fetch(window.Shopify.routes.root + 'cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ items }),
+          })
+            .then((response) => response.json())
+            .then((data) => console.log('Added to cart:', data))
+            .catch((error) => console.error('Error adding to cart:', error));
+        }
+
+        // Check if the qualifying product is added
+        const items = [...freeGifts].map((gift) => {
+          return {
+            id: gift.dataset.freegiftId,
+            quantity: 1,
+          };
+        });
+        addGiftsToCart(items);
+      });
+    });
+  </script>
 </div>

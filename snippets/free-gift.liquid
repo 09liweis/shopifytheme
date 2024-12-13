@@ -1,31 +1,35 @@
-<div class="gift-card-list">
-  Free Gift
-  {% for product in product.metafields.custom.free_gifts.value %}
-    <div class="gift-card-item">
-      <a href="{{ product.url }}">
-        <img
-          src="{{ product.featured_image | image_url: 'medium' }}"
-          alt="{{ product.title }}"
-          width="110px"
-          height="110px"
-        >
-        <h3>{{ product.title }}</h3>
-      </a>
+{% assign free_gifts = product.metafields.custom.free_gifts.value %}
+{% if free_gifts %}
+  <section class="gift-card-section">
+    <h2>Free Gift</h2>
+    <div class="gift-card-list">
+      {% for product in free_gifts.gift_products.value %}
+        <div class="gift-card-item" data-freegift-id="{{ product.variants[0].id }}">
+          <a href="{{ product.url }}">
+            {{
+              product.images[0]
+              | image_url: width: 110
+              | image_tag: class: 'header__heading-logo', alt: product.title, preload: true
+            }}
+            <h3>{{ product.title }}</h3>
+          </a>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
-</div>
-<style>
-  .gift-card-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .gift-card-item {
-    flex: 1 1 calc(33.333% - 20px);
-    text-align: center;
-  }
-  .gift-card-item img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
+  </section>
+  <style>
+    .gift-card-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .gift-card-item {
+      flex: 1 1 calc(33.333% - 20px);
+      text-align: center;
+    }
+    .gift-card-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+{% endif %}
