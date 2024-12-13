@@ -6,3 +6,7 @@
 - [x] FAQ section, background color, font style
 - [ ] layer section
 - [ ] google? reviews
+
+npm install -g @shopify/cli@latest
+
+shopify theme dev --store nitpez-h7
