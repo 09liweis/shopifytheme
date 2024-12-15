@@ -1,0 +1,14 @@
+{% assign product = product %} {# Ensure the product variable is available #}
+<div class="discount-product">
+  <h3>{{ product.title }}</h3>
+  <div class="product-image">
+    {{ product.images[0] | image_url: width: 300 | image_tag: class: 'product-image', alt: product.title }}
+  </div>
+  <div class="product-variants">
+    {% for variant in product.variants %}
+      <div class="variant">
+        <p>{{ variant.title }} - {{ variant.price | money }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
