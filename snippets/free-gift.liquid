@@ -1,31 +1,58 @@
 {% assign free_gifts = product.metafields.custom.free_gifts.value %}
 {% if free_gifts %}
+  {% assign free_gifts_total_price = 0 %}
   <section class="gift-card-section">
-    <h2>Free Gift</h2>
-    <div class="gift-card-list">
-      {% for product in free_gifts.gift_products.value %}
-        <div class="gift-card-item" data-freegift-id="{{ product.variants[0].id }}">
-          <a href="{{ product.url }}">
-            {{
-              product.images[0]
-              | image_url: width: 110
-              | image_tag: class: 'header__heading-logo', alt: product.title, preload: true
-            }}
-            <h3>{{ product.title }}</h3>
-          </a>
-        </div>
-      {% endfor %}
+    <h2 class="free-gift-title">Free Gift</h2>
+    <div class="gift-card-list-container">
+      <div class="gift-card-list">
+        {% for product in free_gifts.gift_products.value %}
+          {% assign product_price = product.variants[0].price %}
+          {% assign free_gifts_total_price = free_gifts_total_price | plus: product_price %}
+          <div class="gift-card-item" data-freegift-id="{{ product.variants[0].id }}">
+            <a href="{{ product.url }}">
+              {{
+                product.images[0]
+                | image_url: width: 110
+                | image_tag: class: 'header__heading-logo', alt: product.title, preload: true
+              }}
+              <h3>{{ product.title }}</h3>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="free-gift-total flex justify-between items-center">
+        <div>Free with Mattress</div>
+        <div>Value of {{ free_gifts_total_price | money }}</div>
+      </div>
     </div>
   </section>
   <style>
+    .free-gift-title {
+      background-color: #272c48;
+      color: #f9dcbe;
+      font-size: 21px;
+      width: 185px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 0;
+    }
+    .gift-card-list-container {
+      border-radius: 0 10px 10px 10px;
+      border: 1px solid #272c48;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .free-gift-total {
+      padding: 10px 20px;
+      border-bottom: 1px solid #272c48;
+    }
     .gift-card-list {
       display: flex;
-      flex-wrap: wrap;
       gap: 20px;
+      padding: 20px;
     }
     .gift-card-item {
-      flex: 1 1 calc(33.333% - 20px);
-      text-align: center;
     }
     .gift-card-item img {
       max-width: 100%;
