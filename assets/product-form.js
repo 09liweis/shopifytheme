@@ -17,8 +17,29 @@ if (!customElements.get('product-form')) {
         this.hideErrors = this.dataset.hideErrors === 'true';
       }
 
-      onSubmitHandler(evt) {
+      async addFreeGifts() {
+        const freeGifts = document.querySelectorAll('[data-freegift-id]');
+        if (freeGifts.length === 0) return;
+        const items = [...freeGifts].map((gift) => {
+          return {
+            id: gift.dataset.freegiftId,
+            quantity: 1,
+          };
+        });
+        const response = await fetch(window.Shopify.routes.root + 'cart/add.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ items }),
+        });
+        const data = await response.json();
+        return data;
+      }
+
+      async onSubmitHandler(evt) {
         evt.preventDefault();
+        const freeGiftsResponse = await this.addFreeGifts();
         if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
 
         this.handleErrorMessage();
