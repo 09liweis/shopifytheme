@@ -1,14 +1,77 @@
-{% assign product = product %} {# Ensure the product variable is available #}
-<div class="discount-product">
-  <h3>{{ product.title }}</h3>
-  <div class="product-image">
-    {{ product.images[0] | image_url: width: 300 | image_tag: class: 'product-image', alt: product.title }}
-  </div>
-  <div class="product-variants">
-    {% for variant in product.variants %}
-      <div class="variant">
-        <p>{{ variant.title }} - {{ variant.price | money }}</p>
+{% assign product = product.metafields.custom.discount_product.value.product.value %}
+{% if product %}
+  <div class="discount-product flex ">
+    <div class="product-image">
+      {{ product.images[0] | image_url: width: 300 | image_tag: class: 'product-image', alt: product.title }}
+    </div>
+    <div>
+      <h3>{{ product.title }}</h3>
+      <div class="product-variants">
+        {% for variant in product.variants %}
+          <div class="variant" id="{{variant.title| replace: " ", "-" }}" data-variant-id="{{ variant.id }}">
+            <p>{{ variant.title }}</p>
+            <p>{{ variant.price | money }}</p>
+          </div>
+        {% endfor %}
+        <button class="button" id="add-discount-product">Add</button>
       </div>
-    {% endfor %}
+    </div>
   </div>
-</div>
+  <style>
+    .discount-product {
+      border: 1px solid #272c48;
+      border-radius: 10px;
+    }
+    .discount-product .variant {
+      display: none;
+    }
+    .discount-product .variant.selected {
+      display: block;
+    }
+  </style>
+  <script>
+    function showDiscountVariant(variant) {
+      const variantElement = document.querySelector('.variant#' + variant.replace(' ', '-'));
+      if (variantElement) {
+        const variantElements = document.querySelectorAll('.variant');
+        for (let i = 0; i < variantElements.length; i++) {
+          variantElements[i].classList.remove('selected');
+        }
+        variantElement.classList.add('selected');
+      }
+    }
+
+    async function addDiscountProduct() {
+      const discountProduct = document.querySelector('.variant.selected');
+      const discountProductId = discountProduct.dataset.variantId;
+      const items = [{ id: discountProductId, quantity: 1 }];
+      const response = await fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ items }),
+      });
+      const data = await response.json();
+    }
+
+    const addDiscountProductButton = document.querySelector('#add-discount-product');
+    addDiscountProductButton.addEventListener('click', addDiscountProduct);
+
+    function bindEventListener() {
+      const mainProductVariantSelector = document.querySelector('.select__select');
+      let currentVariant = mainProductVariantSelector.value;
+      showDiscountVariant(currentVariant);
+
+      mainProductVariantSelector.addEventListener('input', (event) => {
+        const selectedVariant = event.target.value;
+        showDiscountVariant(selectedVariant);
+        setTimeout(() => {
+          bindEventListener();
+        }, 1000);
+      });
+    }
+
+    bindEventListener();
+  </script>
+{% endif %}

@@ -147,8 +147,8 @@
               {% when 'free_gift' %}
                 {% render 'free-gift', product: product %}
 
-              {% when 'discount-product' %}
-                {% render 'discount_product', product: product %}
+              {% when 'discount_product' %}
+                {% render 'discount-product', product: product %}
               {%- when 'inventory' -%}
                 <p
                   class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
