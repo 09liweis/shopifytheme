@@ -4,7 +4,7 @@
 - [ ] firmness style follow endy, variants with image
 - [x] update style for thumbnail
 - [x] FAQ section, background color, font style
-- [ ] layer section
+- [x] layer section
 - [ ] google? reviews
 
 npm install -g @shopify/cli@latest

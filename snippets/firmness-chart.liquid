@@ -60,12 +60,14 @@
   window.addEventListener('load', () => {
     var firmnessChartLink = document.querySelector('#open-firmness-chart');
     var firmnessChart = document.querySelector('#firmness-chart-container');
-    firmnessChartLink.addEventListener('click', () => {
-      firmnessChart.classList.toggle('hidden');
-    });
+    if (firmnessChartLink) {
+      firmnessChartLink.addEventListener('click', () => {
+        firmnessChart.classList.toggle('hidden');
+      });
 
-    firmnessChart.addEventListener('click', () => {
-      firmnessChart.classList.toggle('hidden');
-    });
+      firmnessChart.addEventListener('click', () => {
+        firmnessChart.classList.toggle('hidden');
+      });
+    }
   });
 </script>

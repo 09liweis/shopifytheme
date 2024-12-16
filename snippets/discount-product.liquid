@@ -1,19 +1,22 @@
 {% assign product = product.metafields.custom.discount_product.value.product.value %}
 {% if product %}
-  <div class="discount-product flex ">
-    <div class="product-image">
-      {{ product.images[0] | image_url: width: 300 | image_tag: class: 'product-image', alt: product.title }}
-    </div>
-    <div>
-      <h3>{{ product.title }}</h3>
-      <div class="product-variants">
-        {% for variant in product.variants %}
-          <div class="variant" id="{{variant.title| replace: " ", "-" }}" data-variant-id="{{ variant.id }}">
-            <p>{{ variant.title }}</p>
-            <p>{{ variant.price | money }}</p>
-          </div>
-        {% endfor %}
-        <button class="button" id="add-discount-product">Add</button>
+  <div class="discount-product">
+    <div class="discount-product-header">SAVE 25% on {{ product.title }} with mattress purchase</div>
+    <div class="discount-product-content grid grid--1-col-tablet grid--2-col-desktop">
+      <div class="grid__item">
+        {{ product.images[0] | image_url: width: 250 | image_tag: class: 'product-image', alt: product.title }}
+      </div>
+      <div class="grid__item">
+        <h4>{{ product.title }}</h4>
+        <div class="product-variants">
+          {% for variant in product.variants %}
+            <div class="variant" id="{{variant.title| replace: " ", "-" }}" data-variant-id="{{ variant.id }}">
+              <div>{{ variant.title }}</div>
+              <div>{{ variant.price | money }}</div>
+            </div>
+          {% endfor %}
+          <button class="button" id="add-discount-product">Add</button>
+        </div>
       </div>
     </div>
   </div>
@@ -21,6 +24,17 @@
     .discount-product {
       border: 1px solid #272c48;
       border-radius: 10px;
+    }
+    .discount-product-header {
+      padding: 10px 20px;
+      border-bottom: 1px solid #272c48;
+      color: #272c48;
+    }
+    .discount-product-content {
+      padding: 20px;
+    }
+    .product-image {
+      width: 100% !important;
     }
     .discount-product .variant {
       display: none;
@@ -53,10 +67,14 @@
         body: JSON.stringify({ items }),
       });
       const data = await response.json();
+      const cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+      cart.renderContents(data.items[0]);
     }
 
     const addDiscountProductButton = document.querySelector('#add-discount-product');
-    addDiscountProductButton.addEventListener('click', addDiscountProduct);
+    if (addDiscountProductButton) {
+      addDiscountProductButton.addEventListener('click', addDiscountProduct);
+    }
 
     function bindEventListener() {
       const mainProductVariantSelector = document.querySelector('.select__select');
