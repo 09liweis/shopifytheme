@@ -717,15 +717,15 @@ summary::-webkit-details-marker {
 
 *:focus-visible {
   outline: var(--focused-base-outline);
-  outline-offset: var(--focused-base-outline-offset);
-  box-shadow: var(--focused-base-box-shadow);
+  /* outline-offset: var(--focused-base-outline-offset);
+  box-shadow: var(--focused-base-box-shadow); */
 }
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
 .focused {
   outline: var(--focused-base-outline);
-  outline-offset: var(--focused-base-outline-offset);
-  box-shadow: var(--focused-base-box-shadow);
+  /* outline-offset: var(--focused-base-outline-offset);
+  box-shadow: var(--focused-base-box-shadow); */
 }
 
 /*
@@ -1276,9 +1276,9 @@ button.shopify-payment-button__button--unbranded {
 .customer button:hover::after,
 .shopify-payment-button__button--unbranded:hover::after {
   --border-offset: 1.3px;
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+  /* box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background)); */
 }
 
 .button--secondary:after {
@@ -2358,7 +2358,7 @@ input[type='checkbox'] {
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  background-color: #FDF4EB !important;
 }
 
 .header-wrapper--border-bottom {
@@ -2809,7 +2809,7 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: #272C48;
 }
 
 .header__menu-item:hover {
