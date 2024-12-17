@@ -1,7 +1,7 @@
 {% assign product = product.metafields.custom.discount_product.value.product.value %}
 {% if product %}
   <div class="discount-product">
-    <div class="discount-product-header">SAVE 25% on {{ product.title }} with mattress purchase</div>
+    <div class="discount-product-header flex items-center"><span class="product-add-on-dot"></span>SAVE 25% on {{ product.title }} with mattress purchase</div>
     <div class="discount-product-content grid grid--1-col-tablet grid--2-col-desktop">
       <div class="grid__item">
         {{ product.images[0] | image_url: width: 250 | image_tag: class: 'product-image', alt: product.title }}

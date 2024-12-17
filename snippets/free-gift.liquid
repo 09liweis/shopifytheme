@@ -9,24 +9,31 @@
           {% assign product_price = product.variants[0].price %}
           {% assign free_gifts_total_price = free_gifts_total_price | plus: product_price %}
           <div class="gift-card-item" data-freegift-id="{{ product.variants[0].id }}">
-            <a href="{{ product.url }}">
-              {{
-                product.images[0]
-                | image_url: width: 110
-                | image_tag: class: 'header__heading-logo', alt: product.title, preload: true
-              }}
-              <h3>{{ product.title }}</h3>
-            </a>
+            {{
+              product.images[0]
+              | image_url: width: 110, height: 110
+              | image_tag: class: '', alt: product.title, preload: true
+            }}
+            <h3 class="item-title">{{ product.title }}</h3>
           </div>
         {% endfor %}
       </div>
       <div class="free-gift-total flex justify-between items-center">
-        <div>Free with Mattress</div>
-        <div>Value of {{ free_gifts_total_price | money }}</div>
+        <div class="flex items-center"><span class="product-add-on-dot"></span>Free with Mattress</div>
+        <div>Value of <span style="color:#F9522E;">{{ free_gifts_total_price | money }}</span></div>
       </div>
     </div>
   </section>
   <style>
+    .product-add-on-dot {
+      display: inline-block;
+      background-color: #F9522E;
+      border: 5px solid #ccc;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      margin-right: 10px;
+    }
     .free-gift-title {
       background-color: #272c48;
       color: #f9dcbe;
@@ -52,11 +59,14 @@
       gap: 20px;
       padding: 20px;
     }
-    .gift-card-item {
+    .gift-card-item .item-title {
+      text-decoration: none;
+      margin-bottom: 0;
     }
     .gift-card-item img {
-      max-width: 100%;
-      height: auto;
+      /* width: 100%;
+      height: auto; */
+      border-radius: 10px;
     }
   </style>
 {% endif %}
