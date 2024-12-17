@@ -1,0 +1,20 @@
+{% comment %}
+  Render product rating
+
+  Accepts:
+  - rating: {Object} Product Rating
+
+  Usage:
+  {% render 'product-rating', rating: rating %}
+{% endcomment %}
+
+<div class="star-rating flex items-center" aria-hidden="true" style="text-align: left;">
+  {%- for i in (1..5) -%}
+    <div class="svg-wrapper">
+      {{- 'icon-rating.svg' | inline_asset_content -}}
+    </div>
+  {%- endfor -%}
+  {% if rating %}
+    <span style="font-size: 14px;">({{ rating }})</span>
+  {% endif %}
+</div>
