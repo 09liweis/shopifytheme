@@ -1,8 +1,36 @@
+<div class="contact-info" style="display: flex;">
+  <div style="flex: 1; padding-right: 10px;">
+    {% if section.settings.contact_image %}
+      <img
+        src="{{ section.settings.contact_image | image_url: width: 240, height: 240 }}"
+        alt="Contact Image"
+        width="300"
+        height="200"
+      >
+    {% endif %}
+  </div>
+
+  <div style="flex: 2; display: flex;">
+    <div style="flex: 1; padding-right: 10px;">
+      <h3>Contact Us Information</h3>
+      <div>{{ section.settings.contact_us_info }}</div>
+    </div>
+
+    <div style="flex: 1;">
+      <h3>For Other Inquiries Information</h3>
+      <div>{{ section.settings.other_inquiries_info }}</div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "Contact Info",
   "tag": "section",
   "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
   "settings": [
     {
       "type": "image_picker",
@@ -22,9 +50,6 @@
       "default": "General Inquiries: info@example.com\nSupport: support@example.com\nFeedback: feedback@example.com"
     }
   ],
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
   "presets": [
     {
       "name": "Contact Info"
@@ -32,23 +57,3 @@
   ]
 }
 {% endschema %}
-
-<div class="contact-info" style="display: flex;">
-  <div style="flex: 1; padding-right: 10px;">
-    {% if section.settings.contact_image %}
-      <img src="{{ section.settings.contact_image | img_url: 'medium' }}" alt="Contact Image">
-    {% endif %}
-  </div>
-
-  <div style="flex: 2; display: flex;">
-    <div style="flex: 1; padding-right: 10px;">
-      <h3>Contact Us Information</h3>
-      <p>{{ section.settings.contact_us_info }}</p>
-    </div>
-
-    <div style="flex: 1;">
-      <h3>For Other Inquiries Information</h3>
-      <p>{{ section.settings.other_inquiries_info }}</p>
-    </div>
-  </div>
-</div>
