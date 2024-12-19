@@ -13,12 +13,12 @@
   <div style="flex: 2; display: flex;">
     <div style="flex: 1; padding-right: 10px;">
       <h3>Contact Us Information</h3>
-      <div>{{ section.settings.contact_us_info }}</div>
+      {{ section.settings.contact_us_info }}
     </div>
 
     <div style="flex: 1;">
       <h3>For Other Inquiries Information</h3>
-      <div>{{ section.settings.other_inquiries_info }}</div>
+      {{ section.settings.other_inquiries_info }}
     </div>
   </div>
 </div>
@@ -41,13 +41,13 @@
       "type": "richtext",
       "id": "contact_us_info",
       "label": "Contact Us Information",
-      "default": "Phone: (123) 456-7890\nEmail: contact@example.com\nAddress: 123 Main St, City, State, ZIP"
+      "default": "<p>Phone: (123) 456-7890\nEmail: contact@example.com\nAddress: 123 Main St, City, State, ZIP</p>"
     },
     {
       "type": "richtext",
       "id": "other_inquiries_info",
       "label": "For Other Inquiries Information",
-      "default": "General Inquiries: info@example.com\nSupport: support@example.com\nFeedback: feedback@example.com"
+      "default": "<p>General Inquiries: info@example.com\nSupport: support@example.com\nFeedback: feedback@example.com</p>"
     }
   ],
   "presets": [
