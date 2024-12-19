@@ -1,0 +1,52 @@
+{% schema %}
+{
+  "name": "Contact Info",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "contact_image",
+      "label": "Contact Image"
+    },
+    {
+      "type": "richtext",
+      "id": "contact_us_info",
+      "label": "Contact Us Information",
+      "default": "Phone: (123) 456-7890\nEmail: contact@example.com\nAddress: 123 Main St, City, State, ZIP"
+    },
+    {
+      "type": "richtext",
+      "id": "other_inquiries_info",
+      "label": "For Other Inquiries Information",
+      "default": "General Inquiries: info@example.com\nSupport: support@example.com\nFeedback: feedback@example.com"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "presets": [
+    {
+      "name": "Contact Info"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="contact-info" style="display: flex;">
+  <div style="flex: 1; padding-right: 10px;">
+    {% if section.settings.contact_image %}
+      <img src="{{ section.settings.contact_image | img_url: 'medium' }}" alt="Contact Image">
+    {% endif %}
+  </div>
+
+  <div style="flex: 2; display: flex;">
+    <div style="flex: 1; padding-right: 10px;">
+      <h3>Contact Us Information</h3>
+      <p>{{ section.settings.contact_us_info }}</p>
+    </div>
+
+    <div style="flex: 1;">
+      <h3>For Other Inquiries Information</h3>
+      <p>{{ section.settings.other_inquiries_info }}</p>
+    </div>
+  </div>
+</div>
