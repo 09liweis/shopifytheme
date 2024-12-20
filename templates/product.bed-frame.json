@@ -82,9 +82,9 @@
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials & Certifications",
-            "icon": "leather",
-            "content": "<p>Our foam is CertiPUR-US® Certified, meaning it’s safe from VOCs (Volatile Organic Compounds), formaldehyde, and phthalates. The foams have been tested for low VOC emissions for indoor air quality (less than 0.5 parts per million).</p><ul><li>Three layers of breathable polyurethane foam.</li></ul><p>Our removable cover was thoughtfully designed, ensuring a seamless look and feel for your mattress.</p><ul><li>Top/Sides: 99% Polyester, 1% Spandex</li><li>Bottom: 100% Polypropylene</li></ul>",
+            "heading": "Product Details",
+            "icon": "star",
+            "content": "<ul><li>Fully upholstered in grey linen-like fabric </li><li>Horizontal stitch detailing on headboard for visual interest </li><li>Low profile</li><li>Platform bed; no box-spring or foundation required</li><li>Durable frame construction with solid wood, engineered wood, and plywood</li><li>Exposed low plastic legs in a black finish</li><li>Assemble required</li></ul>",
             "page": ""
           }
         },
