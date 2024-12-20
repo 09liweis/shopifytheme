@@ -134,14 +134,14 @@
         "heading_ajX8L9": {
           "type": "heading",
           "settings": {
-            "heading": "Quality Material s Means You Can Rest Easy",
+            "heading": "Contemporary Design, Easy Assembly",
             "heading_size": "h1"
           }
         },
         "text_YrgtE7": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Upgrade your bedroom with this modern upholstered bed. Featuring a sleek contemporary design, quality materials, and easy assembly, it’s the perfect blend of style and function.</p>",
             "text_style": "body"
           }
         }
@@ -152,7 +152,7 @@
       ],
       "settings": {
         "media_type": "image",
-        "image": "shopify://shop_images/5891GYbed_angle__bedroom__view.jpg",
+        "image": "shopify://shop_images/5892GYQqueenbed__l1_3.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
