@@ -150,11 +150,10 @@
           aria-required="true"
           placeholder="{{ 'templates.contact.form.firmness' | t }}"
         >
-          <option>Plush</option>
-          <option>Medium</option>
-          <option>Medium-Firm</option>
-          <option>Firm</option>
-          <option>Extra-Firm</option>
+          {% assign firmness_options = 'Plush,Medium,Medium-Firm,Firm,Extra-Firm' | split: ',' %}
+          {% for option in firmness_options %}
+            <option value="{{ option }}">{{ option }}</option>
+          {% endfor %}
         </select>
         <label class="field__label" for="ContactForm-firmness">{{ 'templates.contact.form.firmness' | t }}</label>
       </div>
@@ -169,10 +168,10 @@
           aria-required="true"
           placeholder="{{ 'templates.contact.form.shape' | t }}"
         >
-          <option>Standard Rectangle</option>
-          <option>Round</option>
-          <option>Oval</option>
-          <option>Heart</option>
+          {% assign shape_options = 'Standard Rectangle,Round,Oval,Heart' | split: ',' %}
+          {% for option in shape_options %}
+            <option value="{{ option }}">{{ option }}</option>
+          {% endfor %}
         </select>
         <label class="field__label" for="ContactForm-shape">{{ 'templates.contact.form.shape' | t }}</label>
       </div>
@@ -187,10 +186,10 @@
           aria-required="true"
           placeholder="{{ 'templates.contact.form.size' | t }}"
         >
-          <option>Twin</option>
-          <option>Full</option>
-          <option>Queen</option>
-          <option>King</option>
+          {% assign size_options = 'Twin,Full,Queen,King' | split: ',' %}
+          {% for option in size_options %}
+            <option value="{{ option }}">{{ option }}</option>
+          {% endfor %}
         </select>
         <label class="field__label" for="ContactForm-size">{{ 'templates.contact.form.size' | t }}</label>
       </div>
@@ -205,10 +204,10 @@
           aria-required="true"
           placeholder="{{ 'templates.contact.form.thickness' | t }}"
         >
-          <option>Low-Profile</option>
-          <option>Standard</option>
-          <option>Thick</option>
-          <option>Extra Thick</option>
+          {% assign thickness_options = 'Low-Profile,Standard,Thick,Extra Thick' | split: ',' %}
+          {% for option in thickness_options %}
+            <option value="{{ option }}">{{ option }}</option>
+          {% endfor %}
         </select>
         <label class="field__label" for="ContactForm-thickness">{{ 'templates.contact.form.thickness' | t }}</label>
       </div>
@@ -223,10 +222,10 @@
           aria-required="true"
           placeholder="{{ 'templates.contact.form.material' | t }}"
         >
-          <option>Memory Foam</option>
-          <option>Latex</option>
-          <option>Hybrid</option>
-          <option>Organic</option>
+          {% assign material_options = 'Memory Foam,Latex,Hybrid,Organic' | split: ',' %}
+          {% for option in material_options %}
+            <option value="{{ option }}">{{ option }}</option>
+          {% endfor %}
         </select>
         <label class="field__label" for="ContactForm-material">{{ 'templates.contact.form.material' | t }}</label>
       </div>
@@ -241,10 +240,10 @@
           aria-required="true"
           placeholder="{{ 'templates.contact.form.comfortlayer' | t }}"
         >
-          <option>Pillow-Top</option>
-          <option>Gel-Infused Foam</option>
-          <option>Zoned Support</option>
-          <option>None</option>
+          {% assign comfortlayer_options = 'Pillow-Top,Gel-Infused Foam,Zoned Support,None' | split: ',' %}
+          {% for option in comfortlayer_options %}
+            <option value="{{ option }}">{{ option }}</option>
+          {% endfor %}
         </select>
         <label class="field__label" for="ContactForm-comfortlayer">
           {{- 'templates.contact.form.comfortlayer' | t -}}
@@ -261,10 +260,10 @@
           aria-required="true"
           placeholder="{{ 'templates.contact.form.coverfabric' | t }}"
         >
-          <option>Breathable Cotton</option>
-          <option>Organic Wool</option>
-          <option>Cooling Fabric</option>
-          {% comment %} <option>Other (please specify)</option> {% endcomment %}
+          {% assign coverfabric_options = 'Breathable Cotton,Organic Wool,Cooling Fabric' | split: ',' %}
+          {% for option in coverfabric_options %}
+            <option value="{{ option }}">{{ option }}</option>
+          {% endfor %}
         </select>
         <label class="field__label" for="ContactForm-coverfabric">
           {{- 'templates.contact.form.coverfabric' | t -}}
