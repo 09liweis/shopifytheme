@@ -173,7 +173,6 @@
           <option>Round</option>
           <option>Oval</option>
           <option>Heart</option>
-          <option>Custom Shape</option>
         </select>
         <label class="field__label" for="ContactForm-shape">{{ 'templates.contact.form.shape' | t }}</label>
       </div>
@@ -192,7 +191,6 @@
           <option>Full</option>
           <option>Queen</option>
           <option>King</option>
-          <option>Custom size</option>
         </select>
         <label class="field__label" for="ContactForm-size">{{ 'templates.contact.form.size' | t }}</label>
       </div>
@@ -266,7 +264,7 @@
           <option>Breathable Cotton</option>
           <option>Organic Wool</option>
           <option>Cooling Fabric</option>
-          <option>Other (please specify)</option>
+          {% comment %} <option>Other (please specify)</option> {% endcomment %}
         </select>
         <label class="field__label" for="ContactForm-coverfabric">
           {{- 'templates.contact.form.coverfabric' | t -}}
@@ -284,7 +282,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.contact-form.name",
+  "name": "Design your mattress",
   "tag": "section",
   "class": "section",
   "disabled_on": {

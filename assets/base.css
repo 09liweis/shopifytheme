@@ -1595,7 +1595,7 @@ details[open] > .share-button__fallback {
   min-height: calc(var(--inputs-border-width) * 2);
   min-width: calc(7rem + (var(--inputs-border-width) * 2));
   position: relative;
-  /* border: 0; */
+  border: 1px solid;
 }
 
 .field:before,
@@ -1748,6 +1748,10 @@ details[open] > .share-button__fallback {
   color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.1rem;
   line-height: 1.5;
+}
+
+select.field__input {
+  padding-bottom: 0 !important;
 }
 
 .field__input:focus ~ .field__label,
