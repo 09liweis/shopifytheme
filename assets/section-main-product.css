@@ -943,11 +943,11 @@ a.product__text {
   }
 
   .product--medium .thumbnail-list {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .product--large .thumbnail-list {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
