@@ -9,6 +9,46 @@
 {% endcomment %}
 {%- if product != blank -%}
   <div class="compare-product">
+    <div class="compare-product__image-wrapper">
+      {%- if product.featured_image -%}
+        <img
+          srcset="
+            {%- if product.featured_image.width >= 165 -%}{{ product.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
+            {%- if product.featured_image.width >= 360 -%}{{ product.featured_image | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if product.featured_image.width >= 533 -%}{{ product.featured_image | image_url: width: 533 }} 533w,{%- endif -%}
+            {%- if product.featured_image.width >= 720 -%}{{ product.featured_image | image_url: width: 720 }} 720w,{%- endif -%}
+            {%- if product.featured_image.width >= 940 -%}{{ product.featured_image | image_url: width: 940 }} 940w,{%- endif -%}
+            {%- if product.featured_image.width >= 1066 -%}{{ product.featured_image | image_url: width: 1066 }} 1066w{%- endif -%}
+          "
+          src="{{ product.featured_image | image_url: width: 533 }}"
+          sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+          alt="{{ product.featured_image.alt | escape }}"
+          loading="lazy"
+          width="{{ product.featured_image.width }}"
+          height="{{ product.featured_image.height }}"
+        >
+      {%- endif -%}
+
+      {%- if product.tags -%}
+        <div class="compare-product__tag best-seller">{{ product.tags | join: ', ' }}</div>
+      {%- endif -%}
+    </div>
+
+    <div class="compare-product__content">
+      {% render 'product-rating', rating: rating %}
+      <div class="flex justify-between items-center">
+        <h3 class="compare-product__title">{{ product.title }}</h3>
+        <div class="compare-product__price-wrapper">
+          <span class="compare-product__price-label">from</span>
+          <span class="compare-product__price">
+            {{- product.selected_or_first_available_variant.price | money_without_currency -}}
+          </span>
+        </div>
+      </div>
+      {%- if product.metafields.custom.comfort_level != blank -%}
+        <p class="compare-product__description">{{ product.metafields.custom.comfort_level }}</p>
+      {%- endif -%}
+    </div>
     {%- if isPageVersion -%}
       <h3>Feel and pressure relief</h3>
       <p>{{ product.metafields.custom.feel_and_pressure }}</p>
@@ -62,50 +102,9 @@
 
       <h3>Cooling Feature</h3>
       <p>{{ product.metafields.custom.cooling_feature }}</p>
-
-    {% else %}
-      <div class="compare-product__image-wrapper">
-        {%- if product.featured_image -%}
-          <img
-            srcset="
-              {%- if product.featured_image.width >= 165 -%}{{ product.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
-              {%- if product.featured_image.width >= 360 -%}{{ product.featured_image | image_url: width: 360 }} 360w,{%- endif -%}
-              {%- if product.featured_image.width >= 533 -%}{{ product.featured_image | image_url: width: 533 }} 533w,{%- endif -%}
-              {%- if product.featured_image.width >= 720 -%}{{ product.featured_image | image_url: width: 720 }} 720w,{%- endif -%}
-              {%- if product.featured_image.width >= 940 -%}{{ product.featured_image | image_url: width: 940 }} 940w,{%- endif -%}
-              {%- if product.featured_image.width >= 1066 -%}{{ product.featured_image | image_url: width: 1066 }} 1066w{%- endif -%}
-            "
-            src="{{ product.featured_image | image_url: width: 533 }}"
-            sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            alt="{{ product.featured_image.alt | escape }}"
-            loading="lazy"
-            width="{{ product.featured_image.width }}"
-            height="{{ product.featured_image.height }}"
-          >
-        {%- endif -%}
-
-        {%- if product.tags -%}
-          <div class="compare-product__tag best-seller">{{ product.tags | join: ', ' }}</div>
-        {%- endif -%}
-      </div>
-
-      <div class="compare-product__content">
-        {% render 'product-rating', rating: rating %}
-        <div class="flex justify-between items-center">
-          <h3 class="compare-product__title">{{ product.title }}</h3>
-          <div class="compare-product__price-wrapper">
-            <span class="compare-product__price-label">from</span>
-            <span class="compare-product__price">
-              {{- product.selected_or_first_available_variant.price | money_without_currency -}}
-            </span>
-          </div>
-        </div>
-        {%- if product.metafields.custom.comfort_level != blank -%}
-          <p class="compare-product__description">{{ product.metafields.custom.comfort_level }}</p>
-        {%- endif -%}
-
-        <a href="{{ product.url }}" class="button button--primary"> Shop Now </a>
-      </div>
     {%- endif -%}
+    <div style="text-align: center;">
+      <a href="{{ product.url }}" class="button button--primary"> Shop Now </a>
+    </div>
   </div>
 {%- endif -%}
