@@ -252,10 +252,82 @@
     },
     "form": {
       "type": "custom-mattress-form",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_HLJxR8": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_fDeDAJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does The Dawn Mattress compare to Casper's higher-priced mattresses?",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_QQweUP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long will a Dawn Mattress remain comfortable and supportive?",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_8yHEwU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the Dawn Mattress made of?",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_J8QDxJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What certifications does the Dawn mattress have?",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_txdmBt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What kind of bed frame or foundation should I use with the Dawn Mattress?",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_fDeDAJ",
+        "collapsible_row_QQweUP",
+        "collapsible_row_8yHEwU",
+        "collapsible_row_J8QDxJ",
+        "collapsible_row_txdmBt"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently asked questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -268,6 +340,7 @@
     "image_with_text_hCneeT",
     "image_with_text_4iic37",
     "image_with_text_PYPB3g",
-    "form"
+    "form",
+    "collapsible_content_HLJxR8"
   ]
 }
