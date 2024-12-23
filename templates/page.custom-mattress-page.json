@@ -16,6 +16,240 @@
         "padding_bottom": 28
       }
     },
+    "image_with_text_VcXkFG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9g7bQm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Personalized Comfort & Style",
+            "heading_size": "h1"
+          }
+        },
+        "text_W3e9Bi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are experts at providing \"out-of-the- box\" solutions for<br/>your mattress and bedding needs. Whether for a family<br/>bed, special pet bed, or extra length to fit your height—we<br/>can make it for you.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9g7bQm",
+        "text_W3e9Bi"
+      ],
+      "settings": {
+        "media_type": "image",
+        "image": "shopify://shop_images/Banner-01.png",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_6pFiM4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_aewAma": {
+          "type": "heading",
+          "settings": {
+            "heading": "CUSTOM MATTRESSES",
+            "heading_size": "h1"
+          }
+        },
+        "text_4jiJUf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our sleep consultants use in-depth insight and<br/>analysis into your individual needs to match<br/>you with the best sleep system for you (and<br/>your partner). So whether you have a petite<br/>build or your partner is a bodybuilder, we can<br/>adjust each side of the bed to work well for</p>",
+            "text_style": "body"
+          }
+        },
+        "button_pRK4eH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_aewAma",
+        "text_4jiJUf",
+        "button_pRK4eH"
+      ],
+      "settings": {
+        "media_type": "image",
+        "image": "shopify://shop_images/bedroom_img.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_hCneeT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Q3HyyY": {
+          "type": "heading",
+          "settings": {
+            "heading": "CUSTOM DESIGNS & MATERIALS",
+            "heading_size": "h1"
+          }
+        },
+        "text_39NXTC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We can tailor-make mattresses to suit your<br/>space and interior design needs. Even a non-<br/>traditional shape from narrow, round, short, or<br/>heart-shaped is something we can create.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_XVhrM3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Q3HyyY",
+        "text_39NXTC",
+        "button_XVhrM3"
+      ],
+      "settings": {
+        "media_type": "image",
+        "image": "shopify://shop_images/Upholstered-Wooden-Bed-Frame_Lifestyle_Acacia_Slate_Angle-700x700.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_4iic37": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_7xgf7x": {
+          "type": "heading",
+          "settings": {
+            "heading": "BOATS & RVS",
+            "heading_size": "h1"
+          }
+        },
+        "text_nt3p9Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Take your comfort on the road or to the sea.<br/>Unusual shapes and depths are no problem for<br/>our designers and artisans. We can help with<br/>measurements and consult with you to ensure<br/>a perfect fit for your RV or boat.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_jBMEpr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7xgf7x",
+        "text_nt3p9Q",
+        "button_jBMEpr"
+      ],
+      "settings": {
+        "media_type": "image",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_PYPB3g": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_U3Pqbd": {
+          "type": "heading",
+          "settings": {
+            "heading": "ONE & ONE SPLIT MATTRESS WITH TOPER(OPTIONAL)",
+            "heading_size": "h1"
+          }
+        },
+        "text_QfaBrd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Customize your comfort with the One & One Comfort<br/>Split Mattress. Perfect for cöuples with different sleep<br/>preferences, adjust each side to your ideal firmness.<br/>Add an optional luxurious topper for unified comfort<br/>both of you.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_XwLPtP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_U3Pqbd",
+        "text_QfaBrd",
+        "button_XwLPtP"
+      ],
+      "settings": {
+        "media_type": "image",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "form": {
       "type": "custom-mattress-form",
       "settings": {
@@ -29,6 +263,11 @@
   },
   "order": [
     "main",
+    "image_with_text_VcXkFG",
+    "image_with_text_6pFiM4",
+    "image_with_text_hCneeT",
+    "image_with_text_4iic37",
+    "image_with_text_PYPB3g",
     "form"
   ]
 }
