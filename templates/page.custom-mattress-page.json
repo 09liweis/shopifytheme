@@ -250,6 +250,72 @@
         "padding_bottom": 36
       }
     },
+    "multirow_Wk9mmy": {
+      "type": "multirow",
+      "blocks": {
+        "row_j7KpT7": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "1. Design Your Mattress",
+            "text": "<p>Share your preferences for size, shape, materials, and special features.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_qxPiea": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "2. Design Proposal & Quotation",
+            "text": "<p>Receive a customized quote and review the design proposal.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_WPkge9": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "3. Approve & Confirm Order",
+            "text": "<p>Approve design and confirm order</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_6d4Fdp": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "4. Production & Delivery",
+            "text": "<p>Build and deliver your mattress to your doorstep.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_j7KpT7",
+        "row_qxPiea",
+        "row_WPkge9",
+        "row_6d4Fdp"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "subtitle",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-right",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "form": {
       "type": "custom-mattress-form",
       "disabled": true,
@@ -340,6 +406,7 @@
     "image_with_text_hCneeT",
     "image_with_text_4iic37",
     "image_with_text_PYPB3g",
+    "multirow_Wk9mmy",
     "form",
     "collapsible_content_HLJxR8"
   ]
