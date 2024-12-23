@@ -78,11 +78,20 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "contact_info_8zXGJY": {
+      "type": "contact-info",
+      "settings": {
+        "contact_image": "shopify://shop_images/Cover5.jpg",
+        "contact_us_info": "<p>Phone: (123) 456-7890<br/>Email: contact@example.com<br/>Address: 123 Main St, City, State, ZIP</p>",
+        "other_inquiries_info": "<p>General Inquiries: info@example.com<br/>Support: support@example.com<br/>Feedback: feedback@example.com</p>"
+      }
     }
   },
   "order": [
     "main",
     "form",
-    "collapsible_content_7Xnmbq"
+    "collapsible_content_7Xnmbq",
+    "contact_info_8zXGJY"
   ]
 }
