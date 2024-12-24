@@ -1,22 +1,21 @@
-<div class="contact-info" style="display: flex;">
-  <div style="flex: 1; padding-right: 10px;">
+<div class="contact-info grid">
+  <div class="grid__item">
     {% if section.settings.contact_image %}
       <img
         src="{{ section.settings.contact_image | image_url: width: 240, height: 240 }}"
         alt="Contact Image"
-        width="300"
-        height="200"
+        style="width: 100%;"
       >
     {% endif %}
   </div>
 
-  <div style="flex: 2; display: flex;">
-    <div style="flex: 1; padding-right: 10px;">
+  <div class="grid__item grid">
+    <div class="grid__item" style="padding: 20px;">
       <h3>Contact Us Information</h3>
       {{ section.settings.contact_us_info }}
     </div>
 
-    <div style="flex: 1;">
+    <div class="grid__item" style="padding: 20px;">
       <h3>For Other Inquiries Information</h3>
       {{ section.settings.other_inquiries_info }}
     </div>
