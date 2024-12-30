@@ -1,0 +1,25 @@
+<section>
+  {{
+    section.settings.image
+    | image_url: width: 3840
+    | image_tag:
+      class: ''
+  }}
+</section>
+{% schema %}
+{
+  "name": "Page Image",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ]
+}
+{% endschema %}
