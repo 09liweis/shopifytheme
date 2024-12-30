@@ -25,6 +25,36 @@
         "show_text_below": true
       }
     },
+    "rich_text_XfadC9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xFxJ4G": {
+          "type": "heading",
+          "settings": {
+            "heading": "Custom & Oversized Mattresses",
+            "heading_size": "h1"
+          }
+        },
+        "text_Czpdx3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enjoy Restful, Quality Sleep Customized Just for You</p><p>You Deserve a Restful and quality Sleep Every Night</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xFxJ4G",
+        "text_Czpdx3"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -418,6 +448,7 @@
   },
   "order": [
     "image_banner_Fmjzdz",
+    "rich_text_XfadC9",
     "main",
     "image_with_text_VcXkFG",
     "image_with_text_6pFiM4",
