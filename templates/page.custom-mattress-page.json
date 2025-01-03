@@ -421,6 +421,24 @@
             "row_content": "<p>Yes, we accommodate custom shapes and designs, including round, oval, or irregular contours. Our expert team works with you to create a mattress that meets your specific requirements, whether it’s for a unique bed frame, a specialty room, or other needs.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_Gj6xVf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I provide measurements for a custom mattress?",
+            "icon": "check_mark",
+            "row_content": "<p>You can provide your own measurements, and our team will guide you through the process to ensure they are accurate. If needed, we can offer tips and advice to help you measure your space or existing mattress correctly.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bKadHA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I add features like cooling covers orhypoallergenic materials?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, we offer a range of customizable features, including cooling covers to regulate temperature, hypoallergenic materials for allergy relief, and motion isolation layers to minimize partner disturbance. These enhancements<br/>help create the perfect sleep environment.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -428,7 +446,9 @@
         "collapsible_row_QQweUP",
         "collapsible_row_8yHEwU",
         "collapsible_row_J8QDxJ",
-        "collapsible_row_txdmBt"
+        "collapsible_row_txdmBt",
+        "collapsible_row_Gj6xVf",
+        "collapsible_row_bKadHA"
       ],
       "settings": {
         "caption": "",
