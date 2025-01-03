@@ -297,6 +297,29 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_fQJyxf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AaftfV": {
+          "type": "heading",
+          "settings": {
+            "heading": "4 Easy Steps",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AaftfV"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "multirow_Wk9mmy": {
       "type": "multirow",
       "blocks": {
@@ -475,6 +498,7 @@
     "image_with_text_hCneeT",
     "image_with_text_4iic37",
     "image_with_text_PYPB3g",
+    "rich_text_fQJyxf",
     "multirow_Wk9mmy",
     "form",
     "collapsible_content_HLJxR8"
