@@ -214,9 +214,9 @@
         "collapsible_row_a3mgrP": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How many pieces does the bed frame come in?",
+            "heading": "Is it easy to assemble the bed?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>The Upholstered Bed is shipped in 2 boxes with the assemble instruction inside.The Upholstered Bed is thoughtfully designed so you can easily assemble it in 10 minutes or less.</p>",
             "page": ""
           }
         },
