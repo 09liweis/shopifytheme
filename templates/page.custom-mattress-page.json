@@ -380,45 +380,45 @@
         "collapsible_row_fDeDAJ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How does The Dawn Mattress compare to Casper's higher-priced mattresses?",
+            "heading": "Do you offer oversized mattresses?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Yes, we specialize in creating oversized mattresses for larger beds or<br/>unique spaces. Whether you need extra width, length, or both, we can design and<br/>craft a mattress that fits perfectly without compromising on comfort or<br/>quality.</p>",
             "page": ""
           }
         },
         "collapsible_row_QQweUP": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How long will a Dawn Mattress remain comfortable and supportive?",
+            "heading": "Can I choose the materials for my custom mattress?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Absolutely! We offer a variety of high-quality materials, including memory foam for contouring support, latex for durability and bounce, and hybrid combinations for balanced comfort. You can select the material that best suits your preferences and sleep needs.</p>",
             "page": ""
           }
         },
         "collapsible_row_8yHEwU": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What is the Dawn Mattress made of?",
+            "heading": "Do you design mattresses for boats and RVs?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Yes, we create custom mattresses specifically for boats and RVs. Our mattresses are designed to fit unique dimensions and contours while using<br/>durable materials to withstand movement and environmental changes, ensuring<br/>comfort on the road or water.</p>",
             "page": ""
           }
         },
         "collapsible_row_J8QDxJ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What certifications does the Dawn mattress have?",
+            "heading": "What is a One & One Split Mattress?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>A One & One Split Mattress allows each side to have a different firmness level, making it ideal for couples with varying sleep preferences. This design ensures individual comfort while maintaining a unified surface. Optional features like a luxurious topper can be added for shared comfort.</p>",
             "page": ""
           }
         },
         "collapsible_row_txdmBt": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What kind of bed frame or foundation should I use with the Dawn Mattress?",
+            "heading": "Can I request a unique shape or design for my mattress?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Yes, we accommodate custom shapes and designs, including round, oval, or irregular contours. Our expert team works with you to create a mattress that meets your specific requirements, whether it’s for a unique bed frame, a specialty room, or other needs.</p>",
             "page": ""
           }
         }
