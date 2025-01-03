@@ -46,26 +46,30 @@
                       >
                         {% assign product = childlink.object %}
 
-                        {% if product.tags.size > 0 %}
-                          <span class="mega-menu__link-label">{{ product.tags }}</span>
-                        {% endif %}
+                        {% if product.images[0] %}
+                          {% if product.tags.size > 0 %}
+                            <span class="mega-menu__link-label">{{ product.tags }}</span>
+                          {% endif %}
 
-                        {{
-                          product.images[0]
-                          | image_url: width: 500
-                          | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
-                        }}
+                          {{
+                            product.images[0]
+                            | image_url: width: 500
+                            | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
+                          }}
+                          <div class="flex justify-between items-center">
+                            <span>{{ childlink.title | escape }}</span>
+                            <p>
+                              from
+                              <span class="text-orange">
+                                $
+                                {{- product.selected_or_first_available_variant.price | money_without_currency -}}
+                              </span>
+                            </p>
+                        </div>
+                      {% else %}
+                      {{- childlink.title | escape -}}
+                      {% endif %}
                       </a>
-                      <div class="flex justify-between items-center">
-                        <span>{{ childlink.title | escape }}</span>
-                        <p>
-                          from
-                          <span class="text-orange">
-                            $
-                            {{- product.selected_or_first_available_variant.price | money_without_currency -}}
-                          </span>
-                        </p>
-                      </div>
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
