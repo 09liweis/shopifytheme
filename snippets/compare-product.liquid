@@ -5,7 +5,7 @@
   - product: {Object} Product Liquid object (optional)
 
   Usage:
-  {% render 'card-product', show_vendor: section.settings.show_vendor %}
+  {% render 'compare-product', product: product %}
 {% endcomment %}
 {%- if product != blank -%}
   <div class="compare-product">
