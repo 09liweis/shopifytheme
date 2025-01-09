@@ -58,28 +58,29 @@
 </style>
 
 {% assign layerItems = mattressLayer.layer_items.value %}
+{% assign layer_image = product.metafields.custom.construction_materials %}
 
 <div class="page-width scroll-trigger animate--slide-in">
   <h2 class="layer-heading">Engineered for Lasting Comfort</h2>
-  <div class="flex items-center">
-    <div id="layer-image-container" style="width: 50%;">
-      {% assign layer_points = '1,2,3,4' | split: ',' %}
+  <div class="grid grid--1-col-tablet-down grid--2-col-desktop">
+    <div id="layer-image-container" class="grid__item">
+      {% comment %} {% assign layer_points = '1,2,3,4' | split: ',' %}
       {% for point in layer_points %}
         <div class="layer-point {% if point == '1' %} active {% endif %}" id="layer-point{{ point }}">{{ point }}</div>
-      {% endfor %}
+      {% endfor %} {% endcomment %}
       {{
-        mattressLayer.layer_image.value
+        layer_image.value
         | image_url: width: 600
         | image_tag: class: 'motion-reduce w-full', preload: true
       }}
     </div>
-    <div class="layer-items" style="width: 50%;">
+    <div class="layer-items grid__item">
       {% for layerItem in layerItems %}
         {% assign index = forloop.index %}
         <div class="layer-item flex">
           <div>
             <div id="layer-item{{ index }}" class="layer-point {% if index == 1 %} active {% endif %}">
-              {{ index }}
+              {% comment %} {{ index }} {% endcomment %}
             </div>
           </div>
           <div>

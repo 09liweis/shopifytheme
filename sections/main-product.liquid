@@ -742,7 +742,7 @@
   {% assign mattressLayer = product.metafields.custom.mattress_layer.value %}
 
   {% if mattressLayer %}
-    {% render 'mattress-layer', mattressLayer: mattressLayer %}
+    {% render 'mattress-layer', mattressLayer: mattressLayer, product: product %}
   {% endif %}
 {% endif %}
 
