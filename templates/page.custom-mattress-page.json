@@ -86,6 +86,7 @@
         "text_W3e9Bi"
       ],
       "settings": {
+        "bg_color": "#f9dcbe",
         "media_type": "image",
         "image": "shopify://shop_images/Banner-01.png",
         "video_url": "",
@@ -135,6 +136,7 @@
         "button_pRK4eH"
       ],
       "settings": {
+        "bg_color": "",
         "media_type": "image",
         "image": "shopify://shop_images/bedroom_img.jpg",
         "video_url": "",
@@ -184,6 +186,7 @@
         "button_XVhrM3"
       ],
       "settings": {
+        "bg_color": "",
         "media_type": "image",
         "image": "shopify://shop_images/Upholstered-Wooden-Bed-Frame_Lifestyle_Acacia_Slate_Angle-700x700.jpg",
         "video_url": "",
@@ -233,6 +236,7 @@
         "button_jBMEpr"
       ],
       "settings": {
+        "bg_color": "",
         "media_type": "image",
         "video_url": "",
         "height": "adapt",
@@ -281,6 +285,7 @@
         "button_XwLPtP"
       ],
       "settings": {
+        "bg_color": "",
         "media_type": "image",
         "video_url": "",
         "height": "adapt",
