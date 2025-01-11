@@ -355,6 +355,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
+        "column_bg_color": "#f9dcbe",
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Button label",
