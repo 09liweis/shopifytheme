@@ -88,7 +88,7 @@
       "settings": {
         "bg_color": "#f9dcbe",
         "media_type": "image",
-        "image": "shopify://shop_images/Banner-01.png",
+        "image": "shopify://shop_images/mattress_Room_view.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -188,7 +188,7 @@
       "settings": {
         "bg_color": "#f9dcbe",
         "media_type": "image",
-        "image": "shopify://shop_images/Upholstered-Wooden-Bed-Frame_Lifestyle_Acacia_Slate_Angle-700x700.jpg",
+        "image": "shopify://shop_images/Customize_mattress_material.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -238,6 +238,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
+        "image": "shopify://shop_images/custom_mattress_for_boat.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
