@@ -88,7 +88,7 @@
       "settings": {
         "bg_color": "#f9dcbe",
         "media_type": "image",
-        "image": "shopify://shop_images/mattress_Room_view.jpg",
+        "image": "shopify://shop_images/custom_shape_mattress.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -138,7 +138,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/bedroom_img.jpg",
+        "image": "shopify://shop_images/custom_mattress_with_diverse_firmness.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
