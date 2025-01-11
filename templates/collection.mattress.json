@@ -43,6 +43,7 @@
         "column_aqWJ7T": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Elegance_Mattress_Natural_Latex.jpg",
             "title": "Form Mattresses",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -52,6 +53,7 @@
         "column_f3VeD3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ab151960cc6e0aacd8b1cdcef33d4f611a6f1ae2-1280x1600.jpg",
             "title": "Hybrid Mattresses",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -61,6 +63,7 @@
         "column_Hwe7tk": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Homeplus.png",
             "title": "Natural Latex Mattresses",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
