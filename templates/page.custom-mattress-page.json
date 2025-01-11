@@ -308,6 +308,7 @@
         "column_fwiNXY": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Palm_Latex_Mattress_Natural_Latex.jpg",
             "title": "Design Your Mattress",
             "text": "<p>Share your preferences for size, shape, materials, and special features.</p>",
             "link_label": "",
@@ -317,6 +318,7 @@
         "column_wFARUL": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Eco_Palm_Mattress_Cotton_Fabric.jpg",
             "title": "Design Proposal & Quotation",
             "text": "<p>Receive a customized quote and review the design proposal.</p>",
             "link_label": "",
@@ -326,6 +328,7 @@
         "column_geDfa6": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Back-Pain-Relief-_-Support.jpg",
             "title": "Approve & Confirm Order",
             "text": "<p>Approve design and confirm order</p>",
             "link_label": "",
@@ -335,6 +338,7 @@
         "column_tDy8Yf": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/cd11a2319c233ffa3238bcfd821542fba649ceaf-1720x1038.jpg",
             "title": "Production & Delivery",
             "text": "<p>Build and deliver your mattress to your doorstep.</p>",
             "link_label": "",
