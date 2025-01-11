@@ -302,91 +302,66 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_fQJyxf": {
-      "type": "rich-text",
+    "multicolumn_g4NgKT": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_AaftfV": {
-          "type": "heading",
+        "column_fwiNXY": {
+          "type": "column",
           "settings": {
-            "heading": "4 Easy Steps",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_AaftfV"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "multirow_Wk9mmy": {
-      "type": "multirow",
-      "blocks": {
-        "row_j7KpT7": {
-          "type": "row",
-          "settings": {
-            "caption": "",
-            "heading": "1. Design Your Mattress",
+            "title": "Design Your Mattress",
             "text": "<p>Share your preferences for size, shape, materials, and special features.</p>",
-            "button_label": "",
-            "button_link": ""
+            "link_label": "",
+            "link": ""
           }
         },
-        "row_qxPiea": {
-          "type": "row",
+        "column_wFARUL": {
+          "type": "column",
           "settings": {
-            "caption": "",
-            "heading": "2. Design Proposal & Quotation",
+            "title": "Design Proposal & Quotation",
             "text": "<p>Receive a customized quote and review the design proposal.</p>",
-            "button_label": "",
-            "button_link": ""
+            "link_label": "",
+            "link": ""
           }
         },
-        "row_WPkge9": {
-          "type": "row",
+        "column_geDfa6": {
+          "type": "column",
           "settings": {
-            "caption": "",
-            "heading": "3. Approve & Confirm Order",
+            "title": "Approve & Confirm Order",
             "text": "<p>Approve design and confirm order</p>",
-            "button_label": "",
-            "button_link": ""
+            "link_label": "",
+            "link": ""
           }
         },
-        "row_6d4Fdp": {
-          "type": "row",
+        "column_tDy8Yf": {
+          "type": "column",
           "settings": {
-            "caption": "",
-            "heading": "4. Production & Delivery",
+            "title": "Production & Delivery",
             "text": "<p>Build and deliver your mattress to your doorstep.</p>",
-            "button_label": "",
-            "button_link": ""
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "row_j7KpT7",
-        "row_qxPiea",
-        "row_WPkge9",
-        "row_6d4Fdp"
+        "column_fwiNXY",
+        "column_wFARUL",
+        "column_geDfa6",
+        "column_tDy8Yf"
       ],
       "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "subtitle",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "align-right",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
+        "title": "4 Easy Steps",
+        "subtitle": "",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -503,8 +478,7 @@
     "image_with_text_hCneeT",
     "image_with_text_4iic37",
     "image_with_text_PYPB3g",
-    "rich_text_fQJyxf",
-    "multirow_Wk9mmy",
+    "multicolumn_g4NgKT",
     "form",
     "collapsible_content_HLJxR8"
   ]
