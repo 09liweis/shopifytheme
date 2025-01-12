@@ -101,11 +101,13 @@
 .multicolumn-list__item.center .media--adapt,
 .multicolumn-list__item .media--adapt .multicolumn-card__image {
   width: auto;
+  position: static;
+  margin: auto;
 }
 
 .multicolumn-list__item.center .media--adapt img {
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
 }
 
 @media screen and (max-width: 749px) {

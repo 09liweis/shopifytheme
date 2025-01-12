@@ -36,7 +36,7 @@
               and section.settings.media_type == 'image'
               and section.settings.image != blank
             %}
-              style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
+              {% comment %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;" {% endcomment %}
             {% endif %}
           >
             {%- case section.settings.media_type -%}
