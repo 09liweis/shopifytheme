@@ -310,7 +310,7 @@
         "column_fwiNXY": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Design_Mattress_icon_ac0ae4b3-fdf8-4f31-8faf-90edea844b46.jpg",
+            "image": "shopify://shop_images/Design_Mattress_Idear_icon_ef45d6e8-c208-49ef-a002-4c14ce577215.png",
             "title": "1.Design Your Mattress",
             "text": "<p>Share your preferences for size, shape, materials, and special features.</p>",
             "link_label": "",
@@ -330,7 +330,7 @@
         "column_geDfa6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/confirm_icon_689164de-b596-4bf7-8f24-c4d854a9745f.png",
+            "image": "shopify://shop_images/Confirm_Mattress_order.png",
             "title": "3.Approve & Confirm Order",
             "text": "<p>Approve design and confirm order</p>",
             "link_label": "",
