@@ -3696,3 +3696,9 @@ details-disclosure > details {
 #shopify-section-template--23641922437436__multicolumn_qxCUi8 {
   background-color: #FDF9F5;
 }
+
+.star-rating {
+  color: #ff6b6b;
+  font-size: 20px;
+  column-gap: 4px;
+}
