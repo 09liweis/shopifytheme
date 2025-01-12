@@ -288,6 +288,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
+        "image": "shopify://shop_images/custom_one_to_one_split_mattress.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
