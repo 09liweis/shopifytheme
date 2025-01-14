@@ -58,6 +58,13 @@
             "swatch_shape": "circle"
           }
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
         "free_gift_wpijTQ": {
           "type": "free_gift",
           "settings": {}
@@ -65,13 +72,6 @@
         "discount_product_CaAHyk": {
           "type": "discount_product",
           "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": true
-          }
         },
         "description": {
           "type": "description",
@@ -104,9 +104,9 @@
         "price",
         "icon_with_text_U8bxgc",
         "variant_picker",
+        "buy_buttons",
         "free_gift_wpijTQ",
         "discount_product_CaAHyk",
-        "buy_buttons",
         "description",
         "collapsible-row-0",
         "collapsible-row-1"
@@ -173,6 +173,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
+        "column_bg_color": "",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
@@ -241,6 +242,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
+        "column_bg_color": "",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
