@@ -63,16 +63,16 @@
           "disabled": true,
           "settings": {}
         },
-        "free_gift_A9cyDa": {
-          "type": "free_gift",
-          "settings": {}
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
+        },
+        "free_gift_A9cyDa": {
+          "type": "free_gift",
+          "settings": {}
         },
         "description": {
           "type": "description",
@@ -106,8 +106,8 @@
         "icon_with_text_U8bxgc",
         "variant_picker",
         "quantity_selector",
-        "free_gift_A9cyDa",
         "buy_buttons",
+        "free_gift_A9cyDa",
         "description",
         "collapsible-row-0",
         "collapsible-row-1"
@@ -151,6 +151,7 @@
         "text_YrgtE7"
       ],
       "settings": {
+        "bg_color": "",
         "media_type": "image",
         "image": "shopify://shop_images/5892GYQqueenbed__l1_3.jpg",
         "video_url": "",
@@ -191,6 +192,7 @@
         "text_DVYWrd"
       ],
       "settings": {
+        "bg_color": "",
         "media_type": "image",
         "image": "shopify://shop_images/fotor-ai-2024120221939.jpg",
         "video_url": "",
