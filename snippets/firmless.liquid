@@ -5,7 +5,7 @@
   - level: {number} firmless level
 
   Usage:
-  {% render 'firmless', level: level %}
+  {% render 'firmless', level: level, product: product %}
 {% endcomment %}
 <div>
   <h2>How Does Maple Mattress Feel?</h2>
@@ -16,8 +16,6 @@
     <b>Firm</b>
   </div>
   <p>
-    The Maple foam mattress series, available in medium-firm and firm options, features high-density, high-resilience,
-    and memory foam layers for contouring comfort, pressure relief, and lasting support. Perfect for couples and all
-    sleeping styles, ensuring you wake up refreshed and energized every day.
+    {{product.description}}
   </p>
 </div>
