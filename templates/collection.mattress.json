@@ -44,8 +44,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Mattress_Memory_Faom_Bio_Foam_High_Density_Foam.png",
-            "title": "Form Mattresses",
-            "text": "<h4><strong>Loved by thousands of Canadians! </strong>Experience personalized comfort with our memory foam mattress that contours to your body, relieving pressure and promoting restful sleep. Its breathable design ensures you stay cool throughout the night, providing lasting comfort and support.                                               </h4>",
+            "title": "Green Bio High Density Foam",
+            "text": "<h4>Soy based bio foam offers improved durability, strength, and support over conventional foam cores. Based on natural renewable materials, soy foam provides a higher level of comfort.                              </h4>",
             "link_label": "",
             "link": ""
           }
@@ -53,7 +53,7 @@
         "column_f3VeD3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Tranquil_Pocket_Coil_Mattress_Foam_EncasementandPocketCoil.png",
+            "image": "shopify://shop_images/Eco_Palm_Mattress_Cotton_Fabric.jpg",
             "title": "Hybrid Mattresses",
             "text": "<h4><strong>Improve your sleep with our Hybrid mattress.</strong>Our hybrid mattress combines the best of memory foam and pocket coils for balanced support and pressure relief. With zero motion transfer and enhanced breathability, it guarantees a peaceful, uninterrupted sleep experience.</h4>",
             "link_label": "",
@@ -63,7 +63,7 @@
         "column_Hwe7tk": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Elegance_Mattress_Natural_Latex.jpg",
+            "image": "shopify://shop_images/Tranquil_Mattress_High_Resilience_Foam_40e73ad6-96ec-4192-b873-1e7a95bc091c.jpg",
             "title": "Natural Latex Mattresses",
             "text": "<h4><strong>Perfect for firm mattress lovers</strong>! Made<br/>with eco-friendly Talalay latex, our latex mattress offers hypoallergenic and<br/>antimicrobial benefits while providing superior support. Its breathable design<br/>ensures a cool, comfortable sleep, perfect for those seeking natural,<br/>long-lasting comfort.</h4>",
             "link_label": "",
@@ -77,7 +77,7 @@
         "column_Hwe7tk"
       ],
       "settings": {
-        "title": "Our Mattress Types & Materials",
+        "title": "Our Materials",
         "subtitle": "",
         "heading_size": "h1",
         "image_width": "full",
