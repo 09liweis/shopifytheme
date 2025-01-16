@@ -54,8 +54,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Eco_Palm_Mattress_Cotton_Fabric.jpg",
-            "title": "Hybrid Mattresses",
-            "text": "<h4><strong>Improve your sleep with our Hybrid mattress.</strong>Our hybrid mattress combines the best of memory foam and pocket coils for balanced support and pressure relief. With zero motion transfer and enhanced breathability, it guarantees a peaceful, uninterrupted sleep experience.</h4>",
+            "title": "Cotton",
+            "text": "<h4>Soft and breathable, this material enhances airflow and moisture control, helping to maintain a balanced temperature at the sleep surface.</h4>",
             "link_label": "",
             "link": ""
           }
@@ -64,7 +64,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Tranquil_Mattress_High_Resilience_Foam_40e73ad6-96ec-4192-b873-1e7a95bc091c.jpg",
-            "title": "Natural Latex Mattresses",
+            "title": "High Resiilience Foam",
             "text": "<h4><strong>Perfect for firm mattress lovers</strong>! Made<br/>with eco-friendly Talalay latex, our latex mattress offers hypoallergenic and<br/>antimicrobial benefits while providing superior support. Its breathable design<br/>ensures a cool, comfortable sleep, perfect for those seeking natural,<br/>long-lasting comfort.</h4>",
             "link_label": "",
             "link": ""
