@@ -64,7 +64,8 @@
 }
 
 .mega-menu__link--level-2 {
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .header--top-center .mega-menu__list {
