@@ -43,9 +43,9 @@
         "column_aqWJ7T": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Tranquil_Pocket_Coil_Mattress_Foam_EncasementandPocketCoil.png",
-            "title": "Bio High Density Foam",
-            "text": "<h4>Our soy-based bio foam, made from natural, renewable materials, provides enhanced comfort, eco-friendliness, and superior durability, strength, and support compared to traditional foam.</h4>",
+            "image": "shopify://shop_images/Palm_Latex_Mattress_Natural_Latex.jpg",
+            "title": "Talalay Natural Latex",
+            "text": "<h4>Our eco-friendly latex is hypoallergenic, antimicrobial, and naturally resistant to dust mites, mold, and mildew. It offers a breathable, comfortable sleeping surface with contouring support and pressure relief.</h4>",
             "link_label": "",
             "link": ""
           }
@@ -53,7 +53,7 @@
         "column_f3VeD3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Tranquil_Mattress_Zoned_Pocket_Coil_b4c54b03-8ddc-4758-b05e-7d194aa535e1.png",
+            "image": "shopify://shop_images/Palm_Latex_Mattress_Natural_Latex.jpg",
             "title": "Zone Pocket Coil",
             "text": "<h4>The Zone Pocket Coil system offers targeted support for the head, neck, shoulders, hips, back, and legs, ensuring optimal spinal alignment for a more restful sleep.</h4>",
             "link_label": "",
