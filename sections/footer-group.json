@@ -30,14 +30,14 @@
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "ABOUT",
+            "heading": "SUPPORT",
             "menu": "footer-about-menu"
           }
         },
         "link_list_pGJpHX": {
           "type": "link_list",
           "settings": {
-            "heading": "SUPPORT",
+            "heading": "MORE",
             "menu": "footer-support-menu"
           }
         }
