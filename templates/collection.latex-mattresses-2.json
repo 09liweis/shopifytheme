@@ -1,0 +1,104 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_6FVxrJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aqWJ7T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Tranquil_Pocket_Coil_Mattress_Foam_EncasementandPocketCoil.png",
+            "title": "Bio High Density Foam",
+            "text": "<h4>Our soy-based bio foam, made from natural, renewable materials, provides enhanced comfort, eco-friendliness, and superior durability, strength, and support compared to traditional foam.</h4>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f3VeD3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Tranquil_Mattress_Zoned_Pocket_Coil_b4c54b03-8ddc-4758-b05e-7d194aa535e1.png",
+            "title": "Zone Pocket Coil",
+            "text": "<h4>The Zone Pocket Coil system offers targeted support for the head, neck, shoulders, hips, back, and legs, ensuring optimal spinal alignment for a more restful sleep.</h4>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Hwe7tk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Tranquil_Mattress_High_Resilience_Foam_40e73ad6-96ec-4192-b873-1e7a95bc091c.jpg",
+            "title": "High Resilience Foam",
+            "text": "<h4>High resilience foam provides responsive support with a gentle bounce, perfect for those who prefer a dynamic feel. Its high-density construction ensures an even surface and reduces sinking for better support.</h4>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aqWJ7T",
+        "column_f3VeD3",
+        "column_Hwe7tk"
+      ],
+      "settings": {
+        "title": "Our Materials",
+        "subtitle": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_bg_color": "",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "multicolumn_6FVxrJ"
+  ]
+}
