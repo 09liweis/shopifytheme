@@ -43,7 +43,7 @@
         "column_aqWJ7T": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mattress_Memory_Faom_Bio_Foam_High_Density_Foam.png",
+            "image": "shopify://shop_images/Tranquil_Pocket_Coil_Mattress_Foam_EncasementandPocketCoil.png",
             "title": "Bio High Density Foam",
             "text": "<h4>Our soy-based bio foam, made from natural, renewable materials, provides enhanced comfort, eco-friendliness, and superior durability, strength, and support compared to traditional foam.</h4>",
             "link_label": "",
@@ -53,9 +53,9 @@
         "column_f3VeD3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Eco_Palm_Mattress_Cotton_Fabric.jpg",
+            "image": "shopify://shop_images/Tranquil_Mattress_Zoned_Pocket_Coil_b4c54b03-8ddc-4758-b05e-7d194aa535e1.png",
             "title": "Cotton",
-            "text": "<h4>Soft and breathable, this material enhances airflow and moisture control, helping to maintain a balanced temperature at the sleep surface.</h4>",
+            "text": "<h4>The Zone Pocket Coil system offers targeted support for the head, neck, shoulders, hips, back, and legs, ensuring optimal spinal alignment for a more restful sleep.</h4>",
             "link_label": "",
             "link": ""
           }
