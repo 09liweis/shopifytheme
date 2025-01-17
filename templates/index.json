@@ -192,8 +192,8 @@
         "heading_zMhEik": {
           "type": "heading",
           "settings": {
-            "heading": "About Maple",
-            "heading_size": "h1"
+            "heading": "<strong>About Maple</strong>",
+            "heading_size": "hxl"
           }
         },
         "text_yL6iji": {
