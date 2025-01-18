@@ -131,6 +131,49 @@
         "show_price": true
       }
     },
+    "collections_compare_9xYXqP": {
+      "type": "collections-compare",
+      "blocks": {
+        "collection_dcNR7C": {
+          "type": "collection",
+          "settings": {
+            "collection": "foam-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        },
+        "collection_ERchLr": {
+          "type": "collection",
+          "settings": {
+            "collection": "hybrid-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        },
+        "collection_biQem7": {
+          "type": "collection",
+          "settings": {
+            "collection": "latex-mattress",
+            "button_label": "Shop Now",
+            "description": "Designed for a cloud feel, ideal for those who love sinking into their mattress."
+          }
+        }
+      },
+      "block_order": [
+        "collection_dcNR7C",
+        "collection_ERchLr",
+        "collection_biQem7"
+      ],
+      "settings": {
+        "page_version": false,
+        "title": "Perfect Mattresses for Every Sleeper",
+        "subtitle": "Plush, Firm, or Extra Firm",
+        "description": "As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush, firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for you!",
+        "rating": "4.9",
+        "show_vendor": false,
+        "show_price": true
+      }
+    },
     "numbers_stats_8Caz4G": {
       "type": "numbers-stats",
       "blocks": {
@@ -414,6 +457,7 @@
     "slideshow_UPiyTR",
     "announcement_bar_N4aQEr",
     "products_compare_Dh6r9b",
+    "collections_compare_9xYXqP",
     "numbers_stats_8Caz4G",
     "image_with_text_4bwrnd",
     "image_banner_yBB8JL",
