@@ -124,8 +124,8 @@
       "settings": {
         "page_version": false,
         "title": "Perfect Mattresses for Every Sleeper",
-        "subtitle": "Soft, Medium, or Firm",
-        "description": "As a proud Canadian mattress manufacturer, we offer the perfect fit for every sleeper. Whether you prefer plush, firm, or extra firm, we have the ideal mattress for back, side, and stomach sleepers. Discover comfort made just for you!",
+        "subtitle": "Factory-Direct Quality and Comfort",
+        "description": "",
         "rating": "4.8",
         "show_vendor": false,
         "show_price": true
@@ -192,14 +192,14 @@
         "heading_zMhEik": {
           "type": "heading",
           "settings": {
-            "heading": "About Maple",
-            "heading_size": "h1"
+            "heading": "<strong>About Maple</strong>",
+            "heading_size": "hxl"
           }
         },
         "text_yL6iji": {
           "type": "text",
           "settings": {
-            "text": "<p>Discover the perfect mattress at Maple Mattress , where quality craftsmanship meets customizable comfort, proudly made in Canada. Enjoy peace of mind with our risk-free 100-night trial and 10-year warranty, ensuring you wake up refreshed every morning! Sleep Well, Canada! Our mattresses are proudly made from Canadian-sourced materials. Support local craftsmanship and enjoy the comfort of home!</p>",
+            "text": "<h3>At Maple Mattress, we craft high-quality, comfortable mattresses made right here in Canada. Enjoy a <strong>100-night risk-free trial</strong> and a <strong>10-year warranty</strong> for peace of mind, knowing you’re getting the best in sleep comfort.</h3><h3>Proudly made with <strong>locally sourced materials</strong>, our mattresses offer exceptional craftsmanship and support, bringing you the comfort of home. <strong>Sleep well, Canada!</strong></h3>",
             "text_style": "body"
           }
         },
