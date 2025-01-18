@@ -1,0 +1,110 @@
+{% comment %}
+  Renders a compare collection
+
+  Accepts:
+  - collection: {Object} collection Liquid object (optional)
+
+  Usage:
+  {% render 'compare-collection', collection: collection %}
+{% endcomment %}
+{%- if collection != blank -%}
+  <div class="compare-product">
+    <div class="compare-product__image-wrapper">
+      {%- if collection.featured_image -%}
+        <img
+          srcset="
+            {%- if collection.featured_image.width >= 165 -%}{{ collection.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
+            {%- if collection.featured_image.width >= 360 -%}{{ collection.featured_image | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if collection.featured_image.width >= 533 -%}{{ collection.featured_image | image_url: width: 533 }} 533w,{%- endif -%}
+            {%- if collection.featured_image.width >= 720 -%}{{ collection.featured_image | image_url: width: 720 }} 720w,{%- endif -%}
+            {%- if collection.featured_image.width >= 940 -%}{{ collection.featured_image | image_url: width: 940 }} 940w,{%- endif -%}
+            {%- if collection.featured_image.width >= 1066 -%}{{ collection.featured_image | image_url: width: 1066 }} 1066w{%- endif -%}
+          "
+          src="{{ collection.featured_image | image_url: width: 533 }}"
+          sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+          alt="{{ collection.featured_image.alt | escape }}"
+          loading="lazy"
+          width="{{ collection.featured_image.width }}"
+          height="{{ collection.featured_image.height }}"
+        >
+      {%- endif -%}
+
+      {%- if collection.tags -%}
+        <div class="compare-product__tag best-seller">{{ collection.tags | join: ', ' }}</div>
+      {%- endif -%}
+    </div>
+
+    <div class="compare-product__content">
+      {% render 'product-rating', rating: rating %}
+      <div class="flex justify-between items-center">
+        <h3 class="compare-product__title">{{ collection.title }}</h3>
+        <div class="compare-product__price-wrapper">
+          <span class="compare-product__price-label">from</span>
+          <span class="compare-product__price">
+            {{- collection.selected_or_first_available_variant.price | money_without_currency -}}
+          </span>
+        </div>
+      </div>
+      {%- if collection.metafields.custom.comfort_level != blank -%}
+        <p class="compare-product__description">{{ collection.metafields.custom.comfort_level }}</p>
+      {%- endif -%}
+    </div>
+    {%- if isPageVersion -%}
+      <h3>Feel and pressure relief</h3>
+      <p>{{ collection.metafields.custom.feel_and_pressure }}</p>
+
+      {% if collection.metafields.custom.ergonomic_support %}
+        <h3>Ergonomic support</h3>
+        <ul>
+          {% for item in collection.metafields.custom.ergonomic_support.value %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <h3>Matress Height</h3>
+      <p>{{ collection.metafields.custom.matress_height }}</p>
+
+      <h3>Matress Firmness</h3>
+      {{- 'firmless-level.svg' | inline_asset_content -}}
+      <div class="flex justify-evenly">
+        <b>Soft</b>
+        <b>Medium</b>
+        <b>Firm</b>
+      </div>
+
+      <h3>Sleep Position</h3>
+      <p>{{ collection.metafields.custom.sleep_position }}</p>
+
+      <h3>Construction & Materials</h3>
+      <img
+        srcset="
+          {%- if collection.metafields.custom.construction_materials.width >= 165 -%}{{ collection.metafields.custom.construction_materials | image_url: width: 165 }} 165w,{%- endif -%}
+          {%- if collection.metafields.custom.construction_materials.width >= 360 -%}{{ collection.metafields.custom.construction_materials | image_url: width: 360 }} 360w,{%- endif -%}
+          {%- if collection.metafields.custom.construction_materials.width >= 533 -%}{{ collection.metafields.custom.construction_materials | image_url: width: 533 }} 533w,{%- endif -%}
+          {%- if collection.metafields.custom.construction_materials.width >= 720 -%}{{ collection.metafields.custom.construction_materials | image_url: width: 720 }} 720w,{%- endif -%}
+          {%- if collection.metafields.custom.construction_materials.width >= 940 -%}{{ collection.metafields.custom.construction_materials | image_url: width: 940 }} 940w,{%- endif -%}
+          {%- if collection.metafields.custom.construction_materials.width >= 1066 -%}{{ collection.metafields.custom.construction_materials | image_url: width: 1066 }} 1066w{%- endif -%}
+        "
+        src="{{ collection.metafields.custom.construction_materials | image_url: width: 533 }}"
+        sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+        alt="{{ collection.metafields.custom.construction_materials.alt | escape }}"
+        loading="lazy"
+        width="{{ collection.metafields.custom.construction_materials.width }}"
+        height="{{ collection.metafields.custom.construction_materials.height }}"
+      >
+
+      <h3>Motion Transfer</h3>
+      <p>{{ collection.metafields.custom.motion_transfer }}</p>
+
+      <h3>Edge Support</h3>
+      <p>{{ collection.metafields.custom.edge_support }}</p>
+
+      <h3>Cooling Feature</h3>
+      <p>{{ collection.metafields.custom.cooling_feature }}</p>
+    {%- endif -%}
+    <div style="text-align: center;">
+      <a href="{{ collection.url }}" class="button button--primary"> Shop Now </a>
+    </div>
+  </div>
+{%- endif -%}
