@@ -53,9 +53,9 @@
         "column_EbjRa6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Tranquil_Mattress_High_Resilience_Foam_40e73ad6-96ec-4192-b873-1e7a95bc091c.jpg",
-            "title": "<strong>Green Bio High Density Foam</strong>",
-            "text": "<h4>High resilience foam provides responsive support with a gentle bounce, perfect for those who prefer a dynamic feel. Its high-density construction ensures an even surface and reduces sinking for better support.</h4>",
+            "image": "shopify://shop_images/Palm_Latex_Mattress_Palm_Board.jpg",
+            "title": "Green Palm Board",
+            "text": "<h4>The beautifully breathable eco palm board is crafted to enhance durability, strength, and support.</h4>",
             "link_label": "",
             "link": ""
           }
@@ -63,7 +63,7 @@
         "column_NV8Khm": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "ColumnGreen Palm Board",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
