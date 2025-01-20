@@ -4,6 +4,12 @@
   border: solid rgb(210 215 222 / 75%) 1px ;
   border-radius: 20px;
   padding: 10px;
+  text-align: center;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.collection-product:hover {
+  box-shadow: rgb(146 159 180 / 75%) 2px 3px 4px;
 }
 
 .collection-product img {
@@ -18,18 +24,15 @@
 
 .name {
   color: orange;
-  padding: 40px 0;
 }
 
 #plush {
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 2px;
+  font-size: 26px;
+  margin: 0;
 }
 
 #plush2 {
-  margin-bottom: 0;
-  margin-top: 2px;
+  margin: 0;
 } 
 
 .pspace {
@@ -54,12 +57,10 @@
 }
 
 #form {
-  margin-left: 140px;
   margin-bottom: 0;
 }
 
 .price {
-  margin-left:140px;
   font-weight: bolder;
   margin-top: 0;
 }
@@ -100,16 +101,13 @@
       <p id="plush">PLUSH</p>
       <p id="plush2">({{product.metafields.custom.mattress_firmness.value}} out of 10)</p>
     </div>
-
   
     <div class="size">
-      <p class="pspace">图标</p>
-      <p class="pspace num"><b>{{ product.metafields.custom.mattress_firmness.value }}</b></p>
+      <p class="pspace num"><b>3</b></p>
       <p class="pspace">Layers</p>
     </div>
 
     <div class="size">
-      <p class="pspace">图标</p>
       <p class="pspace num"><b>{{product.metafields.custom.mattress_height.value}}</b></p>
       <p class="pspace">Height</p>
     </div>
