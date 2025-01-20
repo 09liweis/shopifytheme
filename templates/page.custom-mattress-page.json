@@ -91,7 +91,7 @@
         "image": "shopify://shop_images/custom_shape_mattress.jpg",
         "video_url": "",
         "height": "adapt",
-        "desktop_image_width": "large",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
