@@ -108,7 +108,7 @@
         "text_hABfkM": {
           "type": "text",
           "settings": {
-            "text": "<h4>✅<strong>Made in Canada:</strong></h4><p>Proudly crafted with care and precision in Canada, ensuring top-tier quality and supporting local jobs.<br/>✅<strong>Direct-to-You Savings:</strong>As the manufacturer, we cut out the middleman, passing the savings on to you.<br/>✅<strong>Eco-Friendly & Healthy:</strong>Made with sustainable materials and free from harmful chemicals for a safer sleep.<br/>✅<strong>Designed for Comfort:</strong>Perfectly balanced for support and pressure relief, so you wake up feeling rejuvenated.<br/>✅<strong>Risk-Free Trial:</strong>Love it or let us know—your satisfaction is guaranteed with our 100 nights trial and 10 years warranty.</p>",
+            "text": "<h4>✅<strong>Made in Canada:</strong></h4><h4><br/>✅<strong>Direct-to-You Savings</strong></h4><p>As the manufacturer, we cut out the middleman, passing the savings on to you.</p><h4><br/>✅<strong>Eco-Friendly & Healthy</strong></h4><p>Made with sustainable materials and free from harmful chemicals for a safer sleep.</p><h4><br/>✅<strong>Designed for Comfort</strong></h4><p>Perfectly balanced for support and pressure relief, so you wake up feeling rejuvenated.</p><h4><br/>✅<strong>Risk-Free 100 Nights Trial</strong></h4>",
             "text_style": "body"
           }
         }
