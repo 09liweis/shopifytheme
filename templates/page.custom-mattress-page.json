@@ -118,7 +118,7 @@
         "text_4jiJUf": {
           "type": "text",
           "settings": {
-            "text": "<h3>Need more space to stretch out? Our oversized mattresses provide extra width and length for ultimate comfort. Perfect for family beds, tall sleepers, or anyone who loves extra room, these mattresses ensure a luxurious and spacious sleep experience every night.</h3>",
+            "text": "<h3>Need more space to stretch out? Our oversized mattresses provide <strong>extra width and length for ultimate comfort</strong>. Perfect for family beds, tall sleepers, or anyone who loves extra room, these mattresses ensure a luxurious and spacious sleep experience every night.</h3>",
             "text_style": "body"
           }
         },
