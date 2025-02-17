@@ -94,11 +94,81 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_L3cTHh": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_HeEBM9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/chat-with-us.svg",
+            "title": "Chat with Us",
+            "text": "<p>Got questions? Chat with us for mattress tips!</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_896pDb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/faqs.svg",
+            "title": "Read the FAQs",
+            "text": "<p>We might have already answered your question.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7eah4t": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/phone-us.svg",
+            "title": "Phone Us",
+            "text": "<p>Call us for any questions at 647-999-9999</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9KXynD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/email-us.svg",
+            "title": "Email Us",
+            "text": "<p>Send us an email at <a href=\"mailto:support@maplezzz.com\" title=\"mailto:support@maplezzz.com\">support@maplezzz.com</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_HeEBM9",
+        "column_896pDb",
+        "column_7eah4t",
+        "column_9KXynD"
+      ],
+      "settings": {
+        "title": "Need Help Deciding on Your Next Mattress?",
+        "subtitle": "",
+        "heading_size": "hxl",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_bg_color": "",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "multicolumn_6FVxrJ"
+    "multicolumn_6FVxrJ",
+    "multicolumn_L3cTHh"
   ]
 }
