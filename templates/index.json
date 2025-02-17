@@ -288,7 +288,7 @@
           "type": "heading",
           "settings": {
             "heading": "Custom & Oversized Mattresses",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_twTcqw": {
@@ -318,7 +318,7 @@
       "settings": {
         "image": "shopify://shop_images/design_your_won_mattress_background.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
