@@ -168,7 +168,7 @@
         "text_39NXTC": {
           "type": "text",
           "settings": {
-            "text": "<h3>Our custom mattresses are made-to-order in your preferred size, shape, firmness, and materials, ensuring optimal comfort and support for your unique sleep preferences. Whether you need a special shape or a personalized feel, we’ll craft a mattress that fits your lifestyle.</h3>",
+            "text": "<h3>Our custom mattresses are made-to-order in your <strong>preferred size, shape, firmness, and materials</strong>, ensuring optimal comfort and support for your unique sleep preferences. Whether you need a special shape or a personalized feel, we’ll craft a mattress that fits your lifestyle.</h3>",
             "text_style": "body"
           }
         },
