@@ -32,13 +32,13 @@
           "type": "heading",
           "settings": {
             "heading": "Custom & Oversized Mattresses",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_Czpdx3": {
           "type": "text",
           "settings": {
-            "text": "<h2>Enjoy Restful, Quality Sleep Customized Just for You</h2><p>You Deserve a Restful and quality Sleep Every Night</p>"
+            "text": "<h3>Enjoy Restful, Quality Sleep Customized Just for You. You Deserve a Restful and quality Sleep Every Night</h3>"
           }
         }
       },
