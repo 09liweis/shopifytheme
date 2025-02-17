@@ -163,12 +163,40 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "testimonial_reviews_WixgLP": {
+      "type": "testimonial-reviews",
+      "blocks": {
+        "testimonial_My6DVr": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Easy Setup and Super Comfort",
+            "text": "I recently purchased a Maple mattress, and I couldn't be happier! It was incredibly easy to set up, and the comfort level is off the charts. Since making the switch, my sleep has improved significantly. I wake up feeling refreshed and ready to take on the day. Highly recommend!"
+          }
+        },
+        "testimonial_cDbc3i": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Say Goodbye to Back Pain",
+            "text": "I’ve been sleeping on my Maple mattress for a few weeks now, and I am amazed at the difference it has made. No more back pain, and I can finally sleep through the night without tossing and turning. I would definitely recommend this mattress to my family and friends. It’s a game changer!"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_My6DVr",
+        "testimonial_cDbc3i"
+      ],
+      "settings": {
+        "title": "See What Canadians Say About Maple Mattress",
+        "full_width": true
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
     "multicolumn_6FVxrJ",
-    "multicolumn_L3cTHh"
+    "multicolumn_L3cTHh",
+    "testimonial_reviews_WixgLP"
   ]
 }
