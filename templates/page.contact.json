@@ -18,12 +18,71 @@
     },
     "form": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/fotor-ai-20241202211648.jpg",
         "description": "<p>Our family business started in Southern California in 1988 with a<br/>commitment to unwavering quality and service in our community. We<br/>continue to build mattresses for local families using traditional<br/>construction methods and natural materials. And proud to serve our<br/>community in many ways as a trusted business partner, responsible<br/>employer, and philanthropic supporter of local non-profits.</p>",
         "heading": "",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_HK7fVJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tjNjbN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/chat-with-us.svg",
+            "title": "Chat with Us",
+            "text": "<p>Got questions? Chat with us for mattress tips!</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hWpp68": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/phone-us.svg",
+            "title": "Phone Us",
+            "text": "<p>Call us for any questions at 647-999-9999</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UrayWX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/email-us.svg",
+            "title": "Email Us",
+            "text": "<p>Send us an email at <a href=\"mailto:support@maplezzz.com\" title=\"mailto:support@maplezzz.com\">support@maplezzz.com</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_tjNjbN",
+        "column_hWpp68",
+        "column_UrayWX"
+      ],
+      "settings": {
+        "title": "Rest easy. We're always here to help.",
+        "subtitle": "",
+        "heading_size": "hxl",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_bg_color": "",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -91,6 +150,7 @@
   "order": [
     "main",
     "form",
+    "multicolumn_HK7fVJ",
     "collapsible_content_7Xnmbq",
     "contact_info_8zXGJY"
   ]
