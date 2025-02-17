@@ -301,7 +301,7 @@
         "buttons_yyedJi": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Design Your Mattress",
+            "button_label_1": "Learn more",
             "button_link_1": "shopify://pages/design-your-mattress",
             "button_style_secondary_1": false,
             "button_label_2": "",
