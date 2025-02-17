@@ -86,12 +86,13 @@
         "text_W3e9Bi"
       ],
       "settings": {
-        "bg_color": "#f9dcbe",
+        "bg_color": "#fdf9f5",
         "media_type": "image",
         "image": "shopify://shop_images/custom_shape_mattress.jpg",
         "video_url": "",
-        "height": "adapt",
-        "desktop_image_width": "medium",
+        "cover_image": "shopify://shop_images/design_your_won_mattress_background.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
