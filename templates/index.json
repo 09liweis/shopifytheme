@@ -287,14 +287,14 @@
         "heading_M66imA": {
           "type": "heading",
           "settings": {
-            "heading": "Not finding the perfect mattress?",
+            "heading": "Custom & Oversized Mattresses",
             "heading_size": "h1"
           }
         },
         "text_twTcqw": {
           "type": "text",
           "settings": {
-            "text": "<strong>Let us design one tailored to your unique needs for the ultimate comfort.</strong>",
+            "text": "",
             "text_style": "body"
           }
         },
@@ -318,7 +318,7 @@
       "settings": {
         "image": "shopify://shop_images/design_your_won_mattress_background.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
