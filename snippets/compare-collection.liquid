@@ -38,7 +38,7 @@
     <div class="compare-product__content">
       {% render 'product-rating', rating: rating %}
       <div class="flex justify-between items-center">
-        <h3 class="compare-product__title">{{ collection.title }}</h3>
+        <a href="{{ collection.url }}" class="compare-product__title">{{ collection.title }}</a>
         <div class="compare-product__price-wrapper">
           <span class="compare-product__price-label">from</span>
           <span class="compare-product__price">
@@ -104,6 +104,9 @@
       <h3>Cooling Feature</h3>
       <p>{{ collection.metafields.custom.cooling_feature }}</p>
     {%- endif -%}
-    
+
+    <div style="text-align: center; margin-bottom: 25px;">
+      <a href="{{ collection.url }}" class="button button--primary">Shop Now</a>
+    </div>
   </div>
 {%- endif -%}

@@ -7,6 +7,10 @@
     <p>{{ section.settings.description }}</p>
   </div>
 
+  <div style="text-align: center; margin-bottom: 25px;">
+    <a href="/collections/mattresses" class="button button--primary"> Shop All Mattress </a>
+  </div>
+
   <div class="products-compare__container">
     <div class="products-compare__grid page-width">
       {%- for block in section.blocks -%}
@@ -20,9 +24,6 @@
           rating: section.settings.rating
         %}
       {%- endfor -%}
-    </div>
-    <div style="text-align: center; margin-bottom: 25px;">
-      <a href="/collections/mattresses" class="button button--primary"> Shop All Mattress </a>
     </div>
   </div>
 </div>

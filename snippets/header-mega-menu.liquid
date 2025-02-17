@@ -36,6 +36,16 @@
                 >
                   {%- for childlink in link.links -%}
                     <li>
+                      {% assign collection = childlink.object %}
+                      {% assign collection_image = collection.featured_image %}
+
+                      {% if collection_image %}
+                        {{
+                          collection_image
+                          | image_url: width: 500
+                          | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
+                        }}
+                      {% endif %}
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
@@ -44,31 +54,7 @@
                           aria-current="page"
                         {% endif %}
                       >
-                        {% assign product = childlink.object %}
-
-                        {% if product.images[0] %}
-                          {% if product.tags.size > 0 %}
-                            <span class="mega-menu__link-label">{{ product.tags }}</span>
-                          {% endif %}
-
-                          {{
-                            product.images[0]
-                            | image_url: width: 500
-                            | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
-                          }}
-                          <div class="flex justify-between items-center">
-                            <span>{{ childlink.title | escape }}</span>
-                            <p>
-                              from
-                              <span class="text-orange">
-                                $
-                                {{- product.selected_or_first_available_variant.price | money_without_currency -}}
-                              </span>
-                            </p>
-                        </div>
-                      {% else %}
-                      {{- childlink.title | escape -}}
-                      {% endif %}
+                        {{- childlink.title | escape -}}
                       </a>
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
@@ -93,7 +79,9 @@
                 </ul>
                 {%- if link.title == 'Mattresses' -%}
                   <div class="flex justify-center">
-                    <a href="/collections/mattresses" class="mega-menu__link link shop_all_mattresses"> SHOP ALL MATTRESSES <b>&#62;</b></a>
+                    <a href="/collections/mattresses" class="mega-menu__link link shop_all_mattresses">
+                      SHOP ALL MATTRESSES <b>&#62;</b></a
+                    >
                   </div>
                 {% endif %}
               </div>
