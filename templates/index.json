@@ -319,7 +319,7 @@
         "image": "shopify://shop_images/design_your_won_mattress_background.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
