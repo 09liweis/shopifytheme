@@ -38,7 +38,7 @@
         "button_QfarfE": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Now",
+            "button_label": "",
             "button_link": "shopify://collections",
             "button_style_secondary": false,
             "button_label_2": "",
