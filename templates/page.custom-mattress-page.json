@@ -69,15 +69,15 @@
         "heading_9g7bQm": {
           "type": "heading",
           "settings": {
-            "heading": "Personalized Comfort & Style",
-            "heading_size": "h1"
+            "heading": "Personalized Comfort & Style – Designed Just for You",
+            "heading_size": "h0"
           }
         },
         "text_W3e9Bi": {
           "type": "text",
           "settings": {
-            "text": "<p>We specialize in providing “out-of-the-box” solutions for all your mattress and bedding needs. Whether you need a custom-sized mattress for your RV, a family bed to accommodate everyone comfortably, or a mattress tailored to your unique sleep preferences, we can make it happen.</p><p>OVER SIZE MATTRESSES</p><p>CUSTOM MATTRESSES</p><p>CUSTOM DESIGNS & MATERIALS</p><p>BOAT & RVS</p><p>ONE & ONE SPLIT MATTRESS</p>",
-            "text_style": "body"
+            "text": "<p>Finding the perfect mattress shouldn't be a challenge. At Maple, we specialize in crafting <strong>custom-sized and oversized mattresses</strong> to fit your unique needs. Whether you need a <strong>made-to-measure mattress</strong> for your <strong>RV, camper, boat, or truck</strong>, a <strong>family-sized bed</strong> for extra space and comfort, or a <strong>personalized mattress</strong> designed for your sleep preferences, we’ve got you covered.</p><ul><li>OVER SIZE MATTRESSES</li><li>CUSTOM MATTRESSES</li><li>CUSTOM DESIGNS & MATERIALS</li><li>BOAT & RVS</li><li>ONE & ONE SPLIT MATTRESS</li></ul>",
+            "text_style": "subtitle"
           }
         }
       },
