@@ -269,13 +269,13 @@
           "type": "text",
           "settings": {
             "text": "<h3>Customize your comfort with the One & One Comfort Split Mattress. Perfect for couples with different sleep preferences, adjust each side to your ideal firmness. it also offer Add an optional luxurious topper for unified comfort and closeness.</h3>",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "button_XwLPtP": {
           "type": "button",
           "settings": {
-            "button_label": "Contact Us",
+            "button_label": "",
             "button_link": "shopify://pages/contact",
             "button_style_secondary": false
           }
