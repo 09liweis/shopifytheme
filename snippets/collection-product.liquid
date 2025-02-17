@@ -1,123 +1,133 @@
 <style>
-.collection-product {
-  display: block;
-  border: solid rgb(210 215 222 / 75%) 1px ;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: center;
-  transition: box-shadow 0.2s ease-in-out;
-}
+  .collection-product {
+    display: block;
+    border: solid rgb(210 215 222 / 75%) 1px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: box-shadow 0.2s ease-in-out;
+  }
 
-.collection-product:hover {
-  box-shadow: rgb(146 159 180 / 75%) 2px 3px 4px;
-}
+  .collection-product:hover {
+    box-shadow: rgb(146 159 180 / 75%) 2px 3px 4px;
+  }
 
-.collection-product img {
-  width: 100%;
-}
+  .collection-product img {
+    width: 100%;
+  }
 
-.size {
-  display: inline-block;
-  margin: 10px;
-  box-sizing: border-box;
-}
+  .size {
+    display: inline-block;
+    margin: 10px;
+    box-sizing: border-box;
+  }
 
-.name {
-  color: orange;
-}
+  .name {
+    color: orange;
+  }
 
-#plush {
-  font-size: 26px;
-  margin: 0;
-}
+  #plush {
+    font-size: 26px;
+    margin: 0;
+  }
 
-#plush2 {
-  margin: 0;
-} 
+  #plush2 {
+    margin: 0;
+  }
 
-.pspace {
-  margin: 0;
-}
+  .pspace {
+    margin: 0;
+  }
 
-#ptop {
-  margin: 0;
-}
+  #ptop {
+    margin: 0;
+  }
 
-.ppadding {
-  margin: 0;
-}
+  .ppadding {
+    margin: 0;
+  }
 
-#viewdetails {
-  width: 250px;
-  border: solid 1px;
-  border-radius: 50px;
-  padding: 5px 50px;
-  margin-left: 50px;
-  text-align: center;
-}
+  #viewdetails {
+    width: 250px;
+    border: solid 1px;
+    border-radius: 50px;
+    padding: 5px 50px;
+    margin-left: 50px;
+    text-align: center;
+  }
 
-#form {
-  margin-bottom: 0;
-}
+  #form {
+    margin-bottom: 0;
+  }
 
-.price {
-  font-weight: bolder;
-  margin-top: 0;
-}
+  .price {
+    font-weight: bolder;
+    margin-top: 0;
+  }
 </style>
 
-
 <a href="{{product.url}}" class="collection-product card-wrapper product-card-wrapper underline-links-hover">
-  <h2>{{product.title}}</h2>
+  <h2>{{ product.title }}</h2>
   <p>Foam mattress</p>
-  
+
   {%- if product.featured_media -%}
-  <div class="quick-add__product-media">
-    <div class="quick-add__product-container global-media-settings">
-      <img
-        srcset="
-          {%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
-          {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
-          {%- if product.featured_media.width >= 533 -%}{{ product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
-          {%- if product.featured_media.width >= 720 -%}{{ product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
-          {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
-          {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
-          {{ product.featured_media | image_url }} {{ product.featured_media.width }}w
-        "
-        src="{{ product.featured_media | image_url: width: 533 }}"
-        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-        alt="{{ product.featured_media.alt | escape }}"
-        class="motion-reduce"
-        {% unless lazy_load == false %}
-          loading="lazy"
-        {% endunless %}
-      >
+    <div class="quick-add__product-media">
+      <div class="quick-add__product-container global-media-settings">
+        <img
+          srcset="
+            {%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
+            {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if product.featured_media.width >= 533 -%}{{ product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
+            {%- if product.featured_media.width >= 720 -%}{{ product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
+            {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
+            {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
+            {{ product.featured_media | image_url }} {{ product.featured_media.width }}w
+          "
+          src="{{ product.featured_media | image_url: width: 533 }}"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt="{{ product.featured_media.alt | escape }}"
+          class="motion-reduce"
+          {% unless lazy_load == false %}
+            loading="lazy"
+          {% endunless %}
+        >
+      </div>
     </div>
-  </div>
   {%- endif -%}
 
   <section>
     <div class="size name">
       <p id="plush">PLUSH</p>
-      <p id="plush2">({{product.metafields.custom.mattress_firmness.value}} out of 10)</p>
+      <p id="plush2">({{ product.metafields.custom.mattress_firmness.value }} out of 10)</p>
     </div>
-  
+
     <div class="size">
-      <p class="pspace num"><b>3</b></p>
+      <p class="pspace num">
+        <b>{{ product.metafields.custom.mattress_layer_no.value }}</b>
+      </p>
       <p class="pspace">Layers</p>
     </div>
 
     <div class="size">
-      <p class="pspace num"><b>{{product.metafields.custom.mattress_height.value}}</b></p>
+      <p class="pspace num">
+        <b>{{ product.metafields.custom.mattress_height.value }}</b>
+      </p>
       <p class="pspace">Height</p>
     </div>
   </section>
 
-  <div id="">
-    <p id="ptop">-3 layers of engineered comfort</p>
-    <p class="ppadding">-3 layers of engineered comfort</p>
-  </div>
+  {% assign mattress_specs = product.metafields.custom.mattress_specs.value %}
+  {% if mattress_specs %}
+    <div id="">
+      {% for spec in mattress_specs %}
+        <p id="ptop">{{ spec }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
 
   <p id="form">From</p>
-  <p class="price">${{- product.selected_or_first_available_variant.price | money_without_currency -}}</p>
+  <p class="price">
+    $
+    {{- product.selected_or_first_available_variant.price | money_without_currency -}}
+  </p>
 </a>
