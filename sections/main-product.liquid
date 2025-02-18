@@ -78,9 +78,11 @@
       <div class="grid__item product__media-wrapper">
         {% render 'product-media-gallery', variant_images: variant_images %}
 
-        {% comment %} {% render 'size-chart' %}
+        {% comment %}
+          {% render 'size-chart' %}
 
-        {% render 'firmness-chart' %} {% endcomment %}
+          {% render 'firmness-chart' %}
+        {% endcomment %}
       </div>
       <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <section
@@ -108,9 +110,8 @@
                       {{ product.title | escape }}
                     </h2>
                   </a>
-                  
-                  {% render 'product-rating', rating: 4.8 %}
 
+                  {% render 'product-rating', rating: 4.8 %}
                 </div>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -737,8 +738,6 @@
 </product-info>
 
 {% if product.template_suffix == '' %}
-  {% render 'icon-row' %}
-
   {% assign mattressLayer = product.metafields.custom.mattress_layer.value %}
 
   {% if mattressLayer %}
