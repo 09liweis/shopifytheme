@@ -164,6 +164,12 @@
         "padding_bottom": 36
       }
     },
+    "product_features_eQbr3h": {
+      "type": "product-features",
+      "settings": {
+        "page_version": false
+      }
+    },
     "testimonial_reviews_WixgLP": {
       "type": "testimonial-reviews",
       "blocks": {
@@ -196,6 +202,7 @@
     "banner",
     "product-grid",
     "multicolumn_6FVxrJ",
+    "product_features_eQbr3h",
     "multicolumn_L3cTHh",
     "testimonial_reviews_WixgLP"
   ]
