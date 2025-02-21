@@ -101,14 +101,14 @@
         "heading_N869rD": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Direct from Manufacturer.                                           Quality You Can Trust</strong>",
+            "heading": "<strong>Direct from Manufacturer,                                          Quality You Can Trust!</strong>",
             "heading_size": "hxl"
           }
         },
         "text_yEkfQc": {
           "type": "text",
           "settings": {
-            "text": "<p>As the direct manufacturer of our mattresses, we eliminate the middleman, giving you the best quality at a fair price. Our mattresses are made with eco-conscious materials, and we ensure they are free from harmful chemicals, so you can sleep soundly knowing you’re making a responsible choice for both your health and the environment.</p>",
+            "text": "<ul><li>Eliminating the middleman to pass savings to you</li><li>Eco-Conscious Materials</li><li>Free from Harmful Chemicals</li><li>Super Comfort & Supportive</li><li>Built for durability and lasting comfort</li></ul>",
             "text_style": "body"
           }
         }
