@@ -108,7 +108,7 @@
         "text_yEkfQc": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Eliminating the middleman to pass savings to you</li><li>Eco-Conscious Materials</li><li>Free from Harmful Chemicals</li><li>Super Comfort & Supportive</li><li>Built for durability and lasting comfort</li></ul>",
+            "text": "<ul><li><strong>Eliminate the Middleman --We cut out the middleman, passing savings directly to you—so you can enjoy premium quality without the premium price.</strong></li><li><strong>Free from Harmful Chemicals--Sleep peacefully with a mattress free from harmful chemicals—only pure, natural materials for your health and safety.</strong></li><li><strong>Super Comfort & Supportive--Unmatched comfort and support that cradles your body for a restful, rejuvenating sleep.</strong></li><li><strong>Built for Durability--Durable craftsmanship and lasting comfort that stays with you night after night, year after year.</strong></li></ul>",
             "text_style": "body"
           }
         }
@@ -120,7 +120,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/image_for_why_choose_us_section.png",
+        "image": "shopify://shop_images/image_for_why_choose_maple_section.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
