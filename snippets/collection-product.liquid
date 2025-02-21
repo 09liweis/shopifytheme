@@ -68,7 +68,7 @@
 
 <a href="{{product.url}}" class="collection-product card-wrapper product-card-wrapper underline-links-hover">
   <h2>{{ product.title }}</h2>
-  <p>Foam mattress</p>
+  <p>{{product.category}}</p>
 
   {%- if product.featured_media -%}
     <div class="quick-add__product-media">
@@ -98,7 +98,7 @@
   <section>
     <div class="size name">
       <p id="plush">PLUSH</p>
-      <p id="plush2">({{ product.metafields.custom.mattress_firmness.value }} out of 10)</p>
+      {% comment %} <p id="plush2">({{ product.metafields.custom.mattress_firmness.value }} out of 10)</p> {% endcomment %}
     </div>
 
     <div class="size">
@@ -118,7 +118,7 @@
 
   {% assign mattress_specs = product.metafields.custom.mattress_specs.value %}
   {% if mattress_specs %}
-    <div id="">
+    <div style="text-align: left;">
       {% for spec in mattress_specs %}
         <p id="ptop">{{ spec }}</p>
       {% endfor %}
