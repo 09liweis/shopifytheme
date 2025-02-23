@@ -158,7 +158,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
-        "column_bg_color": "",
+        "column_bg_color": "#ffffff",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
