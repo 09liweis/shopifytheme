@@ -95,6 +95,12 @@
         "padding_bottom": 36
       }
     },
+    "product_features_eQbr3h": {
+      "type": "product-features",
+      "settings": {
+        "page_version": false
+      }
+    },
     "multicolumn_L3cTHh": {
       "type": "multicolumn",
       "blocks": {
@@ -151,7 +157,7 @@
         "heading_size": "hxl",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_bg_color": "",
         "column_alignment": "center",
         "background_style": "primary",
@@ -162,12 +168,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "product_features_eQbr3h": {
-      "type": "product-features",
-      "settings": {
-        "page_version": false
       }
     },
     "testimonial_reviews_WixgLP": {
