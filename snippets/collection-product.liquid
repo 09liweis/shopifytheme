@@ -68,7 +68,14 @@
 
 <a href="{{product.url}}" class="collection-product card-wrapper product-card-wrapper underline-links-hover">
   <h2>{{ product.title }}</h2>
-  <p>{{product.category}}</p>
+  {% assign category = product.category %}
+  <p>
+    {% if category == 'Innerspring Mattresses' %}
+      Hybrid Mattresses
+    {% else %}
+      {{ category }}
+    {% endif %}
+  </p>
 
   {%- if product.featured_media -%}
     <div class="quick-add__product-media">
@@ -97,7 +104,22 @@
 
   <section>
     <div class="size name">
-      <p id="plush">PLUSH</p>
+      {% assign firmness = product.metafields.custom.mattress_firmness.value %}
+      <p id="plush">
+        {% if firmness == 4 %}
+          SOFT
+        {% elsif firmness == 5 %}
+          MEDIUM
+        {% elsif firmness == 6 %}
+          MEDIUM
+        {% elsif firmness == 9 %}
+          FIRM
+        {% elsif firmness == 10 %}
+          EXTRA FIRM
+        {% else %}
+
+        {% endif %}
+      </p>
       {% comment %} <p id="plush2">({{ product.metafields.custom.mattress_firmness.value }} out of 10)</p> {% endcomment %}
     </div>
 
