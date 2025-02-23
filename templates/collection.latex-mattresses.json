@@ -120,6 +120,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
+        "image": "shopify://shop_images/image_for_why_choose_us_section.png",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
