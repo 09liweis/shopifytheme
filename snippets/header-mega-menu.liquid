@@ -49,6 +49,7 @@
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
+                        style="font-weight: bold;"
                         class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
                         {% if childlink.current %}
                           aria-current="page"
@@ -79,7 +80,11 @@
                 </ul>
                 {%- if link.title == 'Mattresses' -%}
                   <div class="flex justify-center">
-                    <a href="/collections/mattresses" class="mega-menu__link link shop_all_mattresses">
+                    <a
+                      style="font-weight: bold;"
+                      href="/collections/mattresses"
+                      class="mega-menu__link link shop_all_mattresses"
+                    >
                       SHOP ALL MATTRESSES <b>&#62;</b></a
                     >
                   </div>

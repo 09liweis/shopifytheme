@@ -8,30 +8,7 @@
   {% render 'firmless', level: level, product: product %}
 {% endcomment %}
 <div>
-  <h2>How Does Maple Mattress Feel?</h2>
-  {% assign mattress_firmness_meter = product.metafields.custom.mattress_firmness_meter.value %}
-  <img
-    srcset="
-      {%- if mattress_firmness_meter.width >= 165 -%}{{ mattress_firmness_meter | image_url: width: 165 }} 165w,{%- endif -%}
-      {%- if mattress_firmness_meter.width >= 360 -%}{{ mattress_firmness_meter | image_url: width: 360 }} 360w,{%- endif -%}
-      {%- if mattress_firmness_meter.width >= 533 -%}{{ mattress_firmness_meter | image_url: width: 533 }} 533w,{%- endif -%}
-      {%- if mattress_firmness_meter.width >= 720 -%}{{ mattress_firmness_meter | image_url: width: 720 }} 720w,{%- endif -%}
-      {%- if mattress_firmness_meter.width >= 940 -%}{{ mattress_firmness_meter | image_url: width: 940 }} 940w,{%- endif -%}
-      {%- if mattress_firmness_meter.width >= 1066 -%}{{ mattress_firmness_meter | image_url: width: 1066 }} 1066w{%- endif -%}
-    "
-    src="{{ mattress_firmness_meter | image_url: width: 533 }}"
-    sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-    alt="{{ mattress_firmness_meter.alt | escape }}"
-    loading="lazy"
-    width="100%"
-  >
-  {% comment %} {{- 'firmless-level.svg' | inline_asset_content -}}
-  <div class="flex justify-evenly">
-    <b>Soft</b>
-    <b>Medium</b>
-    <b>Firm</b>
-  </div> {% endcomment %}
   <p>
-    {{product.description}}
+    {{ product.description }}
   </p>
 </div>
