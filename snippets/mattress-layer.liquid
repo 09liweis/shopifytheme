@@ -8,10 +8,6 @@
   #layer-image-container {
     position: relative;
   }
-  #layer-image-container .layer-point {
-    position: absolute;
-    left: 45%;
-  }
   .layer-point {
     background-color: #fff;
     padding: 10px;
@@ -21,20 +17,9 @@
     cursor: pointer;
   }
   .layer-point.active {
+    display: block;
     background-color: #fa522d;
     color: white;
-  }
-  #layer-point1 {
-    top: 70px;
-  }
-  #layer-point2 {
-    top: 200px;
-  }
-  #layer-point3 {
-    top: 270px;
-  }
-  #layer-point4 {
-    top: 340px;
   }
   .layer-items {
     padding: 5rem;
@@ -49,46 +34,22 @@
     color: #343a40;
     font-size: 20px;
   }
-  .layer-desc {
-    margin-top: 0;
-    color: #272c48;
-    display: none;
-    margin-bottom: 0;
-  }
 </style>
 
-{% assign layerItems = mattressLayer.layer_items.value %}
+{% assign layerItems = product.metafields.custom.mattress_layer_specs.value %}
 {% assign layer_image = product.metafields.custom.construction_materials %}
 
 <div class="page-width scroll-trigger animate--slide-in">
   <h2 class="layer-heading">Engineered for Lasting Comfort</h2>
   <div class="grid grid--1-col-tablet-down grid--2-col-desktop">
     <div id="layer-image-container" class="grid__item">
-      {% comment %} {% assign layer_points = '1,2,3,4' | split: ',' %}
-      {% for point in layer_points %}
-        <div class="layer-point {% if point == '1' %} active {% endif %}" id="layer-point{{ point }}">{{ point }}</div>
-      {% endfor %} {% endcomment %}
-      {{
-        layer_image.value
-        | image_url: width: 600
-        | image_tag: class: 'motion-reduce w-full', preload: true
-      }}
+      {{ layer_image.value | image_url: width: 600 | image_tag: class: 'motion-reduce w-full', preload: true }}
     </div>
     <div class="layer-items grid__item">
       {% for layerItem in layerItems %}
-        {% assign index = forloop.index %}
         <div class="layer-item flex">
-          <div>
-            <div id="layer-item{{ index }}" class="layer-point {% if index == 1 %} active {% endif %}">
-              {% comment %} {{ index }} {% endcomment %}
-            </div>
-          </div>
-          <div>
-            <h5 class="layer-title">{{ layerItem.layer_title }}</h5>
-            <p class="layer-desc {% if index == 1 %} block {% endif %}" id="layer-desc{{index}}">
-              {{ layerItem.layer_description }}
-            </p>
-          </div>
+          <div class="layer-point active"></div>
+          <h5 class="layer-title">{{ layerItem }}</h5>
         </div>
       {% endfor %}
     </div>
