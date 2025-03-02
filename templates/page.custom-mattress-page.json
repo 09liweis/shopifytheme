@@ -450,6 +450,15 @@
             "row_content": "<p>Yes, we offer a range of customizable features, including cooling covers to regulate temperature, hypoallergenic materials for allergy relief, and motion isolation layers to minimize partner disturbance. These enhancements<br/>help create the perfect sleep environment.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_VhW3q8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -459,7 +468,8 @@
         "collapsible_row_J8QDxJ",
         "collapsible_row_txdmBt",
         "collapsible_row_Gj6xVf",
-        "collapsible_row_bKadHA"
+        "collapsible_row_bKadHA",
+        "collapsible_row_VhW3q8"
       ],
       "settings": {
         "caption": "",
