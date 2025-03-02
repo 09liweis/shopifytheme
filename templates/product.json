@@ -263,48 +263,19 @@
     "collapsible_content_ER7KNk": {
       "type": "collapsible-content",
       "blocks": {
-        "collapsible_row_a3mgrP": {
+        "collapsible_row_DJmPmg": {
           "type": "collapsible_row",
+          "repeater": "{{ metaobjects.faqs[\"faqs-65xp5pwi\"].faq.value }}",
           "settings": {
-            "heading": "How does memory foam compare to other mattress materials?",
-            "icon": "none",
-            "row_content": "<p>Memory foam contours to your body, relieving pressure points and reducing motion transfer. Unlike traditional innerspring mattresses, it provides more consistent comfort and support, especially for those with joint or back pain.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_Qac9h9": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I setup mattress?",
-            "icon": "none",
-            "row_content": "<ol><li><strong>Unbox</strong>: Carefully remove the mattress from the box.</li><li><strong>Position</strong>: Place the mattress on your bed frame.</li><li><strong>Unroll</strong>: Cut open the plastic wrap and unroll the mattress.</li><li><strong>Expand</strong>: Allow 24-48 hours for the mattress to fully expand and settle.</li></ol>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ht67Qk": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What is the difference between a medium-firm and firm mattress?",
-            "icon": "none",
-            "row_content": "<p>A medium-firm mattress offers a balanced feel, providing support while still being soft enough for comfort, while a firm mattress provides stronger support, making it ideal for back or stomach sleepers who need more spinal alignment.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_pCFHwx": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How does the 100-night sleep trial work?",
-            "icon": "none",
-            "row_content": "<p>Maple offers a 100-night trial, giving you over three months to decide if the mattress is right for you. If you're not satisfied, contact our Customer Care team. After a few questions, we’ll guide you through the return process. If you decide to return the mattress, you'll be responsible for sending it back to our factory.</p>",
+            "heading": "{{ block.repeater.question.value }}",
+            "icon": "check_mark",
+            "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
         }
       },
       "block_order": [
-        "collapsible_row_a3mgrP",
-        "collapsible_row_Qac9h9",
-        "collapsible_row_ht67Qk",
-        "collapsible_row_pCFHwx"
+        "collapsible_row_DJmPmg"
       ],
       "settings": {
         "caption": "",
