@@ -388,88 +388,19 @@
     "collapsible_content_HLJxR8": {
       "type": "collapsible-content",
       "blocks": {
-        "collapsible_row_fDeDAJ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do you offer oversized mattresses?",
-            "icon": "none",
-            "row_content": "<p>Yes, we specialize in creating oversized mattresses for larger beds or<br/>unique spaces. Whether you need extra width, length, or both, we can design and<br/>craft a mattress that fits perfectly without compromising on comfort or<br/>quality.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_QQweUP": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I choose the materials for my custom mattress?",
-            "icon": "none",
-            "row_content": "<p>Absolutely! We offer a variety of high-quality materials, including memory foam for contouring support, latex for durability and bounce, and hybrid combinations for balanced comfort. You can select the material that best suits your preferences and sleep needs.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_8yHEwU": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do you design mattresses for boats and RVs?",
-            "icon": "none",
-            "row_content": "<p>Yes, we create custom mattresses specifically for boats and RVs. Our mattresses are designed to fit unique dimensions and contours while using<br/>durable materials to withstand movement and environmental changes, ensuring<br/>comfort on the road or water.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_J8QDxJ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What is a One & One Split Mattress?",
-            "icon": "none",
-            "row_content": "<p>A One & One Split Mattress allows each side to have a different firmness level, making it ideal for couples with varying sleep preferences. This design ensures individual comfort while maintaining a unified surface. Optional features like a luxurious topper can be added for shared comfort.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_txdmBt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I request a unique shape or design for my mattress?",
-            "icon": "none",
-            "row_content": "<p>Yes, we accommodate custom shapes and designs, including round, oval, or irregular contours. Our expert team works with you to create a mattress that meets your specific requirements, whether it’s for a unique bed frame, a specialty room, or other needs.</p>",
-            "page": ""
-          }
-        },
         "collapsible_row_Gj6xVf": {
           "type": "collapsible_row",
+          "repeater": "{{ metaobjects.faqs[\"custom-mattress-fa-qs\"].faq.value }}",
           "settings": {
-            "heading": "How do I provide measurements for a custom mattress?",
+            "heading": "{{ block.repeater.question.value }}",
             "icon": "none",
-            "row_content": "<p>You can provide your own measurements, and our team will guide you through the process to ensure they are accurate. If needed, we can offer tips and advice to help you measure your space or existing mattress correctly.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_bKadHA": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I add features like cooling covers orhypoallergenic materials?",
-            "icon": "none",
-            "row_content": "<p>Yes, we offer a range of customizable features, including cooling covers to regulate temperature, hypoallergenic materials for allergy relief, and motion isolation layers to minimize partner disturbance. These enhancements<br/>help create the perfect sleep environment.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_VhW3q8": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
         }
       },
       "block_order": [
-        "collapsible_row_fDeDAJ",
-        "collapsible_row_QQweUP",
-        "collapsible_row_8yHEwU",
-        "collapsible_row_J8QDxJ",
-        "collapsible_row_txdmBt",
-        "collapsible_row_Gj6xVf",
-        "collapsible_row_bKadHA",
-        "collapsible_row_VhW3q8"
+        "collapsible_row_Gj6xVf"
       ],
       "settings": {
         "caption": "",
