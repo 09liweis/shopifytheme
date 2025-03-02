@@ -277,7 +277,7 @@
           "settings": {
             "heading": "How do I setup mattress?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<ol><li><strong>Unbox</strong>: Carefully remove the mattress from the box.</li><li><strong>Position</strong>: Place the mattress on your bed frame.</li><li><strong>Unroll</strong>: Cut open the plastic wrap and unroll the mattress.</li><li><strong>Expand</strong>: Allow 24-48 hours for the mattress to fully expand and settle.</li></ol>",
             "page": ""
           }
         },
