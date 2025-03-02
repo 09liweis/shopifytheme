@@ -30,7 +30,7 @@
   }
   .layer-title {
     margin: 0;
-    font-weight: bold;
+    font-weight: 400;
     color: #343a40;
     font-size: 20px;
   }
@@ -48,7 +48,9 @@
     <div class="layer-items grid__item">
       {% for layerItem in layerItems %}
         <div class="layer-item flex">
-          <div class="layer-point active"></div>
+          <div>
+            <div class="layer-point active"></div>
+          </div>
           <h5 class="layer-title">{{ layerItem }}</h5>
         </div>
       {% endfor %}
