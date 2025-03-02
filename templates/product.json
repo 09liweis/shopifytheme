@@ -160,7 +160,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Feel-Refreshed-Every-Morning.jpg",
-            "title": "Wake Up Refreshed Daily",
+            "title": "Wake Up Refreshed Every Morning",
             "text": "<p>Experience superior comfort and support, helping you sleep deeply and wake up feeling truly refreshed and ready to take on the day.</p>",
             "link_label": "",
             "link": ""
@@ -266,9 +266,9 @@
         "collapsible_row_a3mgrP": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What is memory foam?",
+            "heading": "How does memory foam compare to other mattress materials?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Memory foam contours to your body, relieving pressure points and reducing motion transfer. Unlike traditional innerspring mattresses, it provides more consistent comfort and support, especially for those with joint or back pain.</p>",
             "page": ""
           }
         },
