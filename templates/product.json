@@ -228,7 +228,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/expand.svg",
-            "title": "Expand",
+            "title": "",
             "text": "<p>Allow 24-48 hours for the  mattress to fully expand and be ready for a comfortable sleep.</p>",
             "link_label": "",
             "link": ""
@@ -268,7 +268,7 @@
           "repeater": "{{ metaobjects.faqs[\"faqs-65xp5pwi\"].faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
