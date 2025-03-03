@@ -41,7 +41,7 @@
             "title": "{{ block.repeater.name.value }}",
             "text": "",
             "link_label": "{{ block.repeater.name.value }}",
-            "link": "{{ page.url }}"
+            "link": "{{ block.repeater.system.url }}"
           }
         }
       },
