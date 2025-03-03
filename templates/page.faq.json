@@ -36,39 +36,20 @@
       "blocks": {
         "column_6jjEE8": {
           "type": "column",
+          "repeater": "{{ page.metafields.custom.faqs_category_list.value }}",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "{{ block.repeater.name.value }}",
+            "text": "",
             "link_label": "",
-            "link": ""
-          }
-        },
-        "column_KRVCMj": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_cCYbLr": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "link": "{{ page.url }}"
           }
         }
       },
       "block_order": [
-        "column_6jjEE8",
-        "column_KRVCMj",
-        "column_cCYbLr"
+        "column_6jjEE8"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "subtitle": "",
         "heading_size": "h1",
         "image_width": "full",
@@ -77,7 +58,7 @@
         "column_bg_color": "",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
