@@ -34,39 +34,18 @@
       "blocks": {
         "column_tjNjbN": {
           "type": "column",
+          "repeater": "{{ metaobjects.contact_section[\"need-help-deciding-on-your-next-mattress\"].list.value }}",
           "settings": {
-            "image": "shopify://shop_images/chat-with-us.svg",
-            "title": "Chat with Us",
-            "text": "<p>Got questions? Chat with us for mattress tips!</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_hWpp68": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/phone-us.svg",
-            "title": "Phone Us",
-            "text": "<p>Call us for any questions at 647-999-9999</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_UrayWX": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/email-us.svg",
-            "title": "Email Us",
-            "text": "<p>Send us an email at <a href=\"mailto:support@maplezzz.com\" title=\"mailto:support@maplezzz.com\">support@maplezzz.com</a></p>",
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "{{ block.repeater.detail | metafield_tag }}",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_tjNjbN",
-        "column_hWpp68",
-        "column_UrayWX"
+        "column_tjNjbN"
       ],
       "settings": {
         "title": "Rest easy. We're always here to help.",
@@ -74,7 +53,7 @@
         "heading_size": "hxl",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_bg_color": "",
         "column_alignment": "center",
         "background_style": "primary",
