@@ -12,7 +12,6 @@
     "image_banner_3jV9Ge": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/mattress_firm_1_20240813.webp",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -31,10 +30,85 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "multicolumn_b77GyE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6jjEE8": {
+          "type": "column",
+          "repeater": "{{ page.metafields.custom.faqs_category_list.value }}",
+          "settings": {
+            "title": "{{ block.repeater.name.value }}",
+            "text": "",
+            "link_label": "{{ block.repeater.name.value }}",
+            "link": "{{ block.repeater.system.url }}"
+          }
+        }
+      },
+      "block_order": [
+        "column_6jjEE8"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_bg_color": "",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_FHh7VU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_CpJHNr": {
+          "type": "column",
+          "repeater": "{{ metaobjects.contact_section[\"need-help-deciding-on-your-next-mattress\"].list.value }}",
+          "settings": {
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "{{ block.repeater.detail | metafield_tag }}",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CpJHNr"
+      ],
+      "settings": {
+        "title": "{{ metaobjects.contact_section[\"need-help-deciding-on-your-next-mattress\"].title.value }}",
+        "subtitle": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_bg_color": "",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_3jV9Ge",
-    "main"
+    "main",
+    "multicolumn_b77GyE",
+    "multicolumn_FHh7VU"
   ]
 }

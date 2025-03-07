@@ -213,38 +213,19 @@
     "collapsible_content_ER7KNk": {
       "type": "collapsible-content",
       "blocks": {
-        "collapsible_row_a3mgrP": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Is it easy to assemble the bed?",
-            "icon": "none",
-            "row_content": "<p>The Upholstered Bed is shipped in 2 boxes with the assemble instruction inside.The Upholstered Bed is thoughtfully designed so you can easily assemble it in 10 minutes or less.</p>",
-            "page": ""
-          }
-        },
         "collapsible_row_Qac9h9": {
           "type": "collapsible_row",
+          "repeater": "{{ metaobjects.faqs[\"furniture-fa-qs\"].faq.value }}",
           "settings": {
-            "heading": "Do I need a foundation or box spring?",
+            "heading": "{{ block.repeater.question.value }}",
             "icon": "none",
-            "row_content": "<p>The Upholstered Bed uses slats to provide sturdy support for your mattress, so the  convenient platform design ensures the use of a foundation or box-spring is not required.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ht67Qk": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What happens if I notice a defect on my new bed frame?",
-            "icon": "none",
-            "row_content": "<p>We want you to love your new bed frame! That’s why it comes with a 2-year limited warranty. If you encounter a manufacturing defect covered by our warranty, we’ll provide a one-time replacement or repair of the original product in the size you purchased, free of charge.</p>",
+            "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
         }
       },
       "block_order": [
-        "collapsible_row_a3mgrP",
-        "collapsible_row_Qac9h9",
-        "collapsible_row_ht67Qk"
+        "collapsible_row_Qac9h9"
       ],
       "settings": {
         "caption": "",
