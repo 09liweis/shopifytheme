@@ -414,3 +414,26 @@ if (!customElements.get('product-info')) {
     }
   );
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const variant = urlParams.get('variant');
+  if (variant) return;
+
+  const defaultVariantName = 'Queen';
+
+  // Find the variant dropdown or radio buttons
+  const variantSelectors = document.querySelector('select');
+
+  if (variantSelectors) {
+    Array.from(variantSelectors.options).forEach((option) => {
+      if (option.text.includes(defaultVariantName)) {
+        variantSelectors.value = option.value;
+        // Trigger a change event to update the price and other details
+        const event = new Event('change', { bubbles: true });
+        variantSelectors.dispatchEvent(event);
+      }
+    });
+  }
+});
