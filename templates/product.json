@@ -180,6 +180,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_bg_color": "",
+        "column_border_color": "",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
@@ -228,7 +229,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/expand.svg",
-            "title": "",
+            "title": "Watch it Expand",
             "text": "<p>Allow 24-48 hours for the  mattress to fully expand and be ready for a comfortable sleep.</p>",
             "link_label": "",
             "link": ""
@@ -249,6 +250,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_bg_color": "",
+        "column_border_color": "",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
