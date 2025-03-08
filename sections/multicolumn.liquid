@@ -126,6 +126,11 @@
                   </div>
                 </div>
               {%- endif -%}
+              
+              {% if block.settings.link != blank and block.settings.link_label == blank %}
+                <a href="{{block.settings.link}}">
+              {% endif %}
+
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h2 class="inline-richtext">{{ block.settings.title }}</h2>
@@ -149,6 +154,10 @@
                   </a>
                 {%- endif -%}
               </div>
+
+              {% if block.settings.link != blank and block.settings.link_label == blank %}
+                </a>
+              {% endif %}
             </div>
           </li>
         {%- endfor -%}
@@ -303,6 +312,11 @@
       "type": "color",
       "id": "column_bg_color",
       "label": "Column Background Color"
+    },
+    {
+      "type": "color",
+      "id": "column_border_color",
+      "label": "Column Border Color"
     },
     {
       "type": "select",
