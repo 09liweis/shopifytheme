@@ -33,7 +33,7 @@
           "repeater": "{{ metaobjects.faqs[\"shippings-fa-qs\"].faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
-            "icon": "check_mark",
+            "icon": "leaf",
             "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
