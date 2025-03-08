@@ -12,6 +12,7 @@
     "image_banner_3jV9Ge": {
       "type": "image-banner",
       "settings": {
+        "image": "shopify://shop_images/image_for_blog-How_to_Choose_a_Bed_Frame.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
