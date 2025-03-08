@@ -21,46 +21,17 @@
       "blocks": {
         "collapsible_row_NaxWyD": {
           "type": "collapsible_row",
+          "repeater": "{{ metaobjects.faqs[\"returns-fa-qs\"].faq.value }}",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "{{ block.repeater.question.value }}",
             "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_kwDeih": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_CPTWMV": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_JyVfxN": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
         }
       },
       "block_order": [
-        "collapsible_row_NaxWyD",
-        "collapsible_row_kwDeih",
-        "collapsible_row_CPTWMV",
-        "collapsible_row_JyVfxN"
+        "collapsible_row_NaxWyD"
       ],
       "settings": {
         "caption": "",
