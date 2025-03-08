@@ -24,7 +24,7 @@
           "repeater": "{{ metaobjects.faqs[\"returns-fa-qs\"].faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
