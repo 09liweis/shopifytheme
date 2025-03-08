@@ -70,7 +70,7 @@
         "announcement_igRwTD": {
           "type": "announcement",
           "settings": {
-            "text": "Take up to 365 Nights to Decide",
+            "text": "100-Night-Trial   10-Year-Warrenty   94% Customer Satisfaction",
             "link": ""
           }
         }
@@ -82,8 +82,8 @@
         "color_scheme": "scheme-3",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "change_slides_speed": 4,
         "enable_country_selector": false,
         "enable_language_selector": false
       }
@@ -410,6 +410,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_bg_color": "",
+        "column_border_color": "",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
