@@ -40,7 +40,7 @@
           "settings": {
             "title": "{{ block.repeater.name.value }}",
             "text": "",
-            "link_label": "{{ block.repeater.name.value }}",
+            "link_label": "",
             "link": "{{ block.repeater.system.url }}"
           }
         }
