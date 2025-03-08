@@ -153,9 +153,9 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/1534GY1_Q_Front_View.jpg",
+        "image": "shopify://shop_images/5891GYQqueenbed__l1_2.jpg",
         "video_url": "",
-        "height": "small",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
@@ -194,7 +194,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/1534GYT1_Twin_Set_View.jpg",
+        "image": "shopify://shop_images/5891GYQqueenbed__front.jpg",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
