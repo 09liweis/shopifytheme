@@ -80,7 +80,7 @@
           >
             <div
               class="multicolumn-card content-container"
-              style="background-color:{{section.settings.column_bg_color}}"
+              style="background-color:{{section.settings.column_bg_color}};{% if section.settings.column_border_color != blank %}border: 1px solid {{section.settings.column_border_color}};{%endif%}"
             >
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
@@ -128,7 +128,7 @@
               {%- endif -%}
               
               {% if block.settings.link != blank and block.settings.link_label == blank %}
-                <a href="{{block.settings.link}}">
+                <a href="{{block.settings.link}}" style="text-decoration: none;">
               {% endif %}
 
               <div class="multicolumn-card__info">
