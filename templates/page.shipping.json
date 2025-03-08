@@ -19,6 +19,15 @@
     "collapsible_content_az3FtG": {
       "type": "collapsible-content",
       "blocks": {
+        "collapsible_row_qhLcGk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "leaf",
+            "row_content": "",
+            "page": ""
+          }
+        },
         "collapsible_row_EKC3Hj": {
           "type": "collapsible_row",
           "repeater": "{{ metaobjects.faqs[\"shippings-fa-qs\"].faq.value }}",
@@ -31,6 +40,7 @@
         }
       },
       "block_order": [
+        "collapsible_row_qhLcGk",
         "collapsible_row_EKC3Hj"
       ],
       "settings": {
