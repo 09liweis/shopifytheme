@@ -52,6 +52,15 @@
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
                               <li>
+                                {% assign collection = childlink.object %}
+                                {% assign collection_image = collection.featured_image %}
+                                {% if collection_image %}
+                                  {{
+                                    collection_image
+                                    | image_url: width: 500
+                                    | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
+                                  }}
+                                {%endif%}
                                 {%- if childlink.links == blank -%}
                                   <a
                                     id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
@@ -61,18 +70,7 @@
                                       aria-current="page"
                                     {% endif %}
                                   >
-                                    {% assign product = childlink.object %}
-                                    {% if product.images[0] %}
-                                    {{
-                                      product.images[0]
-                                      | image_url: width: 300
-                                      | image_tag: class: 'header__heading-logo', alt: childlink.title, preload: true
-                                    }}
                                     {{ childlink.title | escape }}
-                                    <p>{{ product.selected_or_first_available_variant.price | money_with_currency }}</p>
-                                    {% else %}
-                                    {{ childlink.title | escape }}
-                                    {% endif %}
                                   </a>
                                 {%- else -%}
                                   <details id="Details-menu-drawer-{{ link.handle }}-{{ childlink.handle }}">
