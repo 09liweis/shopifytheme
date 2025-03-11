@@ -1,64 +1,60 @@
 {{ 'section-testimonial-reviews.css' | asset_url | stylesheet_tag }}
-{{ 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' | stylesheet_tag }}
-{{ 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js' | script_tag }}
+{% comment %} {{ 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' | stylesheet_tag }}
+{{ 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js' | script_tag }} {% endcomment %}
 
 <div class="testimonial-reviews{% if section.settings.full_width %} page-width{% endif %}">
   <div class="section-header">
     <h2 class="text-center section-title">{{ section.settings.title }}</h2>
   </div>
 
-  <div class="swiper testimonial-slider">
-    <div class="swiper-wrapper">
-      {%- for block in section.blocks -%}
-        <div class="swiper-slide" {{ block.shopify_attributes }}>
-          <div class="testimonial-item">
-            <div class="testimonial-content">
-              <div class="star-rating" aria-hidden="true">
-                {%- for i in (1..5) -%}
-                  {{- 'icon-rating.svg' | inline_asset_content -}}
-                {%- endfor -%}
-              </div>
-              <h3 class="testimonial-title">{{ block.settings.title }}</h3>
-              <div class="testimonial-text">{{ block.settings.text }}</div>
-            </div>
+  <div class="swiper testimonial-slider grid grid--1-col-tablet-down grid--2-col-desktop">
+    {%- for block in section.blocks -%}
+      <div class="testimonial-item grid__item">
+        <div class="testimonial-content">
+          <div class="star-rating" aria-hidden="true">
+            {%- for i in (1..5) -%}
+              {{- 'icon-rating.svg' | inline_asset_content -}}
+            {%- endfor -%}
           </div>
+          <h3 class="testimonial-title">{{ block.settings.title }}</h3>
+          <div class="testimonial-text">{{ block.settings.text }}</div>
         </div>
-      {%- endfor -%}
-    </div>
+      </div>
+    {%- endfor -%}
     <div class="swiper-pagination"></div>
   </div>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const initializeSlider = () => {
-      const slidesPerView = window.innerWidth >= 750 ? 2 : 1;
-      new Swiper('.testimonial-slider', {
-        slidesPerView: slidesPerView,
-        spaceBetween: 30,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        breakpoints: {
-          750: {
-            slidesPerView: 2,
-          },
-        },
-      });
-    };
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const initializeSlider = () => {
+  //     const slidesPerView = window.innerWidth >= 750 ? 2 : 1;
+  //     new Swiper('.testimonial-slider', {
+  //       slidesPerView: slidesPerView,
+  //       spaceBetween: 30,
+  //       pagination: {
+  //         el: '.swiper-pagination',
+  //         clickable: true,
+  //       },
+  //       breakpoints: {
+  //         750: {
+  //           slidesPerView: 1,
+  //         },
+  //       },
+  //     });
+  //   };
 
-    initializeSlider();
+  //   initializeSlider();
 
-    // Reinitialize on section reload in theme editor
-    if (Shopify.designMode) {
-      document.addEventListener('shopify:section:load', function (event) {
-        if (event.target.classList.contains('testimonial-reviews')) {
-          initializeSlider();
-        }
-      });
-    }
-  });
+  //   // Reinitialize on section reload in theme editor
+  //   if (Shopify.designMode) {
+  //     document.addEventListener('shopify:section:load', function (event) {
+  //       if (event.target.classList.contains('testimonial-reviews')) {
+  //         initializeSlider();
+  //       }
+  //     });
+  //   }
+  // });
 </script>
 
 {% schema %}
