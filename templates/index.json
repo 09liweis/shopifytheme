@@ -96,6 +96,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-3",
+        "is_scroll": true,
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": true,
