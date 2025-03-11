@@ -73,26 +73,10 @@
             "text": "100-Night-Trial 10-Year-Warrenty 94% Customer Satisfaction",
             "link": ""
           }
-        },
-        "announcement_mcR34f": {
-          "type": "announcement",
-          "settings": {
-            "text": "100-Night-Trial 10-Year-Warrenty 94% Customer Satisfaction",
-            "link": ""
-          }
-        },
-        "announcement_tw3crz": {
-          "type": "announcement",
-          "settings": {
-            "text": "100-Night-Trial 10-Year-Warrenty 94% Customer Satisfaction",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement_igRwTD",
-        "announcement_mcR34f",
-        "announcement_tw3crz"
+        "announcement_igRwTD"
       ],
       "settings": {
         "color_scheme": "scheme-3",
