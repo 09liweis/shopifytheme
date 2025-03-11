@@ -22,7 +22,7 @@
   class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator and section.blocks.size > 0 %} utility-bar--bottom-border{% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} utility-bar--bottom-border-social-only{% endif %}{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header-localization{% endif %}"
   {{ block.shopify_attributes }}
 >
-  <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
+  <div class="page-width {% if section.settings.is_scroll %}is_scroll{%endif%} utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
     {%- if section.settings.show_social and social_icons -%}
       {%- render 'social-icons' -%}
     {%- endif -%}
@@ -52,14 +52,14 @@
         {%- endif -%}
       </div>
     {%- elsif section.blocks.size > 1 -%}
-      <slideshow-component
+      <div
         class="announcement-bar"
         role="region"
         aria-roledescription="{{ 'sections.announcements.carousel' | t }}"
         aria-label="{{ 'sections.announcements.announcement_bar' | t }}"
       >
         <div class="announcement-bar-slider slider-buttons">
-          <button
+          {% comment %} <button
             type="button"
             class="slider-button slider-button--prev"
             name="previous"
@@ -69,7 +69,7 @@
             <span class="svg-wrapper">
               {{- 'icon-caret.svg' | inline_asset_content -}}
             </span>
-          </button>
+          </button> {% endcomment %}
           <div
             class="grid grid--1-col slider slider--everywhere"
             id="Slider-{{ section.id }}"
@@ -115,7 +115,7 @@
               </div>
             {%- endfor -%}
           </div>
-          <button
+          {% comment %} <button
             type="button"
             class="slider-button slider-button--next"
             name="next"
@@ -125,9 +125,9 @@
             <span class="svg-wrapper">
               {{- 'icon-caret.svg' | inline_asset_content -}}
             </span>
-          </button>
+          </button> {% endcomment %}
         </div>
-      </slideshow-component>
+      </div>
       {%- if request.design_mode -%}
         <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
         <style>
@@ -164,6 +164,15 @@
   </div>
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const announcementBar = document.querySelector('.announcement-bar__message');
+  if (announcementBar) {
+    announcementBar.style.animationDuration = `${announcementBar.scrollWidth / 50}s`;
+  }
+});
+</script>
+
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
@@ -175,6 +184,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-4"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_scroll",
+      "default": false,
+      "label": "Is Scroll"
     },
     {
       "type": "checkbox",
