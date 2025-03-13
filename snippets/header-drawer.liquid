@@ -104,6 +104,9 @@
                                         role="list"
                                         tabindex="-1"
                                       >
+                                        <li>
+                                          <a class="menu-drawer__menu-item link link--text list-menu__item focus-inset" href="{{childlink.url}}">{{childlink.title | escape }}</a>
+                                        </li>
                                         {%- for grandchildlink in childlink.links -%}
                                           <li>
                                             <a
