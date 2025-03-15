@@ -17,8 +17,8 @@
           "repeater": "{{ metaobject.faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
-            "icon": "none",
-            "row_content": "{{ block.repeater.answer | metafield_tag }}",
+            "icon": "leaf",
+            "row_content": "<p>{{ block.repeater.answer | metafield_tag }}</p>",
             "page": ""
           }
         }
