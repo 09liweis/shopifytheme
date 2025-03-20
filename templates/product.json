@@ -117,7 +117,7 @@
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "thumbnail_slider",
+        "gallery_layout": "thumbnail",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
@@ -198,7 +198,6 @@
         "column_Q7aB37": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Maplezzz-Icon-01.png",
             "title": "Unbox",
             "text": "<p>Remove the mattress from the box carefully.</p>",
             "link_label": "",
@@ -208,7 +207,6 @@
         "column_K4m6Mc": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Maplezzz-Icon-02.png",
             "title": "Position",
             "text": "<p>Place the rolled-up mattress on your bed frame.</p>",
             "link_label": "",
@@ -218,7 +216,6 @@
         "column_XfwPY9": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Maplezzz-Icon-03.png",
             "title": "Unroll",
             "text": "<p>Open the plastic wrap and gently unroll the  mattress.</p>",
             "link_label": "",
@@ -228,7 +225,6 @@
         "column_A6Ftjh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Maplezzz-Icon-04.png",
             "title": "Watch it Expand",
             "text": "<p>Allow 24-48 hours for the  mattress to fully expand and be ready for a comfortable sleep.</p>",
             "link_label": "",
