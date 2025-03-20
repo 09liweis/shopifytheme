@@ -127,12 +127,6 @@
         "padding_bottom": 12
       }
     },
-    "product_features_kJRMty": {
-      "type": "product-features",
-      "settings": {
-        "page_version": false
-      }
-    },
     "multicolumn_qxCUi8": {
       "type": "multicolumn",
       "blocks": {
@@ -179,72 +173,6 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_bg_color": "",
-        "column_border_color": "",
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_CkcUYR": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_Q7aB37": {
-          "type": "column",
-          "settings": {
-            "title": "Unbox",
-            "text": "<p>Remove the mattress from the box carefully.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_K4m6Mc": {
-          "type": "column",
-          "settings": {
-            "title": "Position",
-            "text": "<p>Place the rolled-up mattress on your bed frame.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_XfwPY9": {
-          "type": "column",
-          "settings": {
-            "title": "Unroll",
-            "text": "<p>Open the plastic wrap and gently unroll the  mattress.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_A6Ftjh": {
-          "type": "column",
-          "settings": {
-            "title": "Watch it Expand",
-            "text": "<p>Allow 24-48 hours for the  mattress to fully expand and be ready for a comfortable sleep.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_Q7aB37",
-        "column_K4m6Mc",
-        "column_XfwPY9",
-        "column_A6Ftjh"
-      ],
-      "settings": {
-        "title": "Unboxing Your New Maple Mattress",
-        "subtitle": "Maple mattress arrives compressed in a box for easy delivery and hassle-free unboxing. Simply follow the quick setup steps to enjoy a great night’s sleep.",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
         "column_bg_color": "",
         "column_border_color": "",
         "column_alignment": "center",
@@ -311,9 +239,7 @@
   },
   "order": [
     "main",
-    "product_features_kJRMty",
     "multicolumn_qxCUi8",
-    "multicolumn_CkcUYR",
     "collapsible_content_ER7KNk",
     "related-products"
   ]
