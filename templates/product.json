@@ -127,6 +127,12 @@
         "padding_bottom": 12
       }
     },
+    "product_features_TPKRqr": {
+      "type": "product-features",
+      "settings": {
+        "page_version": false
+      }
+    },
     "multicolumn_qxCUi8": {
       "type": "multicolumn",
       "blocks": {
@@ -239,6 +245,7 @@
   },
   "order": [
     "main",
+    "product_features_TPKRqr",
     "multicolumn_qxCUi8",
     "collapsible_content_ER7KNk",
     "related-products"
