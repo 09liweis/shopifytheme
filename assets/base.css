@@ -3705,6 +3705,7 @@ details-disclosure > details {
   font-weight: bold;
   font-size: 30px;
   color: #272C48;
+  text-align: center;
 }
 
 .section-subtitle {
