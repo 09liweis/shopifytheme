@@ -193,6 +193,76 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_E9eTNf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_niAjyj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Unbox_Mattress-_1.png",
+            "title": "Unbox",
+            "text": "<p>Remove the mattress from the box carefully.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WtdBeX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Unbox_Mattress-2.png",
+            "title": "Position",
+            "text": "<p>Place the rolled-up mattress on your bed frame.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Da9AVG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Unbox_Mattress-3.png",
+            "title": "Unroll",
+            "text": "<p>Open the plastic wrap and gently unroll the mattress.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_aJBQBW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Unbox_Mattress-4.png",
+            "title": "Expand",
+            "text": "<p>Allow 24–48 hours for the mattress to fully expand and be ready for a comfortable sleep.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_niAjyj",
+        "column_WtdBeX",
+        "column_Da9AVG",
+        "column_aJBQBW"
+      ],
+      "settings": {
+        "title": "Unboxing Your New Maple Mattress",
+        "subtitle": "Maple mattress arrives compressed in a box for easy delivery and hassle-free unboxing. Simply follow the quick setup steps to enjoy a great night’s sleep.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_bg_color": "",
+        "column_border_color": "",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collapsible_content_ER7KNk": {
       "type": "collapsible-content",
       "blocks": {
@@ -248,6 +318,7 @@
     "main",
     "product_features_TPKRqr",
     "multicolumn_qxCUi8",
+    "multicolumn_E9eTNf",
     "collapsible_content_ER7KNk",
     "related-products"
   ]
