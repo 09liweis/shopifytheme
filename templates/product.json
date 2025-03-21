@@ -140,9 +140,9 @@
         "column_dHBUEq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Uninterrupted-Sleep-Experience.jpg",
-            "title": "Stay Cool All Night Long",
-            "text": "<p>Our advanced breathable materials and temperature-regulating design keep you cool throughout the night, eliminating the discomfort of sleeping hot.</p>",
+            "image": "shopify://shop_images/Mattress__Protector_material.png",
+            "title": "Waterproof Protection",
+            "text": "<p>100% waterproof & stain-resistant, protects  your mattress from liquids and stains.</p>",
             "link_label": "",
             "link": ""
           }
@@ -150,9 +150,9 @@
         "column_nA7tmL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Back-Pain-Relief-_-Support.jpg",
-            "title": "Great Motion Isolation",
-            "text": "<p>Say goodbye to disturbances from your partner’s movements. Our mattress absorbs motion, ensuring a peaceful, undisturbed sleep for both of you.</p>",
+            "image": "shopify://shop_images/Mattress_protector_in_bed.png",
+            "title": "SnugFit for Extra-Deep Mattress",
+            "text": "<p>The elasticized skirt ensures a secure fit for lasting comfort and protection.</p>",
             "link_label": "",
             "link": ""
           }
@@ -160,9 +160,9 @@
         "column_KyqhDz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Feel-Refreshed-Every-Morning.jpg",
-            "title": "Wake Up Refreshed Every Morning",
-            "text": "<p>Experience superior comfort and support, helping you sleep deeply and wake up feeling truly refreshed and ready to take on the day.</p>",
+            "image": "shopify://shop_images/Mattress_protector_benefit.png",
+            "title": "Anti-Bacterial & Hypoallergenic",
+            "text": "<p>Keeps your bed fresh and clean.</p>",
             "link_label": "",
             "link": ""
           }
