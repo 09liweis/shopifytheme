@@ -83,7 +83,7 @@
           "settings": {
             "heading": "Materials & Certifications",
             "icon": "leather",
-            "content": "<p>100% cotton with a 250 thread count.</p>",
+            "content": "<ul><li>Fabric:100% cotton with a 250 thread count</li><li>Protective Water-Resisting Coating: 100% Thermoplastic Polyurethane</li></ul>",
             "page": ""
           }
         },
@@ -201,7 +201,7 @@
           "repeater": "{{ metaobjects.faqs[\"faqs-65xp5pwi\"].faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
-            "icon": "leaf",
+            "icon": "none",
             "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
