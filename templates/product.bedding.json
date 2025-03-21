@@ -1,0 +1,309 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "icon_with_text_U8bxgc": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "none",
+            "image_1": "shopify://shop_images/made_in_ca.svg",
+            "heading_1": "Made in Canada",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/night_time.svg",
+            "heading_2": "100-Night Trial",
+            "icon_3": "truck",
+            "image_3": "shopify://shop_images/year-warrenty.svg",
+            "heading_3": "10-Year Warranty"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "free_gift_A9cyDa": {
+          "type": "free_gift",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Details",
+            "icon": "star",
+            "content": "<ul><li>Full upholstered headboard and side rails in grey linen-like fabric </li><li>Solid wood legs & slats</li><li>10\" to 14\" mattress height recommended; no box spring required</li><li>Horizontal stitch detailing on headboard for visual interest </li><li>Low profile</li><li>Platform bed; no box-spring or foundation required</li><li>Durable frame construction with solid wood, engineered wood, and plywood</li><li>Exposed low plastic legs in a black finish</li><li>Assemble required</li><li>Packaging: 2 Boxes</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warranty & Shipping",
+            "icon": "truck",
+            "content": "<ul><li>You can return our bed frames within 30 days of delivery, provided they are in their original packaging and box.The cost of return shipping will be your responsibility.</li><li>2-year limited warranty.</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "icon_with_text_U8bxgc",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "free_gift_A9cyDa",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "multirow_imedX8": {
+      "type": "multirow",
+      "blocks": {
+        "row_p7fnKN": {
+          "type": "row",
+          "repeater": "{{ product.metafields.custom.bed_frames.value }}",
+          "settings": {
+            "image": "{{ block.repeater.image.value }}",
+            "caption": "",
+            "heading": "{{ block.repeater.title.value }}",
+            "text": "{{ block.repeater.description | metafield_tag }}",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_p7fnKN"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_bqVjRT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ajX8L9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contemporary Design and  Easy Assembly",
+            "heading_size": "h1"
+          }
+        },
+        "text_YrgtE7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our bed frame is thoughtfully designed for simplicity, shipping in two compact boxes and assembling effortlessly in just minutes.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ajX8L9",
+        "text_YrgtE7"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "",
+        "media_type": "image",
+        "image": "shopify://shop_images/5892GYQqueenbed__l1_3.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_fQAT9K": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xkTjWz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Make Your Bedroom a Comfort Zone",
+            "heading_size": "h1"
+          }
+        },
+        "text_DVYWrd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We designed an upholstered bed that combines a timeless, contemporary aesthetic with robust support for any mattress. This bed features a luxurious tufted upholstered headboard, providing both style and comfort, while the sturdy frame ensures ideal support and durability. </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xkTjWz",
+        "text_DVYWrd"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "",
+        "media_type": "image",
+        "image": "shopify://shop_images/5892GYQqueenbed__front.jpg",
+        "video_url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_ER7KNk": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Qac9h9": {
+          "type": "collapsible_row",
+          "repeater": "{{ metaobjects.faqs[\"furniture-fa-qs\"].faq.value }}",
+          "settings": {
+            "heading": "{{ block.repeater.question.value }}",
+            "icon": "leaf",
+            "row_content": "{{ block.repeater.answer | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Qac9h9"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multirow_imedX8",
+    "image_with_text_bqVjRT",
+    "image_with_text_fQAT9K",
+    "collapsible_content_ER7KNk",
+    "related-products"
+  ]
+}
