@@ -83,7 +83,7 @@
           "settings": {
             "heading": "Materials & Certifications",
             "icon": "leather",
-            "content": "<p><strong>Cover:</strong></p><ul><li>Top half: 97% polyester, 3% spandex</li><li>Sides: 100% polyester</li><li>Bottom: 100% polypropylene</li></ul><p><strong>Foam Layers:</strong></p><ul><li>100% breathable, open-cell polyurethane foam</li></ul><p><strong>CertiPUR-US® Certified:</strong></p><ul><li>Made without VOCs, formaldehyde, and phthalates for a safe and comfortable sleep.</li></ul>",
+            "content": "<p>100% cotton with a 250 thread count.</p>",
             "page": ""
           }
         },
@@ -92,7 +92,7 @@
           "settings": {
             "heading": "Warranty & Shipping",
             "icon": "truck",
-            "content": "<p><strong>Fast & Free Shipping to All Canadian Provinces</strong><br/>In-stock orders ship within 1 day! Additional fees or exclusions may apply to Canadian Territories.</p><p><strong>Mattresses:</strong><br/>Twin to Queen-sized memory foam mattresses ship to Iqaluit, Whitehorse, and Yellowknife for a flat fee of $150.<br/>Currently, only Twin-sized hybrid mattresses can be shipped to these locations for a flat $150 fee.<br/><strong>Nature latex mattresses cannot be shipped to the territories at this time.</strong></p><p><strong>Furniture:</strong><br/>Bed frames cannot be shipped to the territories at this time.</p><p><strong>Subject to 10-Year Limited Mattress Warranty.</strong></p>",
+            "content": "<p>Free shipping </p><p>1 year warranty</p>",
             "page": ""
           }
         }
@@ -129,6 +129,7 @@
     },
     "product_features_TPKRqr": {
       "type": "product-features",
+      "disabled": true,
       "settings": {
         "page_version": false
       }
