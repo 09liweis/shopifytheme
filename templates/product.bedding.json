@@ -252,7 +252,7 @@
       "blocks": {
         "collapsible_row_Qac9h9": {
           "type": "collapsible_row",
-          "repeater": "{{ metaobjects.faqs[\"furniture-fa-qs\"].faq.value }}",
+          "repeater": "{{ metaobjects.faqs[\"faqs-hpqxczun\"].faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
             "icon": "leaf",
