@@ -185,7 +185,6 @@
         "heading_ajX8L9",
         "text_YrgtE7"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "",
         "media_type": "image",
@@ -227,13 +226,12 @@
         "heading_xkTjWz",
         "text_DVYWrd"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "",
         "media_type": "image",
         "image": "shopify://shop_images/5892GYQqueenbed__front.jpg",
         "video_url": "",
-        "height": "adapt",
+        "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
