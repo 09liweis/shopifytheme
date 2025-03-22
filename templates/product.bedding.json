@@ -168,14 +168,14 @@
         "heading_ajX8L9": {
           "type": "heading",
           "settings": {
-            "heading": "Contemporary Design and  Easy Assembly",
+            "heading": "SnugFit for Extra-Deep Mattress",
             "heading_size": "h1"
           }
         },
         "text_YrgtE7": {
           "type": "text",
           "settings": {
-            "text": "<p>Our bed frame is thoughtfully designed for simplicity, shipping in two compact boxes and assembling effortlessly in just minutes.</p>",
+            "text": "<p>The elasticized skirt ensures a<br/>snug, secure fit, adapting to your mattress's contours and preventing shifting.It fits mattresses up to 20 inches in height.</p>",
             "text_style": "body"
           }
         }
@@ -184,14 +184,13 @@
         "heading_ajX8L9",
         "text_YrgtE7"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/5892GYQqueenbed__l1_3.jpg",
+        "image": "shopify://shop_images/Mattress_protector_in_bed.png",
         "video_url": "",
-        "height": "adapt",
-        "desktop_image_width": "medium",
+        "height": "small",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
@@ -226,14 +225,13 @@
         "heading_xkTjWz",
         "text_DVYWrd"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/5892GYQqueenbed__front.jpg",
+        "image": "shopify://shop_images/Mattress__Protector_material.png",
         "video_url": "",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
