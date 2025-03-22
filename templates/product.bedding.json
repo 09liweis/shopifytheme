@@ -209,15 +209,15 @@
         "heading_xkTjWz": {
           "type": "heading",
           "settings": {
-            "heading": "Make Your Bedroom a Comfort Zone",
+            "heading": "100% Waterproof, Stain-Resistant & Hypoallergenic",
             "heading_size": "h1"
           }
         },
         "text_DVYWrd": {
           "type": "text",
           "settings": {
-            "text": "<p>We designed an upholstered bed that combines a timeless, contemporary aesthetic with robust support for any mattress. This bed features a luxurious tufted upholstered headboard, providing both style and comfort, while the sturdy frame ensures ideal support and durability. </p>",
-            "text_style": "body"
+            "text": "<h3>Safeguards your mattress from liquids and stains, keeping your bed clean and fresh while preventing allergens.</h3>",
+            "text_style": "subtitle"
           }
         }
       },
