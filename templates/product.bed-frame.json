@@ -133,6 +133,7 @@
       "blocks": {
         "row_p7fnKN": {
           "type": "row",
+          "disabled": true,
           "repeater": "{{ product.metafields.custom.bed_frames.value }}",
           "settings": {
             "image": "{{ block.repeater.image.value }}",
@@ -191,7 +192,7 @@
         "image": "shopify://shop_images/5892GYQqueenbed__l1_3.jpg",
         "video_url": "",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "large",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
@@ -226,14 +227,13 @@
         "heading_xkTjWz",
         "text_DVYWrd"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "",
         "media_type": "image",
         "image": "shopify://shop_images/5892GYQqueenbed__front.jpg",
         "video_url": "",
-        "height": "large",
-        "desktop_image_width": "medium",
+        "height": "adapt",
+        "desktop_image_width": "large",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
