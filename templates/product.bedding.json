@@ -14,7 +14,6 @@
       "blocks": {
         "vendor": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -84,7 +83,7 @@
           "settings": {
             "heading": "Product Details",
             "icon": "star",
-            "content": "<ul><li>Full upholstered headboard and side rails in grey linen-like fabric </li><li>Solid wood legs & slats</li><li>10\" to 14\" mattress height recommended; no box spring required</li><li>Horizontal stitch detailing on headboard for visual interest </li><li>Low profile</li><li>Platform bed; no box-spring or foundation required</li><li>Durable frame construction with solid wood, engineered wood, and plywood</li><li>Exposed low plastic legs in a black finish</li><li>Assemble required</li><li>Packaging: 2 Boxes</li></ul>",
+            "content": "<ul><li>Fabric:100% cotton with a 250 thread count</li><li>Protective Water-Resisting Coating: 100% Thermoplastic Polyurethane</li></ul>",
             "page": ""
           }
         },
@@ -93,7 +92,7 @@
           "settings": {
             "heading": "Warranty & Shipping",
             "icon": "truck",
-            "content": "<ul><li>You can return our bed frames within 30 days of delivery, provided they are in their original packaging and box.The cost of return shipping will be your responsibility.</li><li>2-year limited warranty.</li></ul>",
+            "content": "<p>Free shipping with 1 year warranty.</p>",
             "page": ""
           }
         }
