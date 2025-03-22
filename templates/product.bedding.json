@@ -252,7 +252,7 @@
           "repeater": "{{ metaobjects.faqs[\"faqs-hpqxczun\"].faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
-            "icon": "leaf",
+            "icon": "none",
             "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
