@@ -175,7 +175,7 @@
         "text_YrgtE7": {
           "type": "text",
           "settings": {
-            "text": "<h3>The elasticized skirt ensures a snug, secure fit, adapting to your mattress's contours and preventing shifting.It fits mattresses up to 20 inches in height.</h3>",
+            "text": "<h4>The elasticized skirt ensures a snug, secure fit, adapting to your mattress's contours and preventing shifting.It fits mattresses up to 20 inches in height.</h4>",
             "text_style": "body"
           }
         }
@@ -216,7 +216,7 @@
         "text_DVYWrd": {
           "type": "text",
           "settings": {
-            "text": "<h3>Safeguards your mattress from liquids and stains, keeping your bed clean and fresh while preventing allergens.</h3>",
+            "text": "<h4>Safeguards your mattress from liquids and stains, keeping your bed clean and fresh while preventing allergens.</h4>",
             "text_style": "subtitle"
           }
         }
