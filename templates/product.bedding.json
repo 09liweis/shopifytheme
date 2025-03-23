@@ -175,7 +175,7 @@
         "text_YrgtE7": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Features & Benefits</strong></p><ul><li>100% Waterproof & Stain-Resistant: Protects against liquids and stains.</li><li>Ultimate Comfort: Ensures cool, all-night comfort.</li><li>Extra-Deep Elasticized Skirt: Fits up to 20\" high mattresses, providing consistent protection and comfort.</li></ul>",
+            "text": "",
             "text_style": "body"
           }
         }
@@ -216,8 +216,8 @@
         "text_DVYWrd": {
           "type": "text",
           "settings": {
-            "text": "<h4>Safeguards your mattress from liquids and stains, keeping your bed clean and fresh while preventing allergens.</h4>",
-            "text_style": "subtitle"
+            "text": "<h3><strong>Features & Benefit:</strong></h3><ul><li>100% Waterproof & Stain-Resistant: Protects against liquids and stains.</li><li>Ultimate Comfort: Ensures cool,all-night comfort.</li><li>Extra-Deep Elasticized Skirt:  Fits up to 20\" high mattresses, providing consistent protection and comfort.</li><li>Safeguards your mattress from liquids and stains, keeping your bed clean and fresh while preventing allergens.</li></ul>",
+            "text_style": "body"
           }
         }
       },
