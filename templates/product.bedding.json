@@ -230,7 +230,7 @@
         "media_type": "image",
         "image": "shopify://shop_images/Mattress_protector_benefit.png",
         "video_url": "",
-        "height": "large",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
