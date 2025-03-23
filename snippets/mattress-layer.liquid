@@ -41,10 +41,10 @@
 
 <div class="page-width scroll-trigger animate--slide-in">
   <h2 class="layer-heading">Engineered for Lasting Comfort</h2>
-  <div class="grid grid--1-col-tablet-down grid--2-col-desktop">
+  <div class="grid grid--1-col-tablet-down grid--2-col-desktop justify-center">
     <div id="layer-image-container" class="grid__item">
       {% comment %} {{ layer_image.value | image_url: width: 600 | image_tag: class: 'w-full', preload: true }} {% endcomment %}
-      
+
       <img
         srcset="
           {%- if layer_image.width >= 165 -%}{{ layer_image | image_url: width: 165 }} 165w,{%- endif -%}
@@ -62,18 +62,19 @@
         style="width: 100%"
         loading="lazy"
       >
-
     </div>
-    <div class="layer-items grid__item">
-      {% for layerItem in layerItems %}
-        <div class="layer-item flex">
-          <div>
-            <div class="layer-point active"></div>
+    {% comment %}
+      <div class="layer-items grid__item">
+        {% for layerItem in layerItems %}
+          <div class="layer-item flex">
+            <div>
+              <div class="layer-point active"></div>
+            </div>
+            <h5 class="layer-title">{{ layerItem }}</h5>
           </div>
-          <h5 class="layer-title">{{ layerItem }}</h5>
-        </div>
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
+    {% endcomment %}
   </div>
 </div>
 
