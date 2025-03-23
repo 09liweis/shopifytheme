@@ -216,7 +216,7 @@
         "text_DVYWrd": {
           "type": "text",
           "settings": {
-            "text": "<ul><li><strong>100% Waterproof & Stain-Resistant</strong>: Protects against liquids and stains.</li><li><strong>Ultimate Comfort</strong>: Ensures cool,all-night comfort.</li><li><strong>Extra-Deep Elasticized Skirt</strong>:  Fits up to 20\" high mattresses, providing consistent protection and comfort.</li><li><strong>Hypoallergenic</strong>: Keeps your bed fresh and clean.</li><li><strong>Machine-washable design</strong>:Easy<br/>to clean for enduring freshness.</li></ul>",
+            "text": "<ul><li><strong>100% Waterproof & Stain-Resistant</strong>: Protects against liquids and stains.</li></ul><p></p><ul><li><strong>Ultimate Comfort</strong>: Ensures cool,all-night comfort.</li></ul><p></p><ul><li><strong>Extra-Deep Elasticized Skirt</strong>:  Fits up to 20\" high mattresses, providing consistent protection and comfort.</li></ul><p></p><ul><li><strong>Hypoallergenic</strong>: Keeps your bed fresh and clean.</li></ul><p></p><ul><li><strong>Machine-washable design</strong>:Easy to clean for enduring freshness.</li></ul>",
             "text_style": "body"
           }
         }
