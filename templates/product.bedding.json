@@ -168,14 +168,14 @@
         "heading_ajX8L9": {
           "type": "heading",
           "settings": {
-            "heading": "The Maple Mattress Waterproof Protector keeps your bed clean and fresh while maintaining maximum comfort. Its stain-resistant, machine-washable design makes cleaning effortless, ensuring it looks as good as new after every wash.",
-            "heading_size": "h0"
+            "heading": "<strong>Maximum Protection,Maximum Comfort</strong>",
+            "heading_size": "hxxl"
           }
         },
         "text_YrgtE7": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "<p>The Maple Mattress Waterproof Protector keeps your bed clean and fresh while maintaining maximum comfort. Its stain-resistant, machine-washable design makes cleaning effortless, ensuring it looks as good as new after every wash. </p>",
             "text_style": "body"
           }
         }
