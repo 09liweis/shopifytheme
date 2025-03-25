@@ -17,8 +17,12 @@
   overflow: visible;
 }
 
+.image-with-text__media-item .image-with-text__media img {
+  position: static !important;
+}
+
 .image-with-text__media--small {
-  height: 19.4rem;
+  /* height: 19.4rem; */
 }
 
 .image-with-text__media--medium {
@@ -31,7 +35,7 @@
 
 @media screen and (min-width: 750px) {
   .image-with-text__media--small {
-    height: 31.4rem;
+    /* height: 31.4rem; */
   }
 
   .image-with-text__media--medium {
@@ -246,7 +250,7 @@
     .image-with-text__media-item:after,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
     .grid:not(.image-with-text__grid--reverse)
-    .image-with-text__media,
+    .,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
     .grid:not(.image-with-text__grid--reverse)
     .image-with-text__media
