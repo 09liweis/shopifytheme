@@ -133,6 +133,7 @@
       "blocks": {
         "row_p7fnKN": {
           "type": "row",
+          "disabled": true,
           "repeater": "{{ product.metafields.custom.bed_frames.value }}",
           "settings": {
             "image": "{{ block.repeater.image.value }}",
@@ -185,16 +186,15 @@
         "heading_ajX8L9",
         "text_YrgtE7"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "",
         "media_type": "image",
         "image": "shopify://shop_images/5892GYQqueenbed__l1_3.jpg",
         "video_url": "",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
@@ -227,16 +227,15 @@
         "heading_xkTjWz",
         "text_DVYWrd"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "",
         "media_type": "image",
         "image": "shopify://shop_images/5892GYQqueenbed__front.jpg",
         "video_url": "",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
@@ -255,7 +254,7 @@
           "repeater": "{{ metaobjects.faqs[\"furniture-fa-qs\"].faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
-            "icon": "leaf",
+            "icon": "none",
             "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
@@ -269,7 +268,7 @@
         "heading": "Frequently Asked Questions",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "row",
+        "layout": "none",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,

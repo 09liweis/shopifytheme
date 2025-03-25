@@ -14,7 +14,6 @@
       "blocks": {
         "vendor": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -84,7 +83,7 @@
           "settings": {
             "heading": "Product Details",
             "icon": "star",
-            "content": "<ul><li>Full upholstered headboard and side rails in grey linen-like fabric </li><li>Solid wood legs & slats</li><li>10\" to 14\" mattress height recommended; no box spring required</li><li>Horizontal stitch detailing on headboard for visual interest </li><li>Low profile</li><li>Platform bed; no box-spring or foundation required</li><li>Durable frame construction with solid wood, engineered wood, and plywood</li><li>Exposed low plastic legs in a black finish</li><li>Assemble required</li><li>Packaging: 2 Boxes</li></ul>",
+            "content": "<ul><li>Fabric:100% cotton with a 250 thread count</li><li>Protective Water-Resisting Coating: 100% Thermoplastic Polyurethane</li></ul>",
             "page": ""
           }
         },
@@ -93,7 +92,7 @@
           "settings": {
             "heading": "Warranty & Shipping",
             "icon": "truck",
-            "content": "<ul><li>You can return our bed frames within 30 days of delivery, provided they are in their original packaging and box.The cost of return shipping will be your responsibility.</li><li>2-year limited warranty.</li></ul>",
+            "content": "<p>Free shipping with 1 year warranty.</p>",
             "page": ""
           }
         }
@@ -115,7 +114,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
@@ -169,14 +168,14 @@
         "heading_ajX8L9": {
           "type": "heading",
           "settings": {
-            "heading": "Contemporary Design and  Easy Assembly",
-            "heading_size": "h1"
+            "heading": "<strong>Maximum Protection,Maximum Comfort</strong>",
+            "heading_size": "hxxl"
           }
         },
         "text_YrgtE7": {
           "type": "text",
           "settings": {
-            "text": "<p>Our bed frame is thoughtfully designed for simplicity, shipping in two compact boxes and assembling effortlessly in just minutes.</p>",
+            "text": "<p>Get the ultimate mattress protection for a peaceful night’s sleep. The  mattress protector is 100% waterproof and stain resistant.</p>",
             "text_style": "body"
           }
         }
@@ -185,16 +184,15 @@
         "heading_ajX8L9",
         "text_YrgtE7"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/5892GYQqueenbed__l1_3.jpg",
+        "image": "shopify://shop_images/Mattress_protector_in_bed.png",
         "video_url": "",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
@@ -211,14 +209,14 @@
         "heading_xkTjWz": {
           "type": "heading",
           "settings": {
-            "heading": "Make Your Bedroom a Comfort Zone",
-            "heading_size": "h1"
+            "heading": "<strong>Features & Benefit:</strong>",
+            "heading_size": "h0"
           }
         },
         "text_DVYWrd": {
           "type": "text",
           "settings": {
-            "text": "<p>We designed an upholstered bed that combines a timeless, contemporary aesthetic with robust support for any mattress. This bed features a luxurious tufted upholstered headboard, providing both style and comfort, while the sturdy frame ensures ideal support and durability. </p>",
+            "text": "<ul><li><strong>100% Waterproof & Stain-Resistant</strong>: Protects against liquids and stains.</li></ul><p></p><ul><li><strong>Ultimate Comfort</strong>: Ensures cool,all-night comfort.</li></ul><p></p><ul><li><strong>Extra-Deep Elasticized Skirt</strong>:  Fits up to 20\" high mattresses, providing consistent protection and comfort.</li></ul><p></p><ul><li><strong>Hypoallergenic</strong>: Keeps your bed fresh and clean.</li></ul><p></p><ul><li><strong>Machine-washable design</strong>:Easy to clean for enduring freshness.</li></ul>",
             "text_style": "body"
           }
         }
@@ -227,16 +225,15 @@
         "heading_xkTjWz",
         "text_DVYWrd"
       ],
-      "disabled": true,
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/5892GYQqueenbed__front.jpg",
+        "image": "shopify://shop_images/Mattress_protector_benefit.png",
         "video_url": "",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
@@ -269,7 +266,7 @@
         "heading": "Frequently Asked Questions",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "row",
+        "layout": "none",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,

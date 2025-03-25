@@ -83,7 +83,7 @@
           "settings": {
             "heading": "Materials & Certifications",
             "icon": "leather",
-            "content": "<ul><li>Fabric:100% cotton with a 250 thread count</li><li>Protective Water-Resisting Coating: 100% Thermoplastic Polyurethane</li></ul>",
+            "content": "<p></p><ul><li>Protective Water-Resisting Coating: 100% Thermoplastic Polyurethane</li></ul>",
             "page": ""
           }
         },
@@ -114,10 +114,10 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
-        "media_size": "large",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "columns",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
@@ -231,7 +231,7 @@
           "settings": {
             "image": "shopify://shop_images/Unbox_Mattress-4.png",
             "title": "Expand",
-            "text": "<p>Allow 24–48 hours for the mattress to fully expand and be ready for a comfortable sleep.</p>",
+            "text": "<p>Allow 24–48 hours for the mattress to fully expand. </p>",
             "link_label": "",
             "link": ""
           }
@@ -271,7 +271,7 @@
           "repeater": "{{ metaobjects.faqs[\"faqs-65xp5pwi\"].faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
-            "icon": "leaf",
+            "icon": "none",
             "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
@@ -285,7 +285,7 @@
         "heading": "Frequently Asked Questions",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "row",
+        "layout": "none",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
