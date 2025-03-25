@@ -104,7 +104,7 @@
     </div>
   {%- endif -%}
 
-  <section>
+  {% comment %} <section>
     <div class="size name">
       {% assign firmness = product.metafields.custom.mattress_firmness.value %}
       <p id="plush">
@@ -122,7 +122,6 @@
 
         {% endif %}
       </p>
-      {% comment %} <p id="plush2">({{ product.metafields.custom.mattress_firmness.value }} out of 10)</p> {% endcomment %}
     </div>
 
     <div class="size">
@@ -138,7 +137,7 @@
       </p>
       <p class="pspace">Height</p>
     </div>
-  </section>
+  </section> {% endcomment %}
 
   {% assign mattress_specs = product.metafields.custom.mattress_specs.value %}
   {% if mattress_specs %}
