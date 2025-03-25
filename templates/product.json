@@ -83,7 +83,7 @@
           "settings": {
             "heading": "Materials & Certifications",
             "icon": "leather",
-            "content": "<ul><li>Fabric:100% cotton with a 250 thread count</li><li>Protective Water-Resisting Coating: 100% Thermoplastic Polyurethane</li></ul>",
+            "content": "<p></p><ul><li>Protective Water-Resisting Coating: 100% Thermoplastic Polyurethane</li></ul>",
             "page": ""
           }
         },
