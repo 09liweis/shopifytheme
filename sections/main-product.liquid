@@ -737,13 +737,13 @@
   </div>
 </product-info>
 
-{% if product.template_suffix == '' %}
+{% comment %} {% if product.template_suffix == '' %}
   {% assign mattressLayer = product.metafields.custom.mattress_layer.value %}
 
   {% if mattressLayer %}
     {% render 'mattress-layer', mattressLayer: mattressLayer, product: product %}
   {% endif %}
-{% endif %}
+{% endif %} {% endcomment %}
 
 {% schema %}
 {
