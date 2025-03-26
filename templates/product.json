@@ -92,7 +92,7 @@
           "settings": {
             "heading": "Warranty & Shipping",
             "icon": "truck",
-            "content": "<p>Free shipping with 1 year warranty</p>",
+            "content": "<h5><strong>Shipping Policy:</strong></h5><h5><strong>Where We Ship:</strong><br/>We offer free shipping across all Canadian provinces, from coast to coast.</h5><h5><strong>Shipping Restrictions:</strong></h5><h5>We do not ship mattresses and bed frames to Canadian Territories (e.g., Iqaluit, Whitehorse, Yellowknife, etc.).</h5><h5>We cannot ship to PO Boxes or Station Boxes. Please provide a full residential address, and our shipping partners will deliver to your home or a nearby pickup location.</h5><h5><strong>J0M postal codes</strong>: We can only ship mattresses and bedding to J0M. Furniture cannot be shipped.</h5><h5><strong>V0T postal codes</strong>: We can only ship bedding to V0T. Mattresses and furniture are excluded.</h5><h5><strong>Warranty:</strong></h5><h5>The Maple Mattress is covered by a 10-year limited warranty, while the bed frame is backed by a 1-year limited manufacturer's warranty.</h5>",
             "page": ""
           }
         }
