@@ -93,7 +93,7 @@
           "settings": {
             "heading": "Warranty & Shipping",
             "icon": "truck",
-            "content": "<ul><li>You can return our bed frames within 30 days of delivery, provided they are in their original packaging and box.The cost of return shipping will be your responsibility.</li><li>2-year limited warranty.</li></ul>",
+            "content": "<h4><strong>Where We Ship:</strong><br/><br/>Enjoy free shipping across all Canadian provinces from coast to coast.</h4><h4><strong>Shipping Restrictions:</strong></h4><h4>We do not ship mattresses and bed frames to Canadian Territories (e.g., Iqaluit, Whitehorse, Yellowknife, etc.).</h4><h4>We cannot ship to PO Boxes or Station Boxes. Please provide a full residential address for delivery to your home or a nearby pickup location.</h4><h4><strong>J0M postal codes:</strong> Only mattresses and bedding can be shipped to J0M. Furniture cannot be shipped.</h4><h4><strong>V0T postal codes:</strong> Only bedding can be shipped to V0T. Mattresses and furniture are excluded.<br/><br/>The furniture comes with a 1-year limited manufacturer's warranty.</h4>",
             "page": ""
           }
         }
