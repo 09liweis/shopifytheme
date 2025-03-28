@@ -394,7 +394,7 @@
           "repeater": "{{ metaobjects.faqs[\"custom-mattress-fa-qs\"].faq.value }}",
           "settings": {
             "heading": "{{ block.repeater.question.value }}",
-            "icon": "none",
+            "icon": "leaf",
             "row_content": "{{ block.repeater.answer | metafield_tag }}",
             "page": ""
           }
