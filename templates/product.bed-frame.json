@@ -82,7 +82,7 @@
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Product Details",
+            "heading": "Product Spec & Packaging",
             "icon": "leather",
             "content": "{{ product.description }}",
             "page": ""
