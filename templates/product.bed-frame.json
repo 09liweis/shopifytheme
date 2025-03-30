@@ -83,7 +83,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Product Details",
-            "icon": "star",
+            "icon": "leather",
             "content": "{{ product.description }}",
             "page": ""
           }
