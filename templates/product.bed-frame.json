@@ -84,7 +84,7 @@
           "settings": {
             "heading": "Product Details",
             "icon": "star",
-            "content": "<ul><li></li></ul>{{ product.description }}",
+            "content": "{{ product.description }}",
             "page": ""
           }
         },
