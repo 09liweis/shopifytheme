@@ -11,8 +11,11 @@
       <div class="grid__item">
         <h4>{{ product.title }}</h4>
         <div class="product-variants">
+          <div class="variant" id="variant-not-available">
+            <div>Not Available</div>
+          </div>
           {% for variant in product.variants %}
-            <div class="variant" id="{{variant.title| replace: " ", "-" }}" data-variant-id="{{ variant.id }}">
+            <div class="variant" id="{{variant.title| replace: "/", "-" }}" data-variant-id="{{ variant.id }}">
               <div>{{ variant.title }}</div>
               <div>{{ variant.price | money }}</div>
             </div>
@@ -47,13 +50,18 @@
   </style>
   <script>
     function showDiscountVariant(variant) {
-      const variantElement = document.querySelector('.variant#' + variant.replace(' ', '-'));
+      const addBtn = document.getElementById('add-discount-product');
+      const variantElements = document.querySelectorAll('.variant');
+      for (let i = 0; i < variantElements.length; i++) {
+        variantElements[i].classList.remove('selected');
+      }
+      const variantElement = document.querySelector('.variant#' + variant.replace('/', '-'));
       if (variantElement) {
-        const variantElements = document.querySelectorAll('.variant');
-        for (let i = 0; i < variantElements.length; i++) {
-          variantElements[i].classList.remove('selected');
-        }
         variantElement.classList.add('selected');
+        addBtn.classList.remove('hidden');
+      } else {
+        document.getElementById('variant-not-available').classList.add('selected');
+        addBtn.classList.add('hidden');
       }
     }
 
