@@ -168,7 +168,6 @@
       "blocks": {
         "row_p7fnKN": {
           "type": "row",
-          "disabled": true,
           "repeater": "{{ product.metafields.custom.bed_frames.value }}",
           "settings": {
             "image": "{{ block.repeater.image.value }}",
@@ -204,6 +203,7 @@
       "blocks": {
         "heading_ajX8L9": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Contemporary Design and  Easy Assembly",
             "heading_size": "h0"
@@ -211,6 +211,7 @@
         },
         "text_YrgtE7": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Our bed frame is thoughtfully designed for simplicity, shipping in two compact boxes and assembling effortlessly in just minutes.</p>",
             "text_style": "body"
@@ -225,7 +226,6 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/5891GYQqueenbed_in_BG.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
@@ -246,6 +246,7 @@
       "blocks": {
         "heading_xkTjWz": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Make Your Bedroom a Comfort Zone",
             "heading_size": "h0"
@@ -253,6 +254,7 @@
         },
         "text_DVYWrd": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>We designed an upholstered bed that combines a timeless, contemporary aesthetic with robust support for any mattress. This bed features a luxurious tufted upholstered headboard, providing both style and comfort, while the sturdy frame ensures ideal support and durability. </p>",
             "text_style": "body"
@@ -267,7 +269,6 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/5891GYQqueenbed-in_bg_color.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
