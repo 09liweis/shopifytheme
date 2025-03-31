@@ -1,3 +1,12 @@
+.variant-selector__dropdown {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(var(--color-foreground), 0.15);
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
 .drawer {
   position: fixed;
   z-index: 1000;
