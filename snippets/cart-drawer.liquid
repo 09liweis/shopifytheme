@@ -132,6 +132,25 @@
                               height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
                             >
                           {% endif %}
+
+                          <div class="cart-item__details">
+                          {%- if item.product.has_only_default_variant == false -%}
+                            <div class="variant-selector">
+                              <select class="variant-selector__dropdown" data-line-item-key="{{ item.key }}">
+                                {% for variant in item.product.variants %}
+                                  <option
+                                    value="{{ variant.id }}"
+                                    {% if variant.id == item.variant.id %}selected="selected"{% endif %}
+                                    {% unless variant.available %}disabled="disabled"{% endunless %}
+                                  >
+                                    {{ variant.title }} {% unless variant.available %}(Sold Out){% endunless %}
+                                  </option>
+                                {% endfor %}
+                              </select>
+                            </div>
+                          {%- endif -%}
+                        </div>
+                          
                         </td>
 
                         <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct">
