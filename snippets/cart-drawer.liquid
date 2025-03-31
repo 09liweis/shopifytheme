@@ -578,3 +578,42 @@
     </div>
   </div>
 </cart-drawer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Event delegation for variant selectors
+  document.querySelector('cart-drawer').addEventListener('change', async (event) => {
+    if (!event.target.classList.contains('variant-selector__dropdown')) return;
+
+    const select = event.target;
+    const newVariantId = select.value;
+    const lineItemKey = select.dataset.lineItemKey;
+    const cartDrawer = document.querySelector('cart-drawer');
+
+    try {
+      const response = await fetch('/cart/change.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          id: lineItemKey,
+          new_variant_id: newVariantId,
+          quantity: 1
+        })
+      });
+
+      const data = await response.json();
+      
+      if (response.ok) {
+        // Update cart contents
+        document.dispatchEvent(new CustomEvent('cart:update', { bubbles: true }));
+      } else {
+        throw new Error(data.description);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Unable to update item. Please refresh and try again.');
+      select.value = select.dataset.initialValue; // Reset selection
+    }
+  });
+});
+</script>
