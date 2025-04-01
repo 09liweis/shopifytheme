@@ -45,7 +45,7 @@
           "settings": {
             "image": "shopify://shop_images/Palm_Latex_Mattress_Natural_Latex.jpg",
             "title": "100% Organic Dunlop Latex",
-            "text": "<p>GOLS Certified Dunlop Latex is 100% natural, sustainably harvested latex, offering superior elasticity, strength, and durability.</p>",
+            "text": "<h4>GOLS Certified Dunlop Latex is 100% natural, sustainably harvested latex, offering superior elasticity, strength, and durability.</h4>",
             "link_label": "",
             "link": ""
           }
@@ -128,7 +128,7 @@
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "content_layout": "overlap",
         "section_color_scheme": "",
         "color_scheme": "",
         "image_behavior": "none",
