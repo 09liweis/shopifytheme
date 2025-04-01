@@ -139,6 +139,20 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "16477348613150133823": {
+        "type": "shopify://apps/unlimited-bundles/blocks/script-app-block/d33d0f48-dee0-42a0-b156-2a5dce91814a",
+        "disabled": false,
+        "settings": {
+          "reload_on_line_item_properties": true,
+          "disable_reload_on_cart_update": true,
+          "disable_cart_attribute_tracker": true,
+          "disable_facebook_events": true,
+          "enable_reload_on_bundle_auto_match": true,
+          "use_h2_header": true
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
