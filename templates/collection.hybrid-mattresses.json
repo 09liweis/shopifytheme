@@ -84,6 +84,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_bg_color": "",
+        "column_border_color": "",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
@@ -101,14 +102,14 @@
         "heading_xGwmdA": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Direct from Manufacturer, Quality You Can Trust!</strong>",
+            "heading": "<strong>Why Choose Our Premium Canadian Mattresses?</strong>",
             "heading_size": "hxl"
           }
         },
         "text_hABfkM": {
           "type": "text",
           "settings": {
-            "text": "<p>✅<strong>Save Money</strong>: Buy directly from the manufacturer and cut out the middleman.</p><p>✅<strong>Health-Conscious Sleep</strong>: Enjoy a mattress free from harmful chemicals.</p><p>✅<strong>Eco-Friendly Comfort</strong>: Sleep on a high-quality, eco-conscious mattress.</p><p>✅<strong>Unmatched Support & Comfort</strong>: Experience the perfect balance for a restful sleep.</p><p>✅<strong>Risk-Free Trial</strong>: Enjoy a 100-night risk-free trial to ensure it’s right for you.</p><p>✅<strong>Easy Setup</strong>: Have your mattress conveniently shipped in a box for easy handling.</p>",
+            "text": "<h4>🏅 Proudly Crafted in Canada – Quality YouCan Trust</h4><h4>🚚 Direct to You – High-End Comfort, Fair Prices</h4><h4>🌙 Find the Perfect Mattress for Restful, Restorative Sleep</h4><h4>⭐ Loved and Trusted by Thousands of Satisfied Customers</h4><h4>💎 Invest in Your Sleep – Because You Deserve the Best</h4><h4><br/><strong>You deserve the best – choose a premium, Canadian-made mattress today!</strong></h4>",
             "text_style": "body"
           }
         }
@@ -123,7 +124,7 @@
         "image": "shopify://shop_images/A_couple_sleep_in_hybird_mattress.jpg",
         "video_url": "",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
