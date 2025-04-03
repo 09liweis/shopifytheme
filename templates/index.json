@@ -79,6 +79,8 @@
         "announcement_igRwTD"
       ],
       "settings": {
+        "text_size": 31,
+        "text_color": "#f9dcbe",
         "color_scheme": "scheme-3",
         "is_scroll": true,
         "show_line_separator": true,
