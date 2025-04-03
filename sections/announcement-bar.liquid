@@ -40,7 +40,10 @@
               class="announcement-bar__link link link--text focus-inset animate-arrow"
             >
           {%- endif -%}
-          <p class="announcement-bar__message h5">
+          <p
+            class="announcement-bar__message h5"
+            style="font-size:{{ section.settings.text_size }}px; color:{{ section.settings.text_color }};"
+          >
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {{- 'icon-arrow.svg' | inline_asset_content -}}
@@ -59,17 +62,19 @@
         aria-label="{{ 'sections.announcements.announcement_bar' | t }}"
       >
         <div class="announcement-bar-slider slider-buttons">
-          {% comment %} <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'sections.announcements.previous_announcement' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
-            </span>
-          </button> {% endcomment %}
+          {% comment %}
+            <button
+              type="button"
+              class="slider-button slider-button--prev"
+              name="previous"
+              aria-label="{{ 'sections.announcements.previous_announcement' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            >
+              <span class="svg-wrapper">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
+            </button>
+          {% endcomment %}
           <div
             class="grid grid--1-col slider slider--everywhere"
             id="Slider-{{ section.id }}"
@@ -101,7 +106,10 @@
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
                       >
                     {%- endif -%}
-                    <p class="announcement-bar__message h5">
+                    <p
+                      class="announcement-bar__message h5"
+                      style="font-size:{{ section.settings.text_size }}px; color:{{ section.settings.text_color }};"
+                    >
                       <span>{{ block.settings.text | escape }}</span>
                       {%- if block.settings.link != blank -%}
                         {{- 'icon-arrow.svg' | inline_asset_content -}}
@@ -115,17 +123,19 @@
               </div>
             {%- endfor -%}
           </div>
-          {% comment %} <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'sections.announcements.next_announcement' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            <span class="svg-wrapper">
-              {{- 'icon-caret.svg' | inline_asset_content -}}
-            </span>
-          </button> {% endcomment %}
+          {% comment %}
+            <button
+              type="button"
+              class="slider-button slider-button--next"
+              name="next"
+              aria-label="{{ 'sections.announcements.next_announcement' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            >
+              <span class="svg-wrapper">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
+            </button>
+          {% endcomment %}
         </div>
       </div>
       {%- if request.design_mode -%}
@@ -166,11 +176,11 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-  const announcementBar = document.querySelector('.announcement-bar__message');
-  if (announcementBar) {
-    announcementBar.style.animationDuration = `${announcementBar.scrollWidth / 50}s`;
-  }
-});
+    const announcementBar = document.querySelector('.announcement-bar__message');
+    if (announcementBar) {
+      announcementBar.style.animationDuration = `${announcementBar.scrollWidth / 50}s`;
+    }
+  });
 </script>
 
 {% schema %}
@@ -179,6 +189,21 @@
   "max_blocks": 12,
   "class": "announcement-bar-section",
   "settings": [
+    {
+      "type": "range",
+      "min": 8,
+      "max": 40,
+      "step": 1,
+      "id": "text_size",
+      "label": "Text Size",
+      "default": 13
+    },
+    {
+      "type": "color_scheme",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#f9dcbe"
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
