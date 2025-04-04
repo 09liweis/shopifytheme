@@ -166,7 +166,10 @@
               </div>
             {%- endif -%}
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
+              <h2
+                style="color: {{ block.settings.heading_color }};"
+                class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+              >
                 {{ block.settings.heading }}
               </h2>
             {%- endif -%}
@@ -404,6 +407,12 @@
           "id": "heading",
           "default": "t:sections.slideshow.blocks.slide.settings.heading.default",
           "label": "t:sections.slideshow.blocks.slide.settings.heading.label"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "default": "#272c48",
+          "label": "Heading Color"
         },
         {
           "type": "select",
