@@ -76,17 +76,18 @@
 }
 
 .compare-product__price-wrapper {
-  
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .compare-product__price-label {
   font-size: 16px;
   color: #666666;
-  margin-right: 5px;
 }
 
 .compare-product__price {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: #F9522E;
 }
