@@ -58,16 +58,16 @@
             "swatch_shape": "circle"
           }
         },
+        "free_gift_wpijTQ": {
+          "type": "free_gift",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
-        },
-        "free_gift_wpijTQ": {
-          "type": "free_gift",
-          "settings": {}
         },
         "discount_product_CaAHyk": {
           "type": "discount_product",
@@ -105,8 +105,8 @@
         "price",
         "icon_with_text_U8bxgc",
         "variant_picker",
-        "buy_buttons",
         "free_gift_wpijTQ",
+        "buy_buttons",
         "discount_product_CaAHyk",
         "description",
         "collapsible-row-0",
