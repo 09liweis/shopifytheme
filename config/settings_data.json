@@ -151,6 +151,11 @@
           "enable_reload_on_bundle_auto_match": true,
           "use_h2_header": true
         }
+      },
+      "18408366429334172745": {
+        "type": "shopify://apps/pop-convert-pop-ups-banners/blocks/app-embed/ed587aec-4936-43ae-a1b3-1c9e0d08f185",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
