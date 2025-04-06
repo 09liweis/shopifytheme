@@ -26,7 +26,7 @@
         "announcement-bar-0"
       ],
       "settings": {
-        "text_size": 14,
+        "text_size": 17,
         "text_color": "#f9dcbe",
         "color_scheme": "scheme-3",
         "is_scroll": false,
