@@ -20,14 +20,16 @@
       </div>
       <div class="free-gift-total flex justify-between items-center">
         <div class="flex items-center"><span class="product-add-on-dot"></span>Free with Mattress</div>
-        <div>Value of <span style="color:#F9522E;">{{ free_gifts_total_price | money }}</span></div>
+        <div>
+          Value of <span style="color:#F9522E;text-decoration:line-through;">{{ free_gifts_total_price | money }}</span>
+        </div>
       </div>
     </div>
   </section>
   <style>
     .product-add-on-dot {
       display: inline-block;
-      background-color: #F9522E;
+      background-color: #f9522e;
       border: 5px solid #ccc;
       width: 20px;
       height: 20px;
