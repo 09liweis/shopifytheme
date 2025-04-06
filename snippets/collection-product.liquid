@@ -111,7 +111,7 @@
         {% if firmness <= 4 %}
           SOFT
         {% elsif firmness == 5 or firmness == 6 %}
-          MEDIUM FIRM
+          MEDIUM-FIRM
         {% elsif firmness == 8 or firmness ==7 %}
           FIRM
         {% elsif firmness == 10 or firmness == 9 %}
@@ -131,9 +131,8 @@
 
     <div class="size">
       <p class="pspace num">
-        <b>{{ product.metafields.custom.mattress_height.value }}</b>
+        <b>{{ product.metafields.custom.mattress_height.value }}</b> Height
       </p>
-      <p class="pspace">Height</p>
     </div>
   </section>
 
