@@ -334,11 +334,11 @@
   },
   "order": [
     "main",
-    "11f9273c7f7abd8226d5",
     "product_features_TPKRqr",
     "multicolumn_qxCUi8",
     "multicolumn_E9eTNf",
     "collapsible_content_ER7KNk",
-    "related-products"
+    "related-products",
+    "11f9273c7f7abd8226d5"
   ]
 }
