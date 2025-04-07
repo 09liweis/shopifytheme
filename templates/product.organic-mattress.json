@@ -82,7 +82,7 @@
         "text_wrGX7w": {
           "type": "text",
           "settings": {
-            "text": "<strong>This luxurious organic mattress cannot be rolled for box shipping. Shipping fees vary based on your location and can be calculated at checkout.</strong>",
+            "text": "<strong>This luxurious organic mattress cannot be rolled for box shipping and is not eligible for free shipping. Shipping fees are calculated at checkout based on your location.</strong>",
             "text_style": "body"
           }
         },
