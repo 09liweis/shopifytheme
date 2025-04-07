@@ -8,13 +8,25 @@
         {% for product in free_gifts.gift_products.value %}
           {% assign product_price = product.variants[0].price %}
           {% assign free_gifts_total_price = free_gifts_total_price | plus: product_price %}
-          <div class="gift-card-item" data-freegift-id="{{ product.variants[0].id }}">
+          <div class="gift-card-item flex">
             {{
               product.images[0]
               | image_url: width: 110, height: 110
               | image_tag: class: '', alt: product.title, preload: true
             }}
-            <h3 class="item-title">{{ product.title }}</h3>
+            <div style="padding: 5px;">
+              <h3 class="item-title">{{ product.title }}</h3>
+              <div class="select">
+                <select class="select__select free-gift-selector">
+                  {% for option in product.variants %}
+                    <option value="{{ option.id }}">{{ option.title }}</option>
+                  {% endfor %}
+                </select>
+                <span class="svg-wrapper">
+                  {{- 'icon-caret.svg' | inline_asset_content -}}
+                </span>
+              </div>
+            </div>
           </div>
         {% endfor %}
       </div>
@@ -63,7 +75,7 @@
     }
     .gift-card-item .item-title {
       text-decoration: none;
-      margin-bottom: 0;
+      margin: 0;
     }
     .gift-card-item img {
       /* width: 100%;

@@ -18,11 +18,11 @@ if (!customElements.get('product-form')) {
       }
 
       async addFreeGifts() {
-        const freeGifts = document.querySelectorAll('[data-freegift-id]');
+        const freeGifts = document.querySelectorAll('.free-gift-selector');
         if (freeGifts.length === 0) return;
         const items = [...freeGifts].map((gift) => {
           return {
-            id: gift.dataset.freegiftId,
+            id: gift.value,
             quantity: 1,
           };
         });
