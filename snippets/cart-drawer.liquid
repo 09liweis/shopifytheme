@@ -122,36 +122,47 @@
                         <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
                           {% if item.image %}
                             {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
-                            <a href="{{ item.url }}" class="cart-item__link" tabindex="-1" aria-hidden="true"> 
-                            <img
-                              class="cart-item__image"
-                              src="{{ item.image | image_url: width: 300 }}"
-                              alt="{{ item.image.alt | escape }}"
-                              loading="lazy"
-                              width="150"
-                              height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
-                            >
+                            <a href="{{ item.url }}" class="cart-item__link" tabindex="-1" aria-hidden="true">
+                              <img
+                                class="cart-item__image"
+                                src="{{ item.image | image_url: width: 300 }}"
+                                alt="{{ item.image.alt | escape }}"
+                                loading="lazy"
+                                width="150"
+                                height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
+                              >
                             </a>
                           {% endif %}
 
                           <div class="cart-item__details">
-                          {%- if item.product.has_only_default_variant == false -%}
-                            <div class="variant-selector">
-                              <select class="variant-selector__dropdown" data-line-item-key="{{ item.key }}">
-                                {% for variant in item.product.variants %}
-                                  <option
-                                    value="{{ variant.id }}"
-                                    {% if variant.id == item.variant.id %}selected="selected"{% endif %}
-                                    {% unless variant.available %}disabled="disabled"{% endunless %}
-                                  >
-                                    {{ variant.title }} {% unless variant.available %}(Sold Out){% endunless %}
-                                  </option>
-                                {% endfor %}
-                              </select>
-                            </div>
-                          {%- endif -%}
-                        </div>
-                          
+                            {%- if item.product.has_only_default_variant == false -%}
+                              <div class="variant-selector">
+                                <select
+                                  class="variant-selector__dropdown"
+                                  data-line-item-key="{{ item.key }}"
+                                  data-initial-quantity="{{ item.quantity }}"
+                                >
+                                  {% for variant in item.product.variants %}
+                                    <option
+                                      value="{{ variant.id }}"
+                                      {% if variant.id == item.variant.id %}
+                                        selected
+                                      {% endif %}
+                                      {% unless variant.available %}
+                                        disabled
+                                      {% endunless %}
+                                      data-inventory-quantity="{{ variant.inventory_quantity }}"
+                                      data-inventory-policy="{{ variant.inventory_policy }}"
+                                      data-inventory-increment="{{ variant.inventory_management | default: 1 }}"
+                                    >
+                                      {{ variant.title }}
+                                      {% unless variant.available %}(Unavailable){% endunless %}
+                                    </option>
+                                  {% endfor %}
+                                </select>
+                              </div>
+                            {%- endif -%}
+                          </div>
                         </td>
 
                         <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct">
@@ -228,18 +239,21 @@
                             <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
                           {%- endif -%}
 
-                          <ul
-                            class="discounts list-unstyled"
-                            role="list"
-                            aria-label="{{ 'customer.order.discount' | t }}"
-                          >
-                            {%- for discount in item.line_level_discount_allocations -%}
-                              <li class="discounts__discount">
-                                {{- 'icon-discount.svg' | inline_asset_content -}}
-                                {{ discount.discount_application.title }}
-                              </li>
-                            {%- endfor -%}
-                          </ul>
+                          {% unless item.product.title contains 'Protector' %}
+                            {% comment %} Hide free gift message {% endcomment %}
+                            <ul
+                              class="discounts list-unstyled"
+                              role="list"
+                              aria-label="{{ 'customer.order.discount' | t }}"
+                            >
+                              {%- for discount in item.line_level_discount_allocations -%}
+                                <li class="discounts__discount">
+                                  {{- 'icon-discount.svg' | inline_asset_content -}}
+                                  {{ discount.discount_application.title }}
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                          {% endunless %}
                         </td>
 
                         <td class="cart-item__totals right" role="cell" headers="CartDrawer-ColumnTotal">
@@ -581,40 +595,57 @@
 </cart-drawer>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Event delegation for variant selectors
-  document.querySelector('cart-drawer').addEventListener('change', async (event) => {
-    if (!event.target.classList.contains('variant-selector__dropdown')) return;
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('change', async (event) => {
+      if (!event.target.matches('.variant-selector__dropdown')) return;
 
-    const select = event.target;
-    const newVariantId = select.value;
-    const lineItemKey = select.dataset.lineItemKey;
-    const cartDrawer = document.querySelector('cart-drawer');
+      const select = event.target;
+      const selectedOption = select.options[select.selectedIndex];
+      const lineItemKey = select.dataset.lineItemKey;
+      const newVariantId = select.value;
 
-    try {
-      const response = await fetch('/cart/change.js', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          id: lineItemKey,
-          new_variant_id: newVariantId,
-          quantity: 1
-        })
-      });
+      // Get inventory constraints
+      const inventoryPolicy = selectedOption.dataset.inventoryPolicy;
+      const inventoryIncrement = parseInt(selectedOption.dataset.inventoryIncrement, 10) || 1;
+      let newQuantity = parseInt(select.dataset.initialQuantity, 10);
 
-      const data = await response.json();
-      
-      if (response.ok) {
-        // Update cart contents
-        document.dispatchEvent(new CustomEvent('cart:update', { bubbles: true }));
-      } else {
-        throw new Error(data.description);
+      // Adjust quantity to match inventory rules
+      {% comment %} if (inventoryPolicy === 'deny' && inventoryIncrement > 1) {
+        newQuantity = Math.max(inventoryIncrement, Math.ceil(newQuantity / inventoryIncrement) * inventoryIncrement);
+      } {% endcomment %}
+
+      try {
+        const response = await fetch('/cart/change.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            id: lineItemKey,
+            quantity: newQuantity,
+            variant_id: newVariantId,
+          }),
+        });
+
+        const cartData = await response.json();
+
+        if (response.ok) {
+          document.dispatchEvent(
+            new CustomEvent('cart:refresh', {
+              detail: { cart: cartData },
+            })
+          );
+        } else {
+          throw new Error(cartData.description);
+        }
+      } catch (error) {
+        console.error('Update error:', error);
+        alert(
+          `Update failed: ${error.message.replace(/increments of \d+/, (match) => {
+            const increment = inventoryIncrement > 1 ? inventoryIncrement : '1';
+            return `increments of ${increment}`;
+          })}`
+        );
+        select.value = select.querySelector('option[selected]').value;
       }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('Unable to update item. Please refresh and try again.');
-      select.value = select.dataset.initialValue; // Reset selection
-    }
+    });
   });
-});
 </script>
