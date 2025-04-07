@@ -35,13 +35,6 @@
           "type": "price",
           "settings": {}
         },
-        "text_wrGX7w": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>This organic mattress cant be packed in a box, check the frieght at checkout.</strong>",
-            "text_style": "body"
-          }
-        },
         "icon_with_text_U8bxgc": {
           "type": "icon-with-text",
           "disabled": true,
@@ -86,6 +79,13 @@
           "disabled": true,
           "settings": {}
         },
+        "text_wrGX7w": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>This luxurious organic mattress cannot be rolled for box shipping and is not eligible for free shipping. Shipping fees are calculated at checkout based on your location.</strong>",
+            "text_style": "body"
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -110,13 +110,13 @@
         "title",
         "caption",
         "price",
-        "text_wrGX7w",
         "icon_with_text_U8bxgc",
         "variant_picker",
         "free_gift_wpijTQ",
         "buy_buttons",
         "discount_product_CaAHyk",
         "description",
+        "text_wrGX7w",
         "collapsible-row-0",
         "collapsible-row-1"
       ],
