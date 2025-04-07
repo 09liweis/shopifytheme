@@ -1,0 +1,344 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "icon_with_text_U8bxgc": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "none",
+            "image_1": "shopify://shop_images/made_in_ca.svg",
+            "heading_1": "Made in Canada",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/night_time.svg",
+            "heading_2": "100-Night Trial",
+            "icon_3": "truck",
+            "image_3": "shopify://shop_images/year-warrenty.svg",
+            "heading_3": "10-Year Warranty"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "free_gift_wpijTQ": {
+          "type": "free_gift",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "discount_product_CaAHyk": {
+          "type": "discount_product",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Certifications",
+            "icon": "leather",
+            "content": "<h4>CertiPUR-US® </h4><h4>Our Maple mattress uses Certi-Pur US certified foams, free from harmful chemicals and low in VOCs, ensuring a healthier sleep for you and the planet.</h4>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warranty & Shipping",
+            "icon": "truck",
+            "content": "<h4><strong>Where We Ship:</strong><br/>We proudly offer free shipping to most provinces across Canada, from coast to coast. However, please note that some regions have specific shipping restrictions.</h4><h4><strong>Shipping Restrictions:</strong><br/>Unfortunately, we are unable to ship mattresses and bed frames to Canadian Territories such as Iqaluit, Whitehorse, and Yellowknife.<br/><br/>We cannot deliver to PO Boxes or Station Boxes. Please provide a full residential address, and our shipping partners will ensure your order is delivered directly to your home or to a nearby pickup location.<br/></h4><h4>For orders to J0M postal codes, we can only ship mattresses and bedding. Furniture cannot be delivered to this area.<br/></h4><h4>For orders to V0T postal codes, we can only ship bedding. Mattresses and furniture cannot be shipped to this location.<br/><br/><strong>The new Maple Mattress comes with a 10-year limited warranty.</strong></h4>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "icon_with_text_U8bxgc",
+        "variant_picker",
+        "free_gift_wpijTQ",
+        "buy_buttons",
+        "discount_product_CaAHyk",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "product_features_TPKRqr": {
+      "type": "product-features",
+      "disabled": true,
+      "settings": {
+        "page_version": false
+      }
+    },
+    "multicolumn_qxCUi8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dHBUEq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Feel-Refreshed-Every-Morning.jpg",
+            "title": "<strong>Feel Refreshed Morning</strong>",
+            "text": "<p>Start your day energized! The Maple mattress helps you wake up feeling fresh and ready to take on the day.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nA7tmL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Uninterrupted-Sleep-Experience.jpg",
+            "title": "<strong>Great Motion Isolation</strong>",
+            "text": "<p>The Maple Mattress offers a soothing sleep surface with memory foam that absorbs and reduces motion transfer, ensuring a peaceful, undisturbed sleep.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KyqhDz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Back-Pain-Relief-_-Support.jpg",
+            "title": "<strong>Pressure Relief & Support</strong>",
+            "text": "<p>Wake up pain-free! The Maple mattress offers support to relieve back pain and promote spinal alignment.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_dHBUEq",
+        "column_nA7tmL",
+        "column_KyqhDz"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_bg_color": "",
+        "column_border_color": "",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_E9eTNf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_niAjyj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Unbox_Mattress-_1.png",
+            "title": "Unbox",
+            "text": "<p>Remove the mattress from the box carefully.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WtdBeX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Unbox_Mattress-2.png",
+            "title": "Position",
+            "text": "<p>Place the rolled-up mattress on your bed frame.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Da9AVG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Unbox_Mattress-3.png",
+            "title": "Unroll",
+            "text": "<p>Open the plastic wrap and gently unroll the mattress.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_aJBQBW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Unbox_Mattress-4.png",
+            "title": "Expand",
+            "text": "<p>Allow 24–48 hours for the mattress to fully expand. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_niAjyj",
+        "column_WtdBeX",
+        "column_Da9AVG",
+        "column_aJBQBW"
+      ],
+      "settings": {
+        "title": "Unboxing Your New Maple Mattress",
+        "subtitle": "Maple mattress arrives compressed in a box for easy delivery and hassle-free unboxing. Simply follow the quick setup steps to enjoy a great night’s sleep.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_bg_color": "",
+        "column_border_color": "",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_ER7KNk": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_DJmPmg": {
+          "type": "collapsible_row",
+          "repeater": "{{ metaobjects.faqs[\"faqs-65xp5pwi\"].faq.value }}",
+          "settings": {
+            "heading": "{{ block.repeater.question.value }}",
+            "icon": "leaf",
+            "row_content": "<p>{{ block.repeater.answer | metafield_tag }}</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_DJmPmg"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "11f9273c7f7abd8226d5": {
+      "type": "apps",
+      "blocks": {
+        "1119d61f-b140-4391-9cf9-eae0c3421f5d": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "1119d61f-b140-4391-9cf9-eae0c3421f5d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_features_TPKRqr",
+    "multicolumn_qxCUi8",
+    "multicolumn_E9eTNf",
+    "collapsible_content_ER7KNk",
+    "related-products",
+    "11f9273c7f7abd8226d5"
+  ]
+}
