@@ -329,7 +329,7 @@
       </button>
     </slider-component>
   {%- endif -%}
-  {% if product.template_suffix == '' %}
-    {% render 'firmless', level: 1, product: product %}
+  {% if product.template_suffix == '' or product.template_suffix == 'organic-mattress' %}
+    {{ product.description }}
   {% endif %}
 </media-gallery>
