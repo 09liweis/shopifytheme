@@ -16,7 +16,7 @@
             }}
             <div style="padding: 5px;">
               <h3 class="item-title">{{ product.title }}</h3>
-              <div class="select">
+              <div class="select product-form__input">
                 <select class="select__select free-gift-selector">
                   {% for option in product.variants %}
                     <option value="{{ option.id }}">{{ option.title }}</option>

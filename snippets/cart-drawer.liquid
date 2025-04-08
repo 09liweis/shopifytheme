@@ -609,43 +609,56 @@
       const inventoryIncrement = parseInt(selectedOption.dataset.inventoryIncrement, 10) || 1;
       let newQuantity = parseInt(select.dataset.initialQuantity, 10);
 
-      // Adjust quantity to match inventory rules
-      {% comment %} if (inventoryPolicy === 'deny' && inventoryIncrement > 1) {
-        newQuantity = Math.max(inventoryIncrement, Math.ceil(newQuantity / inventoryIncrement) * inventoryIncrement);
-      } {% endcomment %}
-
       try {
-        const response = await fetch('/cart/change.js', {
+        const removeResponse = await fetch('/cart/change.js', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            id: lineItemKey,
-            quantity: newQuantity,
-            variant_id: newVariantId,
-          }),
+          body: JSON.stringify({ id: lineItemKey, quantity: 0 }),
+        });
+        const removedCart = await removeResponse.json();
+
+        const response = await fetch('/cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ items: [{ id: newVariantId, quantity: newQuantity }] }),
         });
 
         const cartData = await response.json();
 
         if (response.ok) {
-          document.dispatchEvent(
-            new CustomEvent('cart:refresh', {
-              detail: { cart: cartData },
-            })
-          );
+          refreshCartDrawer(cartData);
         } else {
           throw new Error(cartData.description);
         }
       } catch (error) {
         console.error('Update error:', error);
-        alert(
-          `Update failed: ${error.message.replace(/increments of \d+/, (match) => {
-            const increment = inventoryIncrement > 1 ? inventoryIncrement : '1';
-            return `increments of ${increment}`;
-          })}`
-        );
+        // Show a more user-friendly error message
+        const errorMessage = error.message.includes('increments of')
+          ? `You can only add this item in increments of ${inventoryIncrement}`
+          : error.message;
+        alert(`Update failed: ${errorMessage}`);
+        // Reset the select to its original value
         select.value = select.querySelector('option[selected]').value;
       }
     });
   });
+
+  function refreshCartDrawer(cartData) {
+    // Update cart count (Dawn uses a data attribute for the count)
+    const cartCounts = document.querySelectorAll('.cart-count-bubble');
+    cartCounts.forEach((count) => {
+      count.textContent = cartData.item_count;
+    });
+
+    // Re-render the cart drawer section using Dawn’s Sections API
+    fetch('/cart?section_id=cart-drawer')
+      .then((response) => response.text())
+      .then((html) => {
+        const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
+        const newCartDrawer = parsedHTML.querySelector('#cart-drawer');
+        if (newCartDrawer) {
+          document.querySelector('#cart-drawer').innerHTML = newCartDrawer.innerHTML;
+        }
+      });
+  }
 </script>

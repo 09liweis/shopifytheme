@@ -64,7 +64,10 @@ class CartItems extends HTMLElement {
       message = window.quickOrderListStrings.min_error.replace('[min]', event.target.dataset.min);
     } else if (inputValue > parseInt(event.target.max)) {
       message = window.quickOrderListStrings.max_error.replace('[max]', event.target.max);
-    } else if (inputValue % parseInt(event.target.step) !== 0) {
+    } else if (
+      inputValue % parseInt(event.target.step) !== 0 &&
+      Number.isNaN(parseInt(inputValue) % parseInt(event.target.step))
+    ) {
       message = window.quickOrderListStrings.step_error.replace('[step]', event.target.step);
     }
 
@@ -83,7 +86,7 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
-    this.validateQuantity(event);
+    // this.validateQuantity(event);
   }
 
   onCartUpdate() {
