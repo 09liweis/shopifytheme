@@ -136,9 +136,9 @@
 
                           <div class="cart-item__details">
                             {%- if item.product.has_only_default_variant == false -%}
-                              <div class="variant-selector">
+                              <div class="variant-selector select product-form__input">
                                 <select
-                                  class="variant-selector__dropdown"
+                                  class="variant-selector__dropdown select__select"
                                   data-line-item-key="{{ item.key }}"
                                   data-initial-quantity="{{ item.quantity }}"
                                 >
@@ -160,6 +160,9 @@
                                     </option>
                                   {% endfor %}
                                 </select>
+                                <span class="svg-wrapper">
+                                  {{- 'icon-caret.svg' | inline_asset_content -}}
+                                </span>
                               </div>
                             {%- endif -%}
                           </div>

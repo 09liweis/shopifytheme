@@ -33,11 +33,44 @@
       <div class="free-gift-total flex justify-between items-center">
         <div class="flex items-center"><span class="product-add-on-dot"></span>Free with Mattress</div>
         <div>
-          Value of <span style="color:#F9522E;text-decoration:line-through;">{{ free_gifts_total_price | money }}</span>
+          Value of
+          <span style="color:#F9522E;text-decoration:line-through;" class="free-gift-total-price">
+            {{- free_gifts_total_price | money -}}
+          </span>
         </div>
       </div>
     </div>
   </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const selectors = document.querySelectorAll('.free-gift-selector');
+      const totalPriceElement = document.querySelector('.free-gift-total-price');
+
+      // Store initial prices for each variant
+      const variantPrices = {};
+      {% for product in free_gifts.gift_products.value %}
+        {% for variant in product.variants %}
+          variantPrices[{{ variant.id }}] = {{ variant.price }};
+        {% endfor %}
+      {% endfor %}
+
+      function updateTotalPrice() {
+        let total = 0;
+        selectors.forEach(selector => {
+          const variantId = selector.value;
+          total += variantPrices[variantId] || 0;
+        });
+        totalPriceElement.textContent = new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD'
+        }).format(total / 100);
+      }
+
+      selectors.forEach(selector => {
+        selector.addEventListener('change', updateTotalPrice);
+      });
+    });
+  </script>
   <style>
     .product-add-on-dot {
       display: inline-block;
