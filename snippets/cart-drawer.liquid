@@ -139,6 +139,7 @@
                               <div class="variant-selector select product-form__input">
                                 <select
                                   class="variant-selector__dropdown select__select"
+                                  data-product-id="{{ item.product.id }}"
                                   data-line-item-key="{{ item.key }}"
                                   data-initial-quantity="{{ item.quantity }}"
                                 >
@@ -605,6 +606,7 @@
       const select = event.target;
       const selectedOption = select.options[select.selectedIndex];
       const lineItemKey = select.dataset.lineItemKey;
+      const productId = select.dataset.productId;
       const newVariantId = select.value;
 
       // Get inventory constraints
@@ -620,16 +622,31 @@
         });
         const removedCart = await removeResponse.json();
 
-        const response = await fetch('/cart/add.js', {
+        const cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+        const formData = new FormData();
+        formData.append('id', newVariantId);
+        formData.append('product-id', productId);
+        formData.append(
+          'sections',
+          cart.getSectionsToRender().map((section) => section.id)
+        );
+        formData.append('sections_url', window.location.pathname);
+
+        const config = fetchConfig('javascript');
+        config.headers['X-Requested-With'] = 'XMLHttpRequest';
+        delete config.headers['Content-Type'];
+        config.body = formData;
+
+        {% comment %} const response = await fetch('/cart/add.js', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ items: [{ id: newVariantId, quantity: newQuantity }] }),
-        });
-
+        }); {% endcomment %}
+        const response = await fetch(`${routes.cart_add_url}`, config);
         const cartData = await response.json();
 
         if (response.ok) {
-          refreshCartDrawer(cartData);
+          cart.renderContents(cartData);
         } else {
           throw new Error(cartData.description);
         }
@@ -645,23 +662,4 @@
       }
     });
   });
-
-  function refreshCartDrawer(cartData) {
-    // Update cart count (Dawn uses a data attribute for the count)
-    const cartCounts = document.querySelectorAll('.cart-count-bubble');
-    cartCounts.forEach((count) => {
-      count.textContent = cartData.item_count;
-    });
-
-    // Re-render the cart drawer section using Dawn’s Sections API
-    fetch('/cart?section_id=cart-drawer')
-      .then((response) => response.text())
-      .then((html) => {
-        const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
-        const newCartDrawer = parsedHTML.querySelector('#cart-drawer');
-        if (newCartDrawer) {
-          document.querySelector('#cart-drawer').innerHTML = newCartDrawer.innerHTML;
-        }
-      });
-  }
 </script>
