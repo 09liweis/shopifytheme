@@ -737,7 +737,7 @@
   </div>
 </product-info>
 
-{% if product.template_suffix == '' %}
+{% if product.template_suffix == '' or product.template_suffix == 'organic-mattress' %}
   {% assign mattressLayer = product.metafields.custom.mattress_layer.value %}
 
   {% if mattressLayer %}
