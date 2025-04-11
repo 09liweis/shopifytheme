@@ -130,7 +130,6 @@
     },
     "product_features_TPKRqr": {
       "type": "product-features",
-      "disabled": true,
       "settings": {
         "page_version": false
       }
