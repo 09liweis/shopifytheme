@@ -107,58 +107,26 @@
       "blocks": {
         "column_HeEBM9": {
           "type": "column",
+          "repeater": "{{ metaobjects.contact_section[\"need-help-deciding-on-your-next-mattress\"].list.value }}",
           "settings": {
-            "image": "shopify://shop_images/chat-with-us.svg",
-            "title": "Chat with Us",
-            "text": "<p>Got questions? Chat with us for mattress tips!</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_896pDb": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/faqs.svg",
-            "title": "Read the FAQs",
-            "text": "<p>We might have already answered your question.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_7eah4t": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/phone-us.svg",
-            "title": "Phone Us",
-            "text": "<p>Call us for any questions at 647-999-9999</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_9KXynD": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/email-us.svg",
-            "title": "Email Us",
-            "text": "<p>Send us an email at <a href=\"mailto:support@maplezzz.com\" title=\"mailto:support@maplezzz.com\">support@maplezzz.com</a></p>",
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "{{ block.repeater.detail | metafield_tag }}",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_HeEBM9",
-        "column_896pDb",
-        "column_7eah4t",
-        "column_9KXynD"
+        "column_HeEBM9"
       ],
       "settings": {
-        "title": "Need Help Deciding on Your Next Mattress?",
+        "title": "{{ metaobjects.contact_section[\"need-help-deciding-on-your-next-mattress\"].title.value }}",
         "subtitle": "",
         "heading_size": "hxl",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_bg_color": "#ffffff",
         "column_border_color": "",
         "column_alignment": "center",
