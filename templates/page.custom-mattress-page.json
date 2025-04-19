@@ -12,7 +12,7 @@
     "image_banner_Fmjzdz": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/fotor-ai-20241130113052.jpg",
+        "image": "shopify://shop_images/Tailored_Round_Mattress_001.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -88,13 +88,13 @@
       "settings": {
         "bg_color": "#fdf9f5",
         "media_type": "image",
-        "image": "shopify://shop_images/custom_shape_mattress-small.jpg",
+        "image": "shopify://shop_images/Tailored_Round_Mattress_002.png",
         "video_url": "",
         "cover_image": "shopify://shop_images/design_your_won_mattress_background.jpg",
-        "height": "small",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
@@ -139,7 +139,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/custom_mattress_with_diverse_firmness.jpg",
+        "image": "shopify://shop_images/custom_mattress_with_diverse_firmness.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
@@ -189,7 +189,7 @@
       "settings": {
         "bg_color": "#ffffff",
         "media_type": "image",
-        "image": "shopify://shop_images/Customize_mattress_material.jpg",
+        "image": "shopify://shop_images/Maplezzz_Mattress_BioNest_001.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
@@ -239,7 +239,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/custom_mattress_for_boat.jpg",
+        "image": "shopify://shop_images/custom_mattress_for_boat.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
@@ -289,7 +289,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/custom_one_to_one_split_mattress.jpg",
+        "image": "shopify://shop_images/custom_one_to_one_split_mattress.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
