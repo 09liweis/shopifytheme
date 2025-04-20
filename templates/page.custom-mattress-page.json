@@ -11,6 +11,7 @@
   "sections": {
     "image_banner_Fmjzdz": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Tailored_Round_Mattress_001-R.jpg",
         "image_overlay_opacity": 0,
