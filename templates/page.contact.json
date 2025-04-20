@@ -122,7 +122,7 @@
     "contact_info_8zXGJY": {
       "type": "contact-info",
       "settings": {
-        "contact_image": "shopify://shop_images/About_Us_page_image.png",
+        "contact_image": "shopify://shop_images/contact_us_page.png",
         "contact_us_info": "<h3><strong>Showroom Address</strong></h3><p>670 Caledonia Road, Suit 200, Toronto, Ontario M6E 4V9</p><h3><strong>Hours of Operation</strong></h3><p>Monday - Friday 10:30am to 10pm EST</p><p>Saturday and Sunday 10:30am to 6pm EST</p><h4>Or  email us anytime at support@maplezzz.com</h4>",
         "other_inquiries_info": "<h4>Wholesale & Partnerships</h4><p>wholesale@maplezzz.com</p>"
       }
