@@ -152,7 +152,7 @@
   <p class="price price--on-sale">
   {% if compare_price %}
     <span class="price-item--regular">${{- price | money_without_currency -}}</span>
-    ${{- compare_price | money_without_currency -}}
+    <span class="" style="color:#fa522d">${{- compare_price | money_without_currency -}}</span>
   {% else %}
     ${{- price | money_without_currency -}}
   {% endif %}
