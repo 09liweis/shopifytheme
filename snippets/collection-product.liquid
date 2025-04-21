@@ -128,12 +128,15 @@
       </p>
       <p class="pspace">Layers</p>
     </div> {% endcomment %}
-
+    {% assign mattress_height = product.metafields.custom.mattress_height.value %}
+    {% if mattress_height %}
     <div class="size">
       <p class="pspace num">
-        <b>{{ product.metafields.custom.mattress_height.value }}</b> Height
+        <b>{{ mattress_height }}</b> Height
       </p>
     </div>
+    {% endif %}
+    
   </section>
 
   {% assign mattress_specs = product.metafields.custom.mattress_specs.value %}
