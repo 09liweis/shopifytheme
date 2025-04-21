@@ -148,9 +148,14 @@
   <p id="form">From</p>
   {% assign compare_price = product.compare_at_price %}
   {% assign price = product.selected_or_first_available_variant.price %}
-  <p class="price">
-    ${{- price | money_without_currency -}}
+  
+  <p class="price price--on-sale">
+  {% if compare_price %}
+    <span class="price-item--regular">${{- price | money_without_currency -}}</span>
     ${{- compare_price | money_without_currency -}}
+  {% else %}
+    ${{- price | money_without_currency -}}
+  {% endif %}
   </p>
   <span class="button button--primary">VIEW DETAIL</span>
 </a>
