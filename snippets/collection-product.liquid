@@ -146,13 +146,11 @@
   {% endif %}
 
   <p id="form">From</p>
-  {% assign comparePrice = product.compare_at_price %}
+  {% assign compare_price = product.compare_at_price %}
   {% assign price = product.selected_or_first_available_variant.price %}
   <p class="price">
-    $
-    {{- price | money_without_currency -}}
-
-    ${{- comparePrice | money_without_currency -}}
+    ${{- price | money_without_currency -}}
+    ${{- compare_price | money_without_currency -}}
   </p>
   <span class="button button--primary">VIEW DETAIL</span>
 </a>
