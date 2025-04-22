@@ -42,6 +42,8 @@
         {% assign product = collection.products[0] %}
         <div class="compare-product__price-wrapper">
           <span class="compare-product__price-label">from</span>
+          {% assign compare_price = product.compare_at_price %}
+          {% assign price = product.selected_or_first_available_variant.price %}
           <span class="compare-product__price price--on-sale">
           {% if compare_price %}
             <span class="price-item--regular">${{- price | money_without_currency -}}</span>
