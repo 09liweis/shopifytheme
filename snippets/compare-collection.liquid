@@ -42,10 +42,14 @@
         {% assign product = collection.products[0] %}
         <div class="compare-product__price-wrapper">
           <span class="compare-product__price-label">from</span>
-          <span class="compare-product__price">
-            {{- product.selected_or_first_available_variant.price | money_without_currency -}}
+          <span class="compare-product__price price--on-sale">
+          {% if compare_price %}
+            <span class="price-item--regular">${{- price | money_without_currency -}}</span>
+            <span class="" style="color:#fa522d">${{- compare_price | money_without_currency -}}</span>
+          {% else %}
+            ${{- price | money_without_currency -}}
+          {% endif %}
           </span>
-          {{ product.compare_at_price }}
         </div>
       </div>
       {%- if collection.metafields.custom.comfort_level != blank -%}
