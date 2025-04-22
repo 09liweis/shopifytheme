@@ -2967,7 +2967,8 @@ details-disclosure > details {
   background-color: #fa522d;
   /* background-color: rgb(var(--color-badge-background)); */
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
-  color: rgb(var(--color-badge-foreground));
+  color: #fff;
+  /* color: rgb(var(--color-badge-foreground)); */
   word-break: break-word;
 }
 
