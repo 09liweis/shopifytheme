@@ -89,7 +89,7 @@
 .compare-product__price {
   font-size: 20px;
   font-weight: 600;
-  color: #F9522E;
+  /* color: #F9522E; */
 }
 
 .button.button--primary {
