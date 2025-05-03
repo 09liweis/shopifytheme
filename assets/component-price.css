@@ -23,6 +23,10 @@
   margin: 0 1rem 0 0;
 }
 
+.price-item--last {
+  color:#F9522E;
+}
+
 .price__regular .price-item--regular {
   margin-right: 0;
   /* color:#F9522E; */
