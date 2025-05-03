@@ -53,6 +53,7 @@
           {% endif %}
           </span>
         </div>
+        <a href="{{ collection.url }}" class="button button--primary">Shop Now</a>
       </div>
       {%- if collection.metafields.custom.comfort_level != blank -%}
         <p class="compare-product__description">{{ collection.metafields.custom.comfort_level }}</p>
@@ -112,9 +113,5 @@
       <h3>Cooling Feature</h3>
       <p>{{ collection.metafields.custom.cooling_feature }}</p>
     {%- endif -%}
-
-    <div style="text-align: center; margin-bottom: 25px;">
-      <a href="{{ collection.url }}" class="button button--primary">Shop Now</a>
-    </div>
   </div>
 {%- endif -%}
