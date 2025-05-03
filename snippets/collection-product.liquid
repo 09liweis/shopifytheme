@@ -10,6 +10,10 @@
     justify-content: space-between;
   }
 
+  .collection-product-title {
+    margin-bottom: 0;
+  }
+
   .collection-product:hover {
     box-shadow: rgb(146 159 180 / 75%) 2px 3px 4px;
   }
@@ -69,7 +73,7 @@
 
 <a href="{{product.url}}" class="collection-product card-wrapper product-card-wrapper underline-links-hover">
   <div>
-  <h2>{{ product.title }}</h2>
+  <h2 class="collection-product-title">{{ product.title }}</h2>
   <!-- {% assign category = product.category %}
   <p>
     {% if category == 'Innerspring Mattresses' %}
