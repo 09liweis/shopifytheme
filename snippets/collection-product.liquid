@@ -147,6 +147,7 @@
     </div>
   {% endif %}
 
+  <div>
   <p id="form">From</p>
   {% assign compare_price = product.compare_at_price %}
   {% assign price = product.selected_or_first_available_variant.price %}
@@ -160,4 +161,5 @@
   {% endif %}
   </p>
   <span class="button button--primary">VIEW DETAIL</span>
+  </div>
 </a>
