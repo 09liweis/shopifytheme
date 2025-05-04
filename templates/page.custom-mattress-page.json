@@ -276,7 +276,7 @@
         "button_XwLPtP": {
           "type": "button",
           "settings": {
-            "button_label": "",
+            "button_label": "Contact Us",
             "button_link": "shopify://pages/contact",
             "button_style_secondary": false
           }
@@ -367,7 +367,7 @@
         "column_border_color": "",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Contact Us",
+        "button_label": "",
         "button_link": "shopify://pages/contact",
         "color_scheme": "",
         "columns_mobile": "1",

@@ -137,7 +137,7 @@
           "settings": {
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.title.value }}",
-            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>"
+            "text": "{{ block.repeater.description | metafield_tag }}"
           }
         }
       },
