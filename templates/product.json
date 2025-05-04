@@ -133,31 +133,16 @@
       "blocks": {
         "column_RaMLhN": {
           "type": "column",
+          "repeater": "{{ product.metafields.custom.mattress_materials.value.list.value }}",
           "settings": {
-            "title": ""
-          }
-        },
-        "column_UHL7FR": {
-          "type": "column",
-          "source": "{{ product.metafields.custom.mattress_materials.value }}",
-          "settings": {
-            "title": "{{ product.metafields.custom.mattress_materials.value.title.value }}"
-          }
-        },
-        "column_Y9LD9p": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>"
           }
         }
       },
       "block_order": [
-        "column_RaMLhN",
-        "column_UHL7FR",
-        "column_Y9LD9p"
+        "column_RaMLhN"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
