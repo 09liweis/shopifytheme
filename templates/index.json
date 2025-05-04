@@ -336,6 +336,7 @@
     },
     "featured_collection_kmWq9c": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Beds",
         "heading_size": "h1",
