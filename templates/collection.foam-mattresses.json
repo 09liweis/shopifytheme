@@ -42,39 +42,16 @@
       "blocks": {
         "column_aqWJ7T": {
           "type": "column",
+          "repeater": "{{ metaobjects.mattress_group_materials_[\"mattress-group-materials--vnjxna1y\"].list.value }}",
           "settings": {
-            "image": "shopify://shop_images/Mattress_Memory_Faom_Bio_Foam_High_Density_Foam.png",
-            "title": "High Density Foam",
-            "text": "<h4>Our soy-based bio foam, made from renewable materials, offers superior comfort, durability, and eco-friendliness compared to traditional foam.</h4>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_f3VeD3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Eco_Palm_Mattress_Cotton_Fabric.jpg",
-            "title": "Cotton",
-            "text": "<h4>Soft and breathable, this material enhances airflow and moisture control, helping to maintain a balanced temperature at the sleep surface.</h4>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_Hwe7tk": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Tranquil_Mattress_High_Resilience_Foam_40e73ad6-96ec-4192-b873-1e7a95bc091c.jpg",
-            "title": "High Resilience Foam",
-            "text": "<h4>High resilience foam offers responsive support with a gentle bounce, ensuring an even surface and reducing sinking for better support.</h4>",
-            "link_label": "",
-            "link": ""
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>"
           }
         }
       },
       "block_order": [
-        "column_aqWJ7T",
-        "column_f3VeD3",
-        "column_Hwe7tk"
+        "column_aqWJ7T"
       ],
       "settings": {
         "title": "Our Materials",
