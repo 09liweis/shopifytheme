@@ -42,39 +42,16 @@
       "blocks": {
         "column_aAQipb": {
           "type": "column",
+          "repeater": "{{ metaobjects.mattress_group_materials_[\"mattress-group-materials--5botfjrh\"].list.value }}",
           "settings": {
-            "image": "shopify://shop_images/Palm_Latex_Mattress_Natural_Latex.jpg",
-            "title": "100% Organic Dunlop Latex",
-            "text": "<h4>GOLS Certified Dunlop Latex is 100% natural, sustainably harvested latex, offering superior elasticity, strength, and durability.</h4>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_EbjRa6": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Zone_pocket_coils-1R.jpg",
-            "title": "Pocket Coil with Edge Guard",
-            "text": "<h4>Zoned pocket coils reduce sleep disturbances, while edge support prevents sagging and enhances durability.</h4>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_NV8Khm": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Mattress_Memory_Faom_Bio_Foam_High_Density_Foam.png",
-            "title": "Bio High Density Foam",
-            "text": "<h4>Our soy-based bio foam, made from natural, renewable materials, provides enhanced comfort, eco-friendliness, and superior durability, strength, and support compared to traditional foam.</h4>",
-            "link_label": "",
-            "link": ""
+            "image": "{{ block.repeater.image.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>"
           }
         }
       },
       "block_order": [
-        "column_aAQipb",
-        "column_EbjRa6",
-        "column_NV8Khm"
+        "column_aAQipb"
       ],
       "settings": {
         "title": "Our Materials",
