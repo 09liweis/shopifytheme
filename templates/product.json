@@ -137,7 +137,7 @@
           "settings": {
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.title.value }}",
-            "text": "{{ block.repeater.description | metafield_tag }}"
+            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>"
           }
         }
       },
@@ -154,7 +154,7 @@
         "columns_desktop": 3,
         "column_bg_color": "",
         "column_border_color": "",
-        "column_alignment": "center",
+        "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
