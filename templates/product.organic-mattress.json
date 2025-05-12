@@ -143,10 +143,10 @@
         "page_version": false
       }
     },
-    "multicolumn_J8fJNd": {
+    "multicolumn_W6zPMm": {
       "type": "multicolumn",
       "blocks": {
-        "column_KVQAK3": {
+        "column_kXdLw3": {
           "type": "column",
           "repeater": "{{ product.metafields.custom.mattress_materials.value.list.value }}",
           "settings": {
@@ -157,11 +157,11 @@
         }
       },
       "block_order": [
-        "column_KVQAK3"
+        "column_kXdLw3"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Multicolumn",
+        "title": "{{ product.metafields.custom.mattress_materials.value.title.value }}",
         "subtitle": "",
         "heading_size": "h1",
         "image_width": "full",
@@ -381,7 +381,7 @@
   "order": [
     "main",
     "product_features_TPKRqr",
-    "multicolumn_J8fJNd",
+    "multicolumn_W6zPMm",
     "multicolumn_qxCUi8",
     "multicolumn_E9eTNf",
     "collapsible_content_ER7KNk",
