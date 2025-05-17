@@ -146,22 +146,22 @@
     "multicolumn_W6zPMm": {
       "type": "multicolumn",
       "blocks": {
-        "column_kXdLw3": {
+        "column_EGJte4": {
           "type": "column",
-          "repeater": "{{ product.metafields.custom.mattress_materials.value.list.value }}",
+          "repeater": "{{ metaobjects.mattress_group_materials_[\"engineering-for-last-ever-green-organic-mattress-material\"].list.value }}",
           "settings": {
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.title.value }}",
-            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>"
+            "text": "{{ block.repeater.description | metafield_tag }}"
           }
         }
       },
       "block_order": [
-        "column_kXdLw3"
+        "column_EGJte4"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "{{ product.metafields.custom.mattress_materials.value.title.value }}",
+        "title": "{{ metaobjects.mattress_group_materials_[\"engineering-for-last-ever-green-organic-mattress-material\"].title.value }}",
         "subtitle": "",
         "heading_size": "h1",
         "image_width": "full",
@@ -245,7 +245,6 @@
         "column_niAjyj": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Unbox_Mattress-_1.png",
             "title": "Unbox",
             "text": "<p>Remove the mattress from the box carefully.</p>",
             "link_label": "",
@@ -255,7 +254,6 @@
         "column_WtdBeX": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Unbox_Mattress-2.png",
             "title": "Position",
             "text": "<p>Place the rolled-up mattress on your bed frame.</p>",
             "link_label": "",
@@ -265,7 +263,6 @@
         "column_Da9AVG": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Unbox_Mattress-3.png",
             "title": "Unroll",
             "text": "<p>Open the plastic wrap and gently unroll the mattress.</p>",
             "link_label": "",
@@ -275,7 +272,6 @@
         "column_aJBQBW": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Unbox_Mattress-4.png",
             "title": "Expand",
             "text": "<p>Allow 24–48 hours for the mattress to fully expand. </p>",
             "link_label": "",
