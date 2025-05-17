@@ -15,7 +15,6 @@
         "slide_bpgdfg": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Soulmate12.png",
             "heading": "Spend Less & Sleep Better With MAPLE Mattress",
             "heading_color": "#272c48",
             "heading_size": "h1",
@@ -34,7 +33,6 @@
         "slide_yd3JNt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Maple_Mattress_8.png",
             "heading": "Custom Oversize Mattress, or Luxury Mattress for Your RV, Truck",
             "heading_color": "#272c48",
             "heading_size": "h1",
@@ -210,7 +208,7 @@
         "stat_M93mJj": {
           "type": "stat",
           "settings": {
-            "number": "100",
+            "number": "30",
             "plus": false,
             "label": "Nights Sleep Trial"
           }
@@ -271,7 +269,6 @@
         "media_type": "video",
         "image": "shopify://shop_images/Bed_img_for_About_Us_section.png",
         "video_url": "5yovMFER8Js",
-        "cover_image": "shopify://shop_images/Maple-Greenland.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -321,7 +318,6 @@
         "buttons_yyedJi"
       ],
       "settings": {
-        "image": "shopify://shop_images/Tailored_Round_Mattress_001-R.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "top-center",
