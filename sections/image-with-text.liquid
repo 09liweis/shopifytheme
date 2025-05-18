@@ -66,6 +66,15 @@
                   {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                 {%- endif -%}
               {%- when 'video' -%}
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/{{ video_id }}?ref=0"
+                  class="js-youtube"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  title="{{ section.settings.description | escape }}"
+                ></iframe>
                 {%- if section.settings.video_url != blank -%}
                   {%- assign video_id = section.settings.video_url -%}
                   <deferred-media
