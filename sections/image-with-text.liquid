@@ -67,7 +67,7 @@
                 {%- endif -%}
               {%- when 'video' -%}
                 {%- if section.settings.video_url != blank -%}
-                  {%- assign video_id = section.settings.video_url | split: 'v=' | last -%}
+                  {%- assign video_id = section.settings.video_url -%}
                   <deferred-media
                     class="deferred-media no-js-hidden"
                     data-media-id="{{ video_id }}"
