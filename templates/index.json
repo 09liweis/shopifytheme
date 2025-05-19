@@ -268,7 +268,7 @@
         "text_yL6iji": {
           "type": "text",
           "settings": {
-            "text": "<p>Maple is a proud Canadian manufacturer, crafting high-quality mattresses with locally sourced materials. We focus on comfort, support, and sustainability, offering more than just a mattress—it's an investment in better sleep and a healthier lifestyle. </p>",
+            "text": "<p>Maple Mattress is a proud Canadian manufacturer, crafting high-quality mattresses with locally sourced materials. We focus on comfort, support, and sustainability, offering more than just a mattress—it's an investment in better sleep and a healthier lifestyle. </p>",
             "text_style": "body"
           }
         },
@@ -291,7 +291,7 @@
         "media_type": "video",
         "image": "shopify://shop_images/Bed_img_for_About_Us_section.png",
         "video_url": "5yovMFER8Js",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
