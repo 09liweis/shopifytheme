@@ -137,7 +137,9 @@
           "settings": {
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.title.value }}",
-            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>"
+            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -236,7 +238,7 @@
         "column_niAjyj": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Unbox_Mattress-_1.png",
+            "image": "shopify://shop_images/Unbox_Maple_Mattress_1.png",
             "title": "Unbox",
             "text": "<p>Remove the mattress from the box carefully.</p>",
             "link_label": "",
@@ -246,7 +248,7 @@
         "column_WtdBeX": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Unbox_Mattress-2.png",
+            "image": "shopify://shop_images/Unbox_Maple_Mattress-2.png",
             "title": "Position",
             "text": "<p>Place the rolled-up mattress on your bed frame.</p>",
             "link_label": "",
@@ -256,7 +258,7 @@
         "column_Da9AVG": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Unbox_Mattress-3.png",
+            "image": "shopify://shop_images/Unbox_Maple_Mattress-3.png",
             "title": "Unroll",
             "text": "<p>Open the plastic wrap and gently unroll the mattress.</p>",
             "link_label": "",
@@ -266,7 +268,7 @@
         "column_aJBQBW": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Unbox_Mattress-4.png",
+            "image": "shopify://shop_images/Unbox_Maple_Mattress-4.png",
             "title": "Expand",
             "text": "<p>Allow 24–48 hours for the mattress to fully expand. </p>",
             "link_label": "",
