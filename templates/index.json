@@ -31,6 +31,25 @@
             "text_alignment_mobile": "center"
           }
         },
+        "slide_9hwj6L": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Maple_Mattress_Customize_Banner_002_b2bf631d-350a-4d32-89e4-770914c12716.png",
+            "heading": "Spend Less & Sleep Better With MAPLE Mattress",
+            "heading_color": "#272c48",
+            "heading_size": "h1",
+            "subheading": "<strong>Proudly Made in Canada      </strong>",
+            "button_label": "Shop All Mattresses",
+            "link": "shopify://collections/mattresses",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_yd3JNt": {
           "type": "slide",
           "settings": {
@@ -53,6 +72,7 @@
       },
       "block_order": [
         "slide_bpgdfg",
+        "slide_9hwj6L",
         "slide_yd3JNt"
       ],
       "settings": {
