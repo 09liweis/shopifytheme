@@ -291,6 +291,7 @@
         "media_type": "video",
         "image": "shopify://shop_images/Bed_img_for_About_Us_section.png",
         "video_url": "GhfttnOTQ3M",
+        "cover_image": "shopify://shop_images/Screen_Protector.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
