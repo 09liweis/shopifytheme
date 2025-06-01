@@ -46,7 +46,9 @@
           "settings": {
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.title.value }}",
-            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>"
+            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -98,7 +100,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/Maple_Mattress_3.png",
+        "image": "shopify://shop_images/Why_Choose_Maple_Mattress.png",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
