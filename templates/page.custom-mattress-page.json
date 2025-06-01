@@ -13,7 +13,6 @@
       "type": "image-banner",
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/Tailored_Round_Mattress_001-R.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -89,7 +88,7 @@
       "settings": {
         "bg_color": "#fdf9f5",
         "media_type": "image",
-        "image": "shopify://shop_images/Tailored_Round_Mattress_002.png",
+        "image": "shopify://shop_images/Tailored_Round_Maple_Mattress_002.png",
         "video_url": "",
         "cover_image": "shopify://shop_images/design_your_won_mattress_background.jpg",
         "height": "small",
@@ -140,7 +139,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/custom_mattress_with_diverse_firmness.png",
+        "image": "shopify://shop_images/Maple_Custom_Mattress_With_Diverse_Firmness.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
@@ -190,7 +189,7 @@
       "settings": {
         "bg_color": "#ffffff",
         "media_type": "image",
-        "image": "shopify://shop_images/Maplezzz_Mattress_BioNest_001.png",
+        "image": "shopify://shop_images/Maple_Mattress_Home_Page.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
@@ -240,7 +239,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/custom_mattress_for_boat.png",
+        "image": "shopify://shop_images/Custom_Maple_Mattress_For_Boat.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
@@ -290,7 +289,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/custom_one_to_one_split_mattress.png",
+        "image": "shopify://shop_images/Maple_Mattress_Customize_Banner_001.png",
         "video_url": "",
         "height": "small",
         "desktop_image_width": "medium",
@@ -312,7 +311,6 @@
         "column_fwiNXY": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Design_custom_mattress_icon_9a855f71-56d6-493c-ba92-2a0ab9591675.png",
             "title": "1.Design Your Mattress",
             "text": "<p>Share your preferences for size, shape, materials, and special features.</p>",
             "link_label": "",
@@ -322,7 +320,6 @@
         "column_wFARUL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Pricing_icon_a0155b2e-4d22-48c5-bb89-327bdaf40e1d.png",
             "title": "2.Design Proposal & Quotation",
             "text": "<p>Receive a customized quote and review the design proposal.</p>",
             "link_label": "",
@@ -332,7 +329,6 @@
         "column_geDfa6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/approve_icon_9d9e83ff-17a1-4ed0-8ebf-ab24914c733d.png",
             "title": "3.Approve & Confirm Order",
             "text": "<p>Approve design and confirm order</p>",
             "link_label": "",
@@ -342,7 +338,6 @@
         "column_tDy8Yf": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/shipping_icon_461172a9-8228-4ed8-8b53-62b471080c31.png",
             "title": "4.Production & Delivery",
             "text": "<p>Build and deliver your mattress to your doorstep.</p>",
             "link_label": "",
