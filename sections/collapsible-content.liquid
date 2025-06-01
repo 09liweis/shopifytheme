@@ -12,17 +12,17 @@
   .collapsible-content__read-more-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--color-button);
-    color: var(--color-button-text);
+    background-color: #FA522D;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: 500;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
   }
   .collapsible-content__read-more-link:hover {
-    background-color: var(--color-button-hover);
+    opacity: 0.8;
   }
   .collapsible-content__search {
     margin: 20px auto;
@@ -96,7 +96,18 @@
           
           if (searchTerm === '' || heading.includes(searchTerm) || content.includes(searchTerm)) {
             item.classList.remove('filtered-out');
-            item.classList.remove('accordion--hidden');
+            if (searchTerm !== '') {
+              item.classList.remove('accordion--hidden');
+            } else {
+              // When search is cleared, restore original visibility based on read_more_link
+              const readMoreLink = document.querySelector('.collapsible-content__read-more-link');
+              const index = Array.from(accordionItems).indexOf(item);
+              if (index >= 10 && readMoreLink) {
+                item.classList.add('accordion--hidden');
+              } else {
+                item.classList.remove('accordion--hidden');
+              }
+            }
             visibleCount++;
           } else {
             item.classList.add('filtered-out');
@@ -213,7 +224,7 @@
             {%- for block in section.blocks -%}
               {%- assign block_index = forloop.index -%}
               <div
-                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}{% if block_index > 10 %} accordion--hidden{% endif %}"
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}{% if block_index > 10 and section.settings.read_more_link != blank %} accordion--hidden{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 <details
