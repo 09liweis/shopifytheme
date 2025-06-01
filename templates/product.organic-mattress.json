@@ -152,7 +152,9 @@
           "settings": {
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.title.value }}",
-            "text": "{{ block.repeater.description | metafield_tag }}"
+            "text": "{{ block.repeater.description | metafield_tag }}",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -335,7 +337,11 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_first",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "read_more_link": "{{ metaobjects.faqs[\"faqs-65xp5pwi\"].system.url }}",
+        "read_more_text": "Read More",
+        "enable_search": false,
+        "search_placeholder": "Search content..."
       }
     },
     "related-products": {
