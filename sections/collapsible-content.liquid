@@ -24,7 +24,102 @@
   .collapsible-content__read-more-link:hover {
     background-color: var(--color-button-hover);
   }
+  .collapsible-content__search {
+    margin: 20px auto;
+    max-width: 500px;
+    position: relative;
+  }
+  .collapsible-content__search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid rgba(var(--color-foreground), 0.1);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    transition: border-color 0.3s ease;
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+  }
+  .collapsible-content__search-input:focus {
+    outline: none;
+    border-color: rgba(var(--color-foreground), 0.3);
+  }
+  .collapsible-content__search-input::placeholder {
+    color: rgba(var(--color-foreground), 0.6);
+  }
+  .collapsible-content__no-results {
+    text-align: center;
+    padding: 20px;
+    color: rgba(var(--color-foreground), 0.75);
+    display: none;
+  }
+  .collapsible-content__search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+  .accordion {
+    transition: opacity 0.3s ease;
+  }
+  .accordion.filtered-out {
+    display: none;
+  }
+  @media screen and (max-width: 749px) {
+    .collapsible-content__search {
+      margin: 15px;
+    }
+    .collapsible-content__search-input {
+      font-size: 1.4rem;
+    }
+  }
 </style>
+
+{% if section.settings.enable_search %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('.collapsible-content__search-input');
+    const accordionItems = document.querySelectorAll('.accordion');
+    const noResultsMessage = document.querySelector('.collapsible-content__no-results');
+    
+    if (searchInput && accordionItems.length > 0) {
+      searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase().trim();
+        let visibleCount = 0;
+        
+        accordionItems.forEach(item => {
+          const heading = item.querySelector('.accordion__title')?.textContent.toLowerCase() || '';
+          const content = item.querySelector('.accordion__content')?.textContent.toLowerCase() || '';
+          
+          if (searchTerm === '' || heading.includes(searchTerm) || content.includes(searchTerm)) {
+            item.classList.remove('filtered-out');
+            item.classList.remove('accordion--hidden');
+            visibleCount++;
+          } else {
+            item.classList.add('filtered-out');
+          }
+        });
+        
+        // Show/hide no results message
+        if (searchTerm !== '' && visibleCount === 0) {
+          noResultsMessage.style.display = 'block';
+        } else {
+          noResultsMessage.style.display = 'none';
+        }
+        
+        // Hide "Read More" button when searching
+        const readMoreBtn = document.querySelector('.collapsible-content__read-more');
+        if (readMoreBtn) {
+          readMoreBtn.style.display = searchTerm === '' ? '' : 'none';
+        }
+      });
+    }
+  });
+</script>
+{% endif %}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -95,6 +190,24 @@
               </h2>
             {%- else -%}
               <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
+            {% endif %}
+
+            {% if section.settings.enable_search %}
+              <div class="collapsible-content__search">
+                <input
+                  type="text"
+                  class="collapsible-content__search-input"
+                  placeholder="{{ section.settings.search_placeholder }}"
+                  aria-label="{{ section.settings.search_placeholder }}"
+                >
+                <svg class="collapsible-content__search-icon" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentColor">
+                  <circle cx="14" cy="14" r="9" stroke-width="2"/>
+                  <path d="M21 21L27 27" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="collapsible-content__no-results">
+                No matching content found
+              </div>
             {% endif %}
             {%- assign total_blocks = section.blocks | size -%}
             {%- for block in section.blocks -%}
@@ -328,6 +441,24 @@
       "id": "read_more_text",
       "label": "Read More Text",
       "default": "Read More"
+    },
+    {
+      "type": "header",
+      "content": "Search Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_search",
+      "label": "Enable content search",
+      "default": false,
+      "info": "Allow users to search through block headings and content"
+    },
+    {
+      "type": "text",
+      "id": "search_placeholder",
+      "label": "Search placeholder text",
+      "default": "Search content...",
+      "info": "Placeholder text for the search input"
     }
   ],
   "blocks": [
