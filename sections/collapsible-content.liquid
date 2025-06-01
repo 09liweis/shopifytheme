@@ -1,6 +1,31 @@
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .accordion--hidden {
+    display: none;
+  }
+  .collapsible-content__read-more {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .collapsible-content__read-more-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-button);
+    color: var(--color-button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .collapsible-content__read-more-link:hover {
+    background-color: var(--color-button-hover);
+  }
+</style>
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -71,9 +96,11 @@
             {%- else -%}
               <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
             {% endif %}
+            {%- assign total_blocks = section.blocks | size -%}
             {%- for block in section.blocks -%}
+              {%- assign block_index = forloop.index -%}
               <div
-                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}{% if block_index > 10 %} accordion--hidden{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 <details
@@ -101,6 +128,14 @@
                 </details>
               </div>
             {%- endfor -%}
+            
+            {% if total_blocks > 10 and section.settings.read_more_link != blank %}
+              <div class="collapsible-content__read-more">
+                <a href="{{ section.settings.read_more_link }}" class="collapsible-content__read-more-link">
+                  {{ section.settings.read_more_text | default: 'Read More' }}
+                </a>
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -281,6 +316,18 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "url",
+      "id": "read_more_link",
+      "label": "Read More Link",
+      "info": "Where the 'Read More' button should link to when there are more than 10 items"
+    },
+    {
+      "type": "text",
+      "id": "read_more_text",
+      "label": "Read More Text",
+      "default": "Read More"
     }
   ],
   "blocks": [
