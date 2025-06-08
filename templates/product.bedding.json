@@ -92,7 +92,7 @@
           "settings": {
             "heading": "Warranty & Shipping",
             "icon": "truck",
-            "content": "<p>Free shipping with 1 year warranty.</p>",
+            "content": "<p>Free shipping</p>",
             "page": ""
           }
         }
@@ -273,7 +273,11 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_first",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "read_more_link": "",
+        "read_more_text": "Read More",
+        "enable_search": false,
+        "search_placeholder": "Search content..."
       }
     },
     "related-products": {
