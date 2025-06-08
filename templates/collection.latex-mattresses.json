@@ -46,7 +46,9 @@
           "settings": {
             "image": "{{ block.repeater.image.value }}",
             "title": "{{ block.repeater.title.value }}",
-            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>"
+            "text": "<p>{{ block.repeater.description | metafield_tag }}</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -98,7 +100,7 @@
       "settings": {
         "bg_color": "",
         "media_type": "image",
-        "image": "shopify://shop_images/image_for_why_choose_us_section_6e527243-f145-4301-9026-bc3177e417a4.png",
+        "image": "shopify://shop_images/Soulmate12.png",
         "video_url": "",
         "height": "adapt",
         "desktop_image_width": "medium",
