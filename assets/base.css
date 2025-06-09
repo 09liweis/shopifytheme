@@ -3733,4 +3733,5 @@ details-disclosure > details {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
   margin-top: 20px;
+  font-weight: bold;
 }
