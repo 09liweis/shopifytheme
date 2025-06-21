@@ -256,6 +256,14 @@
         </a>
       {%- endif -%}
 
+      <a
+          href="/search"
+          class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}"
+          rel="nofollow"
+        >
+          <span class="svg-wrapper">{{ 'icon-search.svg' | inline_asset_content }}</span>
+        </a>
+
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when '@app' -%}
