@@ -12,6 +12,7 @@
     "main": {
       "type": "main-login",
       "settings": {
+        "enable_shop_login_button": false
       }
     }
   },
